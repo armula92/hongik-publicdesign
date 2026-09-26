@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>홍익대학교 공공디자인전공 | Hongik Public Design</title>
+<meta name="description" content="디자인으로 공공가치를 만듭니다. 홍익대학교 공공디자인전공(석사·박사)과 공공디자인연구센터의 교육, 연구, 프로젝트, 입학 안내.">
+<meta property="og:title" content="홍익대학교 공공디자인전공">
+<meta property="og:description" content="Design for Public — 사회문제를 디자인으로 해결하는 연구자와 전문가를 기릅니다.">
+<meta property="og:image" content="images/hero-seminar.jpg">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='22 22 158 130'><rect x='22' y='22' width='158' height='130' rx='20' fill='%23BF5E38'/><g fill='%23fff'><rect x='44' y='53' width='34' height='13'/><circle cx='60' cy='96' r='17.5' fill='none' stroke='%23fff' stroke-width='15'/><rect x='32' y='68' width='56' height='17'/><circle cx='140' cy='85' r='21' fill='none' stroke='%23fff' stroke-width='20'/></g></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --paper:#F5F3EE; --paper-2:#ECE9E1; --ink:#111111; --ink-2:#3A3A3A; --mute:#6E6B64;
+  --line:#D9D5CB; --accent:#BF5E38; --accent-dark:#944527; --accent-deep:#411F10; --accent-light:#DE9E73; --accent-pale:#F2C9AD; --accent-soft:#F7E9DF;
+  --white:#FFFFFF; --maxw:1240px; --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  background:var(--paper);color:var(--ink);line-height:1.65;word-break:keep-all;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.h-sec{font-size:clamp(30px,4.4vw,54px);line-height:1.15;font-weight:800;letter-spacing:-.03em;margin:10px 0 18px}
+.lead{font-size:clamp(16px,1.6vw,19px);color:var(--ink-2);max-width:760px}
+section{padding:110px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:48px}
+.num-tag{font-size:13px;font-weight:600;color:var(--mute);font-variant-numeric:tabular-nums}
+
+/* ---------- Header ---------- */
+header.site{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s,color .3s;color:#fff}
+header.site.solid{background:rgba(245,243,238,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.logo-mark{width:52px;height:34px;border-radius:8px;background:var(--accent);display:grid;place-items:center;flex:none}
+.logo-mark svg{width:40px;height:24px;display:block}
+.logo small{display:block;font-size:10.5px;font-weight:600;letter-spacing:.08em;opacity:.75}
+.menu{display:flex;gap:4px;list-style:none}
+.menu>li{position:relative}
+.menu>li>a{display:block;padding:10px 14px;font-size:15px;font-weight:600;border-radius:8px}
+.menu>li>a:hover{background:rgba(127,127,127,.14)}
+.menu .sub{position:absolute;top:100%;left:0;min-width:180px;background:var(--white);color:var(--ink);border-radius:12px;padding:8px;
+  box-shadow:0 12px 40px rgba(0,0,0,.14);list-style:none;opacity:0;visibility:hidden;transform:translateY(6px);transition:.2s}
+.menu>li:hover .sub,.menu>li:focus-within .sub{opacity:1;visibility:visible;transform:none}
+.sub a{display:block;padding:8px 12px;font-size:14px;border-radius:8px}
+.sub a:hover{background:var(--paper)}
+.nav-cta{padding:10px 18px;border-radius:99px;background:var(--accent);color:#fff;font-weight:700;font-size:14px;white-space:nowrap}
+.nav-cta:hover{background:var(--accent-dark)}
+.burger{display:none;width:44px;height:44px;border-radius:10px}
+.burger span{display:block;width:22px;height:2px;background:currentColor;margin:5px auto;transition:.25s}
+.mobile-menu{display:none}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;padding:0 0 64px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url(images/hero-seminar.jpg) center 40%/cover no-repeat;transform:scale(1.04);animation:heroZoom 18s ease-out forwards}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 65%),linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.1) 35%,rgba(0,0,0,.8) 100%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero-kicker{display:inline-flex;gap:10px;align-items:center;font-size:14px;font-weight:600;padding:8px 14px;border:1px solid rgba(255,255,255,.4);border-radius:99px;backdrop-filter:blur(6px)}
+.hero-kicker i{width:8px;height:8px;border-radius:50%;background:var(--accent-light);box-shadow:0 0 0 4px rgba(222,158,115,.35)}
+.hero h1{font-size:clamp(44px,8.6vw,124px);line-height:.98;font-weight:900;letter-spacing:-.045em;margin:22px 0 22px}
+.hero h1{text-shadow:0 4px 30px rgba(0,0,0,.35)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.sub{font-size:clamp(17px,1.9vw,22px);max-width:720px;opacity:.93}
+.hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-top:40px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 24px;border-radius:99px;font-weight:700;font-size:15px;transition:.2s}
+.btn-accent{background:var(--accent);color:#fff}.btn-accent:hover{background:var(--accent-dark)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.7);color:#fff}.btn-ghost:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:#333}
+.btn-line{border:1.5px solid var(--ink)}.btn-line:hover{background:var(--ink);color:#fff}
+.hero-cap{font-size:12.5px;opacity:.75;max-width:320px;text-align:right}
+
+/* ---------- Ticker ---------- */
+.ticker{background:var(--ink);color:#fff;overflow:hidden;white-space:nowrap;padding:18px 0;font-weight:700;font-size:clamp(18px,2.2vw,26px);letter-spacing:-.01em}
+.ticker-track{display:inline-flex;gap:48px;animation:tick 40s linear infinite;padding-left:48px}
+.ticker-track span{display:inline-flex;align-items:center;gap:48px}
+.ticker-track span::after{content:"✳";color:var(--accent);font-size:.8em}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:start}
+.statement{font-size:clamp(24px,2.8vw,36px);font-weight:700;line-height:1.4;letter-spacing:-.025em}
+.statement mark{background:linear-gradient(transparent 60%,rgba(191,94,56,.22) 60%);color:inherit}
+.about-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;position:relative}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-img figcaption{position:absolute;left:14px;bottom:12px;color:#fff;font-size:12.5px;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:72px}
+.feature{background:var(--paper);padding:30px 26px}
+.feature b{display:block;font-size:13px;color:var(--accent);letter-spacing:.1em;margin-bottom:14px}
+.feature h3{font-size:20px;letter-spacing:-.02em;margin-bottom:10px}
+.feature p{font-size:15px;color:var(--ink-2)}
+
+/* strategy cycle */
+.cycle{margin-top:96px;background:var(--ink);color:#fff;border-radius:24px;padding:64px 56px;position:relative;overflow:hidden}
+.cycle::before{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:70px solid rgba(191,94,56,.28)}
+.cycle .h-sec{font-size:clamp(26px,3.4vw,42px)}
+.cycle .lead{color:#C9C6BE}
+.steps6{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:40px;position:relative}
+.step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:22px 18px;transition:.25s}
+.step:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-4px)}
+.step .n{font-size:12px;opacity:.6;font-weight:700}
+.step h4{font-size:20px;margin:6px 0 2px;letter-spacing:-.01em}
+.step .ko{font-size:14px;font-weight:700;opacity:.85}
+.step p{font-size:13px;opacity:.72;margin-top:12px;line-height:1.55}
+.cycle-note{margin-top:22px;font-size:14px;opacity:.7}
+
+/* ---------- Faculty ---------- */
+.fac-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.fac{background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:.25s}
+.fac:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.08)}
+.fac .ph{aspect-ratio:4/5;background:var(--paper-2);overflow:hidden}
+.fac .ph img{width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:grayscale(1);transition:.4s}
+.fac:hover .ph img{filter:none}
+.fac .bd{padding:18px 20px 22px}
+.fac h4{font-size:20px;letter-spacing:-.02em}
+.fac h4 small{font-size:13px;font-weight:600;color:var(--mute);margin-left:6px}
+.fac-role{display:inline-block;font-size:12px;font-weight:800;color:#fff;background:var(--accent);padding:4px 10px;border-radius:99px;margin-bottom:8px;letter-spacing:.02em}
+.fac .field{font-size:14px;font-weight:700;color:var(--accent);margin:4px 0 10px}
+.fac ul{list-style:none;font-size:13px;color:var(--ink-2);line-height:1.7}
+.fac a:hover{color:var(--accent)}
+
+/* ---------- Curriculum ---------- */
+.tabs{display:inline-flex;background:var(--paper-2);padding:5px;border-radius:99px;gap:4px;margin-bottom:34px}
+.tab{padding:11px 22px;border-radius:99px;font-weight:700;font-size:15px;color:var(--mute)}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff}
+.panel[hidden]{display:none}
+.track-intro{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;margin-bottom:40px}
+.track-intro h3{font-size:28px;letter-spacing:-.02em;line-height:1.3}
+.track-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.chip{display:inline-block;padding:6px 12px;border-radius:99px;background:var(--white);border:1px solid var(--line);font-size:13px;font-weight:600}
+.chip.accent{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip.soft{background:var(--accent-soft);border-color:transparent;color:var(--accent-dark)}
+.courses{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.course{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:20px 20px 18px;text-align:left;transition:.2s;display:flex;flex-direction:column;gap:6px}
+.course:hover{border-color:var(--ink)}
+.course .cat{font-size:11.5px;font-weight:700;letter-spacing:.08em;color:var(--mute);text-transform:uppercase}
+.course h4{font-size:17px;letter-spacing:-.02em}
+.course p{font-size:13.5px;color:var(--ink-2);line-height:1.6;max-height:0;overflow:hidden;transition:max-height .35s}
+.course.open p{max-height:260px;margin-top:4px}
+.course .more{font-size:12.5px;font-weight:700;color:var(--accent);margin-top:auto}
+.seminars{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:64px}
+.sem{border-radius:var(--radius);overflow:hidden;background:var(--white);border:1px solid var(--line)}
+.sem img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.sem div{padding:20px 22px 24px}
+.sem h4{font-size:18px;letter-spacing:-.02em;margin-bottom:6px}
+.sem p{font-size:14px;color:var(--ink-2)}
+
+/* ---------- Projects ---------- */
+#projects{background:var(--ink);color:#fff}
+#projects .lead{color:#C9C6BE}
+.flow-legend{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-weight:700;font-size:15px}
+.flow-legend span{padding:8px 14px;border-radius:99px;border:1px solid rgba(255,255,255,.3)}
+.flow-legend span:last-child{background:var(--accent-light);border-color:var(--accent-light);color:var(--accent-deep)}
+.flow-legend i{opacity:.5;font-style:normal}
+.case{display:grid;grid-template-columns:1.1fr 1fr;gap:0;background:#1B1B1B;border-radius:22px;overflow:hidden;margin-bottom:28px;border:1px solid #2A2A2A}
+.case:nth-of-type(even){grid-template-columns:1fr 1.1fr}
+.case:nth-of-type(even) .case-img{order:2}
+.case-img{position:relative;min-height:420px}
+.case-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.case-img .tag{position:absolute;left:18px;top:18px;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);padding:6px 12px;border-radius:99px;font-size:12.5px;font-weight:700}
+.case-body{padding:44px 44px 40px;display:flex;flex-direction:column}
+.case-body .meta{font-size:13px;color:#9C998F;font-weight:600;margin-bottom:10px}
+.case-body h3{font-size:clamp(24px,2.6vw,32px);letter-spacing:-.03em;line-height:1.25;margin-bottom:24px}
+.flow{display:grid;gap:12px}
+.flow-item{display:grid;grid-template-columns:92px 1fr;gap:14px;align-items:start;padding:14px 0;border-top:1px solid #2F2F2F}
+.flow-item b{font-size:12.5px;letter-spacing:.06em;padding:5px 0;border-radius:6px;text-align:center}
+.flow-item:nth-child(1) b{background:#512A1B;color:#F8E3D6}
+.flow-item:nth-child(2) b{background:var(--accent)}
+.flow-item:nth-child(3) b{background:var(--accent-light);color:var(--accent-deep)}
+.flow-item p{font-size:15px;color:#D8D5CD}
+.big-stat{display:flex;align-items:baseline;gap:14px;margin-top:22px;padding:18px 22px;border-radius:14px;background:rgba(191,94,56,.18);border:1px solid rgba(222,158,115,.45)}
+.big-stat strong{font-size:44px;line-height:1;font-weight:900;color:var(--accent-pale);letter-spacing:-.03em}
+.big-stat span{font-size:14px;color:#F8E3D6}
+.more-cases{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:56px}
+.mini{background:#1B1B1B;border:1px solid #2A2A2A;border-radius:16px;overflow:hidden;transition:.25s}
+.mini:hover{transform:translateY(-4px);border-color:#555}
+.mini img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.mini div{padding:16px 18px 20px}
+.mini .k{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.06em}
+.mini h4{font-size:16.5px;letter-spacing:-.02em;margin:4px 0 6px;line-height:1.35}
+.mini p{font-size:13.5px;color:#AFACA3}
+
+/* ---------- Impact numbers ---------- */
+.impact{background:var(--accent);color:#fff;padding:90px 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{padding:10px 26px;border-left:1px solid rgba(255,255,255,.35)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat strong{display:block;font-size:clamp(46px,6vw,84px);font-weight:900;line-height:1;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.stat strong sup{font-size:.4em;vertical-align:top;margin-left:2px}
+.stat span{display:block;margin-top:14px;font-size:15px;font-weight:600;opacity:.95}
+.stat small{display:block;font-size:12.5px;opacity:.75;margin-top:4px}
+
+/* ---------- Research ---------- */
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.area{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px}
+.area .ic{width:44px;height:44px;border-radius:12px;background:var(--paper);display:grid;place-items:center;margin-bottom:18px}
+.area .ic svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.area h4{font-size:19px;letter-spacing:-.02em;margin-bottom:8px}
+.area p{font-size:14.5px;color:var(--ink-2);margin-bottom:12px}
+.area ul{list-style:none;font-size:13.5px;color:var(--mute)}
+.area li::before{content:"— ";color:var(--line)}
+.pubs{display:grid;grid-template-columns:1fr 1.5fr;gap:56px;margin-top:88px;align-items:center}
+.pub-covers{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.pub-covers img{border-radius:10px;box-shadow:0 18px 40px rgba(0,0,0,.14);aspect-ratio:3/4;object-fit:contain;width:100%;background:#fff;padding:14px}
+.pub-list{list-style:none;border-top:1px solid var(--ink)}
+.pub-list li{display:grid;grid-template-columns:80px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.pub-list .y{font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.pub-list b{display:block;font-size:16.5px;letter-spacing:-.02em}
+.pub-list span{font-size:13.5px;color:var(--mute)}
+
+/* ---------- People ---------- */
+#people{background:var(--paper-2)}
+.people-hero{border-radius:22px;overflow:hidden;position:relative;aspect-ratio:21/8;min-height:260px}
+.people-hero img{width:100%;height:100%;object-fit:cover}
+.people-hero div{position:absolute;inset:auto 0 0 0;padding:32px 36px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.75))}
+.people-hero h3{font-size:clamp(22px,3vw,34px);letter-spacing:-.03em;line-height:1.25}
+.people-cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;margin-top:28px}
+.pcard{background:var(--white);border-radius:var(--radius);padding:28px 26px;border:1px solid var(--line)}
+.pcard h4{font-size:19px;margin-bottom:14px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.pcard h4 em{font-style:normal;font-size:12px;color:#fff;background:var(--ink);padding:3px 9px;border-radius:99px}
+.alist{list-style:none}
+.alist li{padding:11px 0;border-top:1px solid var(--line);font-size:14px}
+.alist li:first-child{border-top:0;padding-top:0}
+.alist b{display:block;font-size:14.5px}
+.alist span{color:var(--mute);font-size:13px}
+.careers{display:flex;flex-wrap:wrap;gap:8px}
+.careers .chip{font-size:13.5px;padding:8px 13px}
+
+/* timeline */
+.timeline{margin-top:88px}
+.tl-years{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:26px}
+.tl-year{padding:9px 16px;border-radius:99px;border:1px solid var(--ink);font-weight:800;font-size:15px;font-variant-numeric:tabular-nums}
+.tl-year[aria-selected="true"]{background:var(--ink);color:#fff}
+.tl-body{display:grid;grid-template-columns:260px 1fr;gap:40px;background:var(--white);border-radius:var(--radius);padding:36px;border:1px solid var(--line)}
+.tl-body .big{font-size:84px;font-weight:900;line-height:.9;letter-spacing:-.05em;color:var(--accent)}
+.tl-body .big small{display:block;font-size:15px;color:var(--ink);letter-spacing:0;margin-top:14px;font-weight:700;line-height:1.5}
+.tl-body ul{list-style:none;columns:2;column-gap:36px}
+.tl-body li{break-inside:avoid;padding:8px 0 8px 16px;position:relative;font-size:14.5px;border-bottom:1px dashed var(--line)}
+.tl-d{display:inline-block;min-width:46px;margin-right:8px;font-size:12.5px;font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+.tl-body li::before{content:"";position:absolute;left:0;top:16px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+
+/* ---------- News ---------- */
+.news-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-auto-rows:auto;gap:22px}
+.news{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.25s}
+.news:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.08)}
+.news img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.news.feat{grid-row:span 2}
+.news.feat img{aspect-ratio:auto;flex:1;min-height:280px}
+.news .bd{padding:20px 22px 22px}
+.news .cat{display:flex;gap:8px;align-items:center;font-size:12.5px;font-weight:700;color:var(--mute);margin-bottom:8px}
+.news .cat i{font-style:normal;padding:3px 9px;border-radius:99px;background:var(--paper);color:var(--ink)}
+.news h4{font-size:17.5px;line-height:1.4;letter-spacing:-.02em}
+.news.feat h4{font-size:24px}
+.news p{font-size:14px;color:var(--ink-2);margin-top:8px}
+.news-list{margin-top:34px;border-top:1px solid var(--ink);list-style:none}
+.news-list li{display:grid;grid-template-columns:110px 90px 1fr;gap:16px;padding:16px 4px;border-bottom:1px solid var(--line);font-size:15px;align-items:center}
+.news-list .d{font-variant-numeric:tabular-nums;color:var(--mute);font-weight:600;font-size:14px}
+.news-list .c{font-size:12.5px;font-weight:700;color:var(--accent)}
+
+/* ---------- Admission ---------- */
+#admission{background:var(--white)}
+.adm-slogan{font-size:clamp(24px,3.2vw,40px);font-weight:800;line-height:1.3;letter-spacing:-.03em;color:var(--accent);margin:4px 0 20px}
+.adm-slogan mark{background:linear-gradient(transparent 62%,rgba(191,94,56,.18) 62%);color:inherit}
+.adm-top{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.adm-card{border-radius:20px;padding:40px 36px;position:relative;overflow:hidden}
+.adm-card.ma{background:var(--ink);color:#fff}
+.adm-card.phd{background:var(--accent);color:#fff}
+.adm-card .deg{font-size:13px;font-weight:700;letter-spacing:.12em;opacity:.8}
+.adm-card h3{font-size:clamp(26px,3vw,36px);letter-spacing:-.03em;margin:8px 0 6px;line-height:1.2}
+.adm-card .dept{font-size:15px;opacity:.85;margin-bottom:22px}
+.adm-card ul{list-style:none;font-size:15px}
+.adm-card li{padding:10px 0;border-top:1px solid rgba(255,255,255,.2);display:grid;grid-template-columns:110px 1fr;gap:12px}
+.adm-card li b{opacity:.75;font-weight:600}
+.proc{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:64px;counter-reset:s}
+.proc div{padding:24px 22px;border-top:3px solid var(--ink);position:relative}
+.proc div::before{counter-increment:s;content:"0" counter(s);font-size:13px;font-weight:800;color:var(--accent)}
+.proc h4{font-size:18px;margin:6px 0 6px;letter-spacing:-.02em}
+.proc p{font-size:14px;color:var(--ink-2)}
+.faq-wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:56px;margin-top:96px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--ink)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font-size:17px;font-weight:700;letter-spacing:-.02em;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:16px;font-size:28px;font-weight:300;transition:.25s}
+.faq details[open] summary::after{transform:rotate(45deg);color:var(--accent)}
+.faq details p{padding:0 44px 24px 0;color:var(--ink-2);font-size:15px}
+.contact-box{background:var(--paper);border-radius:20px;padding:32px 30px}
+.contact-box h4{font-size:20px;margin-bottom:14px}
+.contact-box dl{display:grid;grid-template-columns:78px 1fr;gap:10px 12px;font-size:14.5px}
+.contact-box dt{color:var(--mute);font-weight:600}
+.contact-box .btns{margin-top:24px}
+
+/* ---------- Location ---------- */
+.loc{display:grid;grid-template-columns:1fr 1.3fr;gap:0;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:var(--white)}
+.loc-info{padding:44px 40px}
+.loc-info h3{font-size:28px;letter-spacing:-.03em;margin-bottom:18px}
+.loc-info dl{display:grid;grid-template-columns:78px 1fr;gap:12px 14px;font-size:15px}
+.loc-info dt{color:var(--mute);font-weight:600}
+.loc iframe{width:100%;height:100%;min-height:380px;border:0;filter:grayscale(.3)}
+
+/* ---------- Footer ---------- */
+footer{background:var(--ink);color:#BDBAB2;padding:72px 0 40px;font-size:14px}
+.f-top{display:grid;grid-template-columns:1.6fr repeat(3,1fr);gap:40px;padding-bottom:48px;border-bottom:1px solid #2C2C2C}
+.f-top h5{color:#fff;font-size:14px;margin-bottom:14px}
+.f-top ul{list-style:none;line-height:2}
+.f-top a:hover{color:#fff}
+.f-brand{font-size:clamp(34px,4.6vw,58px);font-weight:900;color:#fff;letter-spacing:-.04em;line-height:1}
+.f-brand em{font-style:normal;color:var(--accent)}
+.f-bot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:26px;font-size:13px}
+
+
+/* seminar series feature */
+#series{margin:32px 0 28px}
+.series-card{width:100%;display:grid;grid-template-columns:1.05fr 1fr;text-align:left;background:var(--accent);color:#fff;border-radius:24px;overflow:hidden;
+  box-shadow:0 24px 60px rgba(191,94,56,.28);transition:transform .3s,box-shadow .3s}
+.series-card:hover{transform:translateY(-6px);box-shadow:0 32px 70px rgba(191,94,56,.38)}
+.series-card:focus-visible{outline:3px solid var(--accent-pale);outline-offset:4px}
+.series-img{position:relative;min-height:440px}
+.series-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.series-card:hover .series-img img{transform:scale(1.04)}
+.series-badge{position:absolute;left:20px;top:20px;background:#fff;color:var(--accent);font-weight:800;font-size:13px;padding:7px 14px;border-radius:99px}
+.series-body{padding:44px 44px 40px;display:flex;flex-direction:column}
+.series-eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-pale)}
+.series-body h3{font-size:clamp(28px,3.2vw,42px);line-height:1.18;letter-spacing:-.035em;font-weight:900;margin:12px 0 14px}
+.series-desc{font-size:15.5px;color:#F9E7DB;line-height:1.65}
+.series-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:24px 0 20px;border-top:1px solid rgba(255,255,255,.25);border-bottom:1px solid rgba(255,255,255,.25)}
+.series-stats div{padding:14px 12px 14px 0}
+.series-stats div+div{padding-left:14px;border-left:1px solid rgba(255,255,255,.25)}
+.series-stats strong{display:block;font-size:30px;font-weight:900;letter-spacing:-.03em;line-height:1.1}
+.series-stats span{font-size:12.5px;color:var(--accent-pale)}
+.series-recent{list-style:none;font-size:14px;color:#FBEEE5}
+.series-recent li{padding:6px 0;display:flex;gap:10px}
+.series-recent span,.sm-list span{font-weight:800;font-variant-numeric:tabular-nums;color:var(--accent-pale);min-width:24px}
+.series-cta{margin-top:auto;padding-top:22px;font-weight:800;font-size:16px;display:inline-flex;gap:8px;align-items:center}
+.series-cta b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#fff;color:var(--accent);transition:transform .3s}
+.series-card:hover .series-cta b{transform:translateX(6px)}
+.series-modal{border:0;padding:0;border-radius:22px;width:min(960px,calc(100vw - 32px));max-height:calc(100vh - 48px);margin:auto;background:var(--paper);color:var(--ink);
+  box-shadow:0 30px 90px rgba(40,22,13,.45)}
+.series-modal::backdrop{background:rgba(40,22,13,.7);backdrop-filter:blur(4px)}
+.series-modal[open]{display:flex;flex-direction:column;animation:smIn .3s ease}
+@keyframes smIn{from{opacity:0;transform:translateY(18px)}}
+.sm-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;background:var(--accent);color:#fff;padding:30px 34px 26px}
+.sm-head h3{font-size:clamp(22px,2.8vw,32px);letter-spacing:-.03em;margin:6px 0 6px}
+.sm-meta{font-size:13.5px;color:#F9E7DB}
+.sm-close{flex:none;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.16);color:#fff;font-size:26px;line-height:1}
+.sm-close:hover{background:#fff;color:var(--accent)}
+.sm-list{list-style:none;overflow-y:auto;padding:14px 34px;columns:2;column-gap:36px}
+.sm-list li{break-inside:avoid;display:flex;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.45}
+.sm-list li span{color:var(--accent)}
+.sm-list li:nth-last-child(-n+4){font-weight:700}
+.sm-foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:18px 34px 22px;border-top:1px solid var(--line);font-size:13.5px;color:var(--mute)}
+body.modal-open{overflow:hidden}
+@media (max-width:760px){
+  .series-card{grid-template-columns:1fr;border-radius:18px}
+  .series-img{min-height:240px}
+  .series-body{padding:28px 22px}
+  .series-stats strong{font-size:24px}
+  .sm-head{padding:22px 20px 18px}
+  .sm-list{columns:1;padding:8px 20px}
+  .sm-foot{padding:16px 20px 20px}
+}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+.to-top{position:fixed;right:20px;bottom:20px;width:48px;height:48px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+  opacity:0;visibility:hidden;transition:.3s;z-index:40;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.to-top.show{opacity:1;visibility:visible}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1080px){
+  .menu,.nav .nav-cta{display:none}
+  .burger{display:block}
+  .mobile-menu{display:block;position:fixed;inset:72px 0 0 0;background:var(--paper);color:var(--ink);padding:16px 24px 40px;overflow-y:auto;
+    transform:translateX(100%);transition:transform .3s;z-index:49}
+  .mobile-menu.open{transform:none}
+  .mobile-menu details{border-bottom:1px solid var(--line)}
+  .mobile-menu summary{list-style:none;padding:18px 0;font-size:20px;font-weight:800}
+  .mobile-menu summary::-webkit-details-marker{display:none}
+  .mobile-menu details a{display:block;padding:8px 0 8px 12px;color:var(--ink-2)}
+  .mobile-menu details[open]{padding-bottom:12px}
+  .mobile-menu .btn{margin-top:24px;width:100%;justify-content:center}
+  body.menu-open header.site{background:var(--paper);color:var(--ink)}
+  body.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  body.menu-open .burger span:nth-child(2){opacity:0}
+  body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .features{grid-template-columns:1fr 1fr}
+  .steps6{grid-template-columns:repeat(3,1fr)}
+  .fac-grid{grid-template-columns:repeat(3,1fr)}
+  .courses{grid-template-columns:1fr 1fr}
+  .more-cases{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr 1fr;gap:36px 0}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .areas{grid-template-columns:1fr 1fr}
+  .people-cols{grid-template-columns:1fr 1fr}
+  .proc{grid-template-columns:1fr 1fr 1fr}
+  .f-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  section{padding:76px 0}
+  .wrap{padding:0 16px}
+  .about-grid,.track-intro,.pubs,.faq-wrap,.adm-top,.loc,.tl-body{grid-template-columns:1fr;gap:32px}
+  .features,.fac-grid,.courses,.seminars,.more-cases,.areas,.people-cols,.proc{grid-template-columns:1fr}
+  .fac-grid{grid-template-columns:1fr 1fr;gap:14px}
+  .fac .bd{padding:14px}
+  .fac ul{font-size:12px;overflow-wrap:anywhere}
+  .steps6{grid-template-columns:1fr 1fr}
+  .cycle{padding:44px 22px;border-radius:18px}
+  .case,.case:nth-of-type(even){grid-template-columns:1fr}
+  .case:nth-of-type(even) .case-img{order:0}
+  .case-img{min-height:260px}
+  .case-body{padding:28px 22px}
+  .flow-item{grid-template-columns:1fr;gap:6px}
+  .flow-item b{justify-self:start;padding:4px 10px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat{padding:0 14px}
+  .stat:nth-child(odd){border-left:0;padding-left:0}
+  .news-grid{grid-template-columns:1fr}
+  .news.feat{grid-row:auto}
+  .news-list li{grid-template-columns:1fr;gap:2px}
+  .tl-body{padding:24px}
+  .tl-body ul{columns:1}
+  .tl-body .big{font-size:60px}
+  .hero-cap{text-align:left}
+  .loc-info{padding:30px 22px}
+  .adm-card{padding:30px 22px}
+  .adm-card li{grid-template-columns:90px 1fr}
+  .f-top{grid-template-columns:1fr}
+  .people-hero{aspect-ratio:4/3}
+  .people-hero div{padding:22px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site" id="top">
+  <div class="wrap nav">
+    <a href="#top" class="logo" aria-label="홍익대학교 공공디자인전공 홈">
+      <span class="logo-mark"><svg viewBox="22 40 158 94" aria-hidden="true"><g fill="#fff"><rect x="44" y="53" width="34" height="13"/><circle cx="60" cy="96" r="17.5" fill="none" stroke="#fff" stroke-width="15"/><rect x="32" y="68" width="56" height="17"/><circle cx="140" cy="85" r="21" fill="none" stroke="#fff" stroke-width="20"/></g></svg></span>
+      <span>홍익대학교 공공디자인전공<small>HONGIK PUBLIC DESIGN</small></span>
+    </a>
+    <nav aria-label="주 메뉴">
+      <ul class="menu">
+        <li><a href="#about">전공 소개</a>
+          <ul class="sub"><li><a href="#about">전공 소개</a></li><li><a href="#faculty">교수진</a></li><li><a href="#location">오시는 길</a></li></ul></li>
+        <li><a href="#curriculum">교육과정</a>
+          <ul class="sub"><li><a href="#curriculum">석사·박사 과정</a></li><li><a href="#courses">교과목</a></li><li><a href="#series">세미나 시리즈</a></li><li><a href="#seminars">세미나·특강</a></li></ul></li>
+        <li><a href="#projects">연구·프로젝트</a>
+          <ul class="sub"><li><a href="#research">연구 분야</a></li><li><a href="#projects">공공디자인 프로젝트</a></li><li><a href="#pubs">논문·출판</a></li></ul></li>
+        <li><a href="#people">사람들</a>
+          <ul class="sub"><li><a href="#people">재학생</a></li><li><a href="#alumni">졸업생·진로</a></li><li><a href="#history">연혁</a></li></ul></li>
+        <li><a href="#news">소식</a>
+          <ul class="sub"><li><a href="#news">수상·협약·포럼</a></li></ul></li>
+        <li><a href="#admission">입학 안내</a>
+          <ul class="sub"><li><a href="#admission">모집 안내</a></li><li><a href="#apply">지원 방법</a></li><li><a href="#faq">자주 묻는 질문</a></li></ul></li>
+      </ul>
+    </nav>
+    <a href="#admission" class="nav-cta">입학 안내</a>
+    <button class="burger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <details><summary>전공 소개</summary><a href="#about">전공 소개</a><a href="#faculty">교수진</a><a href="#location">오시는 길</a></details>
+  <details><summary>교육과정</summary><a href="#curriculum">석사·박사 과정</a><a href="#courses">교과목</a><a href="#series">세미나 시리즈</a><a href="#seminars">세미나·특강</a></details>
+  <details><summary>연구·프로젝트</summary><a href="#research">연구 분야</a><a href="#projects">공공디자인 프로젝트</a><a href="#pubs">논문·출판</a></details>
+  <details><summary>사람들</summary><a href="#people">재학생</a><a href="#alumni">졸업생·진로</a><a href="#history">연혁</a></details>
+  <details><summary>소식</summary><a href="#news">수상·협약·포럼</a></details>
+  <details><summary>입학 안내</summary><a href="#admission">모집 안내</a><a href="#apply">지원 방법</a><a href="#faq">자주 묻는 질문</a></details>
+  <a href="#admission" class="btn btn-accent">입학 안내 바로가기 →</a>
+</div>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero" aria-label="소개">
+  <div class="hero-bg" role="img" aria-label="많은 참가자가 함께한 공공디자인연구센터 세미나"></div>
+  <div class="wrap">
+    <span class="hero-kicker"><i></i>2026 DESIS Lab 지정 · 사회혁신 디자인 국제 네트워크</span>
+    <h1>Design<br>for <em>Public</em>.</h1>
+    <p class="sub">디자인으로 공공가치를 만듭니다. 홍익대학교 공공디자인전공은 도시와 일상의 사회문제를 발견하고, 디자인으로 실험하고, 실제 변화로 증명하는 연구자와 전문가를 기릅니다.</p>
+    <div class="hero-foot">
+      <div class="btns">
+        <a href="#projects" class="btn btn-accent">프로젝트 보기 →</a>
+        <a href="#admission" class="btn btn-ghost">입학 안내</a>
+      </div>
+      <p class="hero-cap">사진: 공공디자인연구센터 세미나 시리즈, 홍문관 R1310</p>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Public Design Governance</span><span>사회문제해결디자인</span><span>공공안전디자인</span><span>유니버설디자인</span><span>공공서비스디자인</span><span>Tactical Urbanism</span><span>ESG 공공디자인</span><span>사회적 처방</span><span>보행도시</span><span>Evidence-Based Design</span>
+    <span>Public Design Governance</span><span>사회문제해결디자인</span><span>공공안전디자인</span><span>유니버설디자인</span><span>공공서비스디자인</span><span>Tactical Urbanism</span><span>ESG 공공디자인</span><span>사회적 처방</span><span>보행도시</span><span>Evidence-Based Design</span>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="eyebrow">01 · About</p><h2 class="h-sec">전공 소개</h2></div>
+      <span class="num-tag">Since 2018 · 산업미술대학원 / 대학원</span>
+    </div>
+    <div class="about-grid">
+      <div class="rv">
+        <p class="statement">공공디자인은 시설물을 예쁘게 만드는 일이 아니라, <mark>사회가 필요로 하는 가치를 발견하고 검증하고 확산</mark>하는 일입니다.</p>
+        <p class="lead" style="margin-top:28px">2018년 신설된 홍익대학교 공공디자인전공은 공공디자인 계획, 공공 공간·시설·시각 디자인, 공공디자인 행정과 정책, 문화전략 전반을 다룹니다. 2019년 문을 연 공공디자인연구센터와 함께 수업에서 시작한 연구를 실제 도시의 프로젝트로 옮기고, 그 결과를 정책과 교육으로 되돌려 보냅니다.</p>
+        <p class="lead" style="margin-top:16px">우리는 스스로를 무언가를 만드는 사람(Makers)이 아니라 디자인으로 공공가치를 증명하는 사람(Valuers)이라고 정의합니다.</p>
+      </div>
+      <figure class="about-img rv">
+        <img src="images/people-group.jpg" alt="공공디자인 전공 세미나 행사" loading="lazy">
+        <figcaption>공공디자인 전공 세미나 행사</figcaption>
+      </figure>
+    </div>
+
+    <div class="features rv">
+      <div class="feature"><b>01</b><h3>연구와 실천의 연결</h3><p>수업 연구가 연구센터를 거쳐 지자체·공공기관과의 실제 프로젝트로 이어집니다.</p></div>
+      <div class="feature"><b>02</b><h3>증거 기반 디자인</h3><p>설치 전후를 비교해 측정하는 준실험 설계로, 디자인의 사회적 효과를 숫자로 확인합니다.</p></div>
+      <div class="feature"><b>03</b><h3>거버넌스 중심</h3><p>정부·지자체·기업·시민을 잇는 PDG(Public Design Governance) 모델로 UNESCO ESD 인증을 받았습니다.</p></div>
+      <div class="feature"><b>04</b><h3>국제 네트워크</h3><p>DESIS Network, 국제공공디자인포럼 IPDF, 대만·중국·일본·프랑스 파트너와 교류합니다.</p></div>
+    </div>
+
+    <div class="cycle rv">
+      <p class="eyebrow" style="color:var(--accent-pale)">Vision &amp; Six Strategies</p>
+      <h3 class="h-sec">홍익대 공공디자인의 6대 전략</h3>
+      <p class="lead">의제를 발견하고, 방법을 연구하고, 현장에서 실험하고, 사람과 기관을 연결하고, 다음 세대를 교육하고, 성과를 사회로 확산합니다. 확산된 성과는 다시 새로운 의제가 됩니다.</p>
+      <div class="steps6">
+        <div class="step"><span class="n">01</span><h4>Discover</h4><span class="ko">발견</span><p>포럼·페스티벌·뉴스레터로 아직 이름 없는 사회문제를 먼저 포착합니다.</p></div>
+        <div class="step"><span class="n">02</span><h4>Research</h4><span class="ko">연구</span><p>결과물이 아닌 문제해결의 방법론을 연구합니다.</p></div>
+        <div class="step"><span class="n">03</span><h4>Experiment</h4><span class="ko">실험</span><p>실제 도시와 일상에서 디자인의 효과를 검증합니다.</p></div>
+        <div class="step"><span class="n">04</span><h4>Connect</h4><span class="ko">연결</span><p>공공·민간·시민·학계의 협력 구조를 설계합니다.</p></div>
+        <div class="step"><span class="n">05</span><h4>Educate</h4><span class="ko">교육</span><p>차세대 전문가와 공공디자인 행정가를 기릅니다.</p></div>
+        <div class="step"><span class="n">06</span><h4>Share</h4><span class="ko">확산</span><p>포럼·출판·아카이브로 성과를 사회에 돌려줍니다.</p></div>
+      </div>
+      <p class="cycle-note">↻ Share에서 다시 Discover로. 공공디자인연구센터 비전 「디자인을 수단으로 공공가치를 생성하는 가치지능(Value Intelligence)」</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FACULTY ================= -->
+<section id="faculty" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="eyebrow">Faculty</p><h2 class="h-sec">교수진</h2>
+      <p class="lead">공간디자인, 도시설계, 조경·어버니즘, 건축, 건축이론, 산업디자인까지. 서로 다른 전문 분야가 하나의 공공 의제를 함께 다룹니다.</p></div>
+    </div>
+    <div class="fac-grid">
+      <article class="fac fac-head rv"><div class="ph"><img src="images/fac-jungyoonchun.jpg" alt="정윤천 주임교수" loading="lazy"></div>
+        <div class="bd"><span class="fac-role">주임교수</span><h4>정윤천<small>부교수</small></h4><p class="field">Architectural History and Theory</p>
+        <ul><li>건축학박사 · McGill Univ.</li><li><a href="mailto:yoonchunjung@hongik.ac.kr">yoonchunjung@hongik.ac.kr</a></li></ul></div></article>
+      <article class="fac rv"><div class="ph"><img src="images/fac-kimjuyeon.jpg" alt="김주연 교수" loading="lazy"></div>
+        <div class="bd"><h4>김주연<small>교수</small></h4><p class="field">공간디자인</p>
+        <ul><li>건축학박사 · 국민대학교</li><li>문헌관(MH동) 1102호</li><li>02-320-1934</li><li><a href="mailto:jykim@hongik.ac.kr">jykim@hongik.ac.kr</a></li></ul></div></article>
+      <article class="fac rv"><div class="ph"><img src="images/fac-ohseonghun.jpg" alt="오성훈 교수" loading="lazy"></div>
+        <div class="bd"><h4>오성훈<small>교수</small></h4><p class="field">Urban Design · 보행환경</p>
+        <ul><li>공학박사 · 서울대학교</li><li>前 건축공간연구원(AURI) 부원장</li><li><a href="mailto:oshud@hongik.ac.kr">oshud@hongik.ac.kr</a></li></ul></div></article>
+      <article class="fac rv"><div class="ph"><img src="images/fac-leehyunsung.jpg" alt="이현성 교수" loading="lazy"></div>
+        <div class="bd"><h4>이현성<small>교수</small></h4><p class="field">Landscape Urbanism</p>
+        <ul><li>공학석사 · Kingston Univ. London</li><li>홍문관(R동) 1207-1호</li><li>02-320-2240</li><li><a href="mailto:armula@hongik.ac.kr">armula@hongik.ac.kr</a></li></ul></div></article>
+      <article class="fac rv"><div class="ph"><img src="images/fac-jangyoungho.jpg" alt="장영호 교수" loading="lazy"></div>
+        <div class="bd"><h4>장영호<small>교수</small></h4><p class="field">건축학</p>
+        <ul><li>건축학박사 · Nagoya University</li><li>홍문관(R동) 1207-1호</li><li>02-320-2238</li><li><a href="mailto:nagoyajang@hongik.ac.kr">nagoyajang@hongik.ac.kr</a></li></ul></div></article>
+      <article class="fac rv"><div class="ph"><img src="images/fac-chungjaehee.jpg" alt="정재희 부교수" loading="lazy"></div>
+        <div class="bd"><h4>정재희<small>부교수</small></h4><p class="field">Industrial Design</p>
+        <ul><li>디자인학박사 · Bergische Univ. (Wuppertal)</li><li>홍문관(R동) 1403호</li><li>02-320-2225</li><li><a href="mailto:jaehee.chung@hongik.ac.kr">jaehee.chung@hongik.ac.kr</a></li></ul></div></article>
+      <article class="fac rv"><div class="ph"><img src="images/fac-kwonsoonyeop.jpg" alt="권순엽 겸임교수" loading="lazy"></div>
+        <div class="bd"><h4>권순엽<small>겸임교수</small></h4><p class="field">건축공학</p>
+        <ul><li>건축학석사 · Harvard Univ.</li><li><a href="mailto:soon@hongik.ac.kr">soon@hongik.ac.kr</a></li></ul></div></article>
+      <article class="fac rv" style="background:var(--ink);color:#fff;border-color:var(--ink);display:flex;flex-direction:column;justify-content:flex-end;padding:26px">
+        <p class="eyebrow" style="color:var(--accent-pale)">Research Center</p>
+        <h4 style="font-size:22px;margin:10px 0 10px;line-height:1.3">공공디자인<br>연구센터</h4>
+        <p style="font-size:14px;opacity:.8">학문적 연구를 사회에 실현하는 플랫폼. 석·박사 연구원이 실제 용역과 실험에 참여합니다.</p>
+        <a href="#research" style="margin-top:18px;font-weight:700;color:var(--accent-pale)">연구 분야 보기 →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="eyebrow">02 · Projects</p><h2 class="h-sec">디자인이 바꾼 것들</h2>
+      <p class="lead">공공디자인의 결과는 ‘무엇을 만들었나’가 아니라 ‘무엇이 달라졌나’로 말합니다. 각 프로젝트를 사회문제, 디자인 접근, 실제 변화의 순서로 소개합니다.</p></div>
+      <div class="flow-legend"><span>사회문제</span><i>→</i><span>디자인 접근</span><i>→</i><span>실제 변화</span></div>
+    </div>
+
+    <article class="case rv">
+      <div class="case-img"><img src="images/proj-sticker-data.jpg" alt="SRT 수서역 대기공간의 The Public Sticker 설치 후 모습" loading="lazy"><span class="tag">공공디자인 실험실 · 2025</span></div>
+      <div class="case-body">
+        <p class="meta">SRT 수서역 · 대한민국 공공디자인 페스티벌 · SRT·사회공헌센터 협업</p>
+        <h3>The Public Sticker<br>아무도 앉지 않던 대기공간</h3>
+        <div class="flow">
+          <div class="flow-item"><b>사회문제</b><p>역사 안의 대기공간은 있었지만 사람들은 머물지 않았습니다. 사용성이 낮은 공간은 공공 자원의 낭비입니다.</p></div>
+          <div class="flow-item"><b>디자인 접근</b><p>바닥에 붙이는 모듈형 그래픽과 식재, 공공정보를 조합해 적은 비용으로 공간의 성격을 바꾸는 ‘Design as Nudge’ 실험.</p></div>
+          <div class="flow-item"><b>실제 변화</b><p>같은 시간대 공간 사용 빈도를 설치 전후로 비교 측정했습니다.</p></div>
+        </div>
+        <div class="big-stat"><strong>11 → 34</strong><span>설치 전후 이용 건수<br>이용성 약 3배 증가</span></div>
+      </div>
+    </article>
+
+    <article class="case rv">
+      <div class="case-img"><img style="object-position:center 30%" src="images/proj-patrol.jpg" alt="파주시 모두의 순찰대 시민정책디자인단 워크숍" loading="lazy"><span class="tag">공공서비스디자인 · 2024</span></div>
+      <div class="case-body">
+        <p class="meta">파주시 금촌1동 · 시민정책디자인단 · 기획 김상아(박사과정)</p>
+        <h3>모두의 순찰대<br>혼자 사는 사람들의 안전망</h3>
+        <div class="flow">
+          <div class="flow-item"><b>사회문제</b><p>1인 가구 비율이 높은 동네에서 생활 안전과 사회적 고립이 함께 커지고 있었습니다.</p></div>
+          <div class="flow-item"><b>디자인 접근</b><p>시민 9명, 파주시 공무원, 경찰 범죄예방 담당관이 함께한 9회의 워크숍과 주민 인터뷰로 서비스를 설계하고, 동산길 범죄예방디자인과 연계했습니다.</p></div>
+          <div class="flow-item"><b>실제 변화</b><p>반려인·장년 1인 가구·지역상점이 함께 순찰하는 주민 안전망이 만들어졌고, 파주시가 다른 지역 확대를 검토하고 있습니다.</p></div>
+        </div>
+        <div class="big-stat"><strong>행안부장관상</strong><span>행정안전부 공공서비스디자인<br>우수과제 선정</span></div>
+      </div>
+    </article>
+
+    <article class="case rv">
+      <div class="case-img"><img src="images/proj-smoking.jpg" alt="사회갈등예방 분리형 흡연공간 공공디자인 실험" loading="lazy"><span class="tag">사회갈등 예방 · 2023–2024</span></div>
+      <div class="case-body">
+        <p class="meta">강남구 · 공공디자인 실험실 3 · 광운대 공공소통연구소 LOUD 공동</p>
+        <h3>분리형 흡연공간<br>갈등을 디자인으로 줄이다</h3>
+        <div class="flow">
+          <div class="flow-item"><b>사회문제</b><p>강남역 일대처럼 사람이 몰리는 곳의 길거리 흡연은 흡연자와 비흡연자 사이의 반복되는 갈등이었습니다.</p></div>
+          <div class="flow-item"><b>디자인 접근</b><p>‘사회갈등 예방을 위한 디자인’ 포럼에서 의제를 공론화한 뒤, 연기와 시선을 분리하는 흡연부스를 실제 거리에 실험 설치했습니다.</p></div>
+          <div class="flow-item"><b>실제 변화</b><p>실험 결과를 바탕으로 ‘분리형 흡연부스’ 디자인 매뉴얼을 개발해 다른 지자체도 적용할 수 있게 했습니다.</p></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case rv">
+      <div class="case-img"><img src="images/proj-station2.jpg" alt="KTX 서울역 공공매체 마스터플랜" loading="lazy"><span class="tag">공공매체 · 2024–2026</span></div>
+      <div class="case-body">
+        <p class="meta">코레일 · KTX 서울역 → 부산역·용산역 확산</p>
+        <h3>Platform 111<br>서울역의 정보와 광고를 다시 짜다</h3>
+        <div class="flow">
+          <div class="flow-item"><b>사회문제</b><p>하루 수십만 명이 오가는 서울역에서 광고와 안내 정보가 뒤섞여, 정작 필요한 정보를 찾기 어려웠습니다.</p></div>
+          <div class="flow-item"><b>디자인 접근</b><p>역사 전체의 매체를 조사해 광고와 공공정보의 위계를 정리하는 공공매체 마스터플랜과 미디어 디자인을 수립했습니다.</p></div>
+          <div class="flow-item"><b>실제 변화</b><p>서울역 모델이 KTX 부산역·용산역 광고매체 리뉴얼로 이어졌습니다.</p></div>
+        </div>
+        <div class="big-stat"><strong>2026 대상</strong><span>대한민국 공공디자인대상<br>진흥원장상 수상</span></div>
+      </div>
+    </article>
+
+    <div class="more-cases">
+      <article class="mini rv"><img src="images/proj-seoul-plan.jpg" alt="서울시 사회문제해결디자인 기본계획 보고서" loading="lazy"><div><span class="k">정책 · 2024</span><h4>서울시 사회문제해결디자인 기본계획</h4><p>5대 유형, 16개 혁신형 디자인 사업으로 구성한 서울시 2차 계획을 수립했습니다.</p></div></article>
+      <article class="mini rv"><img src="images/proj-kids.jpg" alt="공심이 도리도리 프로젝트에 참여한 어린이들" loading="lazy"><div><span class="k">U.S.R · 공심이</span><h4>도리도리 프로젝트</h4><p>공심이, 함께걷기 사회적협동조합, 인천미추홀경찰서가 아이들과 함께한 시민참여 프로젝트입니다.</p></div></article>
+      <article class="mini rv"><img src="images/proj-janeswalk.jpg" alt="Jane's Walk Seoul 2025 도보 관찰" loading="lazy"><div><span class="k">시민참여 · 2025</span><h4>Jane’s Walk Seoul</h4><p>시민이 함께 걸으며 도시 공간을 관찰하고 다시 해석하는 워크숍입니다.</p></div></article>
+      <article class="mini rv"><img src="images/proj-parkingday.jpg" alt="Park(ing) Day 주차공간 전환 실험" loading="lazy"><div><span class="k">Tactical Urbanism</span><h4>Park(ing) Day</h4><p>주차 한 칸을 하루 동안 시민의 공간으로 바꾸는 국제 도시 실험에 한국 대표로 참여했습니다.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IMPACT ================= -->
+<section class="impact" aria-label="숫자로 보는 공공디자인전공">
+  <div class="wrap">
+    <p class="eyebrow rv" style="color:#fff;opacity:.85">Impact in Numbers</p>
+    <h2 class="h-sec rv" style="margin-bottom:48px">숫자로 보는 홍익 공공디자인</h2>
+    <div class="stats">
+      <div class="stat rv"><strong data-count="104">0</strong><span>연구센터 수행 프로젝트</span><small>2019–2025</small></div>
+      <div class="stat rv"><strong data-count="100">0</strong><span>공공디자인 뉴스레터 발행</span><small>The Public Design 365 · 호 이상</small></div>
+      <div class="stat rv"><strong data-count="6">0</strong><span>대한민국 공공디자인대상 수상 연도</span><small>2019·2020·2022·2023·2024·2026</small></div>
+      <div class="stat rv"><strong data-count="68">0</strong><span>DESIS Network 참여 기관</span><small>32개국 대학·연구소와 함께</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEARCH ================= -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="eyebrow">03 · Research</p><h2 class="h-sec">연구 분야</h2>
+      <p class="lead">대학원 학위논문, 교수진의 학술 연구, 정책 연구와 디자인 R&amp;D가 여섯 영역을 가로지릅니다.</p></div>
+    </div>
+    <div class="areas">
+      <div class="area rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg></div><h4>정책 · 제도</h4><p>공공디자인 진흥계획과 기본계획을 수립합니다.</p><ul><li>강남구·송파구 공공디자인 진흥계획</li><li>인천광역시 도시디자인진흥계획</li><li>2025 공공디자인 혁신지원 기본계획</li></ul></div>
+      <div class="area rv"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div><h4>사회문제해결</h4><p>안전, 고립, 갈등, 고령화 문제를 가설 → 실험 → 관찰 → 정책의 순서로 다룹니다.</p><ul><li>서울시 사회문제해결디자인 기본계획</li><li>사회갈등 예방 디자인</li></ul></div>
+      <div class="area rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></div><h4>안전 R&amp;D</h4><p>일상의 안전을 설계하는 공공안전디자인 원칙을 연구합니다.</p><ul><li>K-지하고속도로 R&amp;D (한국건설기술연구원)</li><li>산업안전디자인 표준 개발 (KIDP)</li><li>HD현대 글로벌 R&amp;D센터 Safephilic 연구</li></ul></div>
+      <div class="area rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div><h4>건강 · 복지</h4><p>공공디자인과 건강복지가 만나는 사회적 처방을 실증합니다.</p><ul><li>수원시립미술관 웰니스 프로그램 「마인딩」</li><li>사회적 녹색 처방 Green Prescribing</li><li>문체부 ‘멘탈케어디자인’ 실증연구</li></ul></div>
+      <div class="area rv"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div><h4>공공매체 · 웨이파인딩</h4><p>역사와 공공공간의 정보·광고 체계를 설계합니다.</p><ul><li>KTX 서울역 공공매체 마스터플랜</li><li>부산역·용산역 광고매체 리뉴얼</li><li>강원랜드 UX·XI 개선 연구</li></ul></div>
+      <div class="area rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 18c3-6 6-6 9 0s6 6 9 0"/><path d="M3 10c3-6 6-6 9 0s6 6 9 0"/></svg></div><h4>보행 · 도시공간</h4><p>사람 중심의 가로와 머무는 공공공간(Street as Place)을 연구합니다.</p><ul><li>보행환경 디자인과 실증 연구 방법론</li><li>Walkable 향교로 특화 가로 연구</li><li>교량 경관·특화거리 설계</li></ul></div>
+    </div>
+
+    <div class="pubs" id="pubs">
+      <div class="pub-covers rv">
+        <img src="images/pub-safety.jpg" alt="공공디자인으로 안전만들기 표지" loading="lazy">
+        <img src="images/pub-textbook.jpg" alt="공공디자인 전문인력을 위한 직무교육 교재" loading="lazy">
+      </div>
+      <div class="rv">
+        <p class="eyebrow">Publications</p>
+        <h3 class="h-sec" style="font-size:clamp(26px,3vw,38px)">논문 · 출판</h3>
+        <ul class="pub-list">
+          <li><span class="y">2024</span><div><b>『공공디자인으로 안전만들기』</b><span>한국공간디자인학회 · 미세움 · 14명의 전문가가 쓴 안전디자인 이야기</span></div></li>
+          <li><span class="y">2020–</span><div><b>『공공디자인 전문가 직무 교과서』</b><span>한국공예·디자인문화진흥원 · 2025 문화체육관광부 리뉴얼</span></div></li>
+          <li><span class="y">2020–</span><div><b>The Public Design 365</b><span>대한민국 최초 공공디자인 전문 뉴스레터 · 2024년 100호 발간</span></div></li>
+          <li><span class="y">2021–</span><div><b>Public Design Agenda</b><span>정례 세미나 발제를 모은 공공디자인 의제집</span></div></li>
+          <li><span class="y">2018–</span><div><b>Public Design Promenade</b><span>공공디자인 수업 연구결과집</span></div></li>
+          <li><span class="y">2021</span><div><b>공공디자인 중등 교과서 집필 연구</b><span>문화체육관광부</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CURRICULUM ================= -->
+<section id="curriculum" style="background:var(--white)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="eyebrow">04 · Curriculum</p><h2 class="h-sec">교육과정</h2>
+      <p class="lead">석사과정은 공공디자인의 기획·정책·실무 역량을, 박사과정은 공공디자인을 이끌 연구자와 리더십을 기릅니다.</p></div>
+    </div>
+
+    <div class="tabs rv" role="tablist" aria-label="과정 선택">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="p-ma" id="t-ma">석사과정</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-phd" id="t-phd">박사과정</button>
+    </div>
+
+    <div class="panel" id="p-ma" role="tabpanel" aria-labelledby="t-ma">
+      <div class="track-intro rv">
+        <div><h3>산업미술대학원<br>공공디자인전공 석사</h3>
+          <div class="track-meta"><span class="chip accent">석사</span><span class="chip">전공선택 3학점</span><span class="chip soft">종합시험 · 학위논문</span></div></div>
+        <p class="lead" style="font-size:16px">공공디자인 개론에서 시작해 스튜디오, 거버넌스, 정책·행정, 서비스디자인, 유니버설·안전디자인까지. 이론을 배우고 스튜디오에서 도시에 적용해 보는 과정입니다. 종합시험은 <b>공공디자인기획론</b>과 <b>공공디자인정책·행정론</b>으로 봅니다.</p>
+      </div>
+      <div class="courses" id="courses">
+        <button class="course"><span class="cat">Foundation</span><h4>공공디자인 개론</h4><p>디자인과 공공성의 기본 개념, 공공디자인의 사회·문화·정치·경제·환경적 배경과 공적 문제의 조율자로서 공공디자이너의 소명을 다룹니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Studio</span><h4>공공디자인 스튜디오 Ⅰ</h4><p>공공디자인의 개념과 원리, 적용까지 단계적 프로세스를 익히고 주제에 맞춘 응용 과제를 진행합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Studio</span><h4>공공디자인 스튜디오 Ⅱ</h4><p>도시환경을 이루는 3D 시설물, 2D 매체, 정보디자인의 기능적·심리적 영향을 연구하고 디자인으로 전개합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Seminar</span><h4>공공디자인 세미나</h4><p>사회학자, 철학자, 건축가, 정책가, 지역활동가 등 다양한 전문가와의 토론으로 공공디자인의 전문성을 키웁니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Governance</span><h4>공공디자인 거버넌스</h4><p>거버넌스 이론과 현황을 이해하고, 사회·경제·문화 변화에 따른 협치형 공공디자인 거버넌스의 방향을 학습합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Policy</span><h4>공공디자인 정책·행정론</h4><p>공공디자인 정책을 계획하고 실행하는 행정 과정, 행정의 개념과 역할, 방법론을 체계적으로 익힙니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Planning</span><h4>공공디자인 기획론</h4><p>공공의 목적에 맞는 디자인을 기획하는 방법론과 기본계획 수립에 필요한 도시계획법, 조례, 경관 제도를 다룹니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Service</span><h4>공공서비스디자인</h4><p>서비스디자인 방법론과 프로세스를 적용해 혁신적인 공공서비스 모델을 개발합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Research</span><h4>공공디자인 리서치</h4><p>국내외 연구 동향을 조사하고 연구 주제와 방법론을 개발합니다. 콜로키움 형식으로 비평 능력을 기릅니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Inclusive</span><h4>공공 유니버설 디자인</h4><p>성별, 연령, 국적, 장애와 관계없이 모든 시민이 안전하고 편리하게 쓰는 도시를 위한 이론과 사례를 학습합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Safety</span><h4>공공 안전 디자인</h4><p>CPTED를 한국형 공공안전디자인으로 재해석하고, 행정·제도·정책으로 확장하는 실무 역량을 기릅니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Community</span><h4>커뮤니티 비즈니스 디자인</h4><p>단절된 커뮤니티를 회복하고 지역 재생을 위한 지속가능한 공공디자인의 방향을 사례 비교로 연구합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Place</span><h4>문화·장소 마케팅</h4><p>사회문화·지리학 이론과 마케팅 이론을 접목해 도시재생, 지역 활성화, 지역 정체성 확보 방법을 배웁니다.</p><span class="more">자세히 +</span></button>
+      </div>
+    </div>
+
+    <div class="panel" id="p-phd" role="tabpanel" aria-labelledby="t-phd" hidden>
+      <div class="track-intro">
+        <div><h3>대학원 디자인공예학과<br>공공디자인 박사</h3>
+          <div class="track-meta"><span class="chip accent">박사</span><span class="chip">전공선택 3학점</span><span class="chip soft">국내 최초 공공디자인 박사과정 기획</span></div></div>
+        <p class="lead" style="font-size:16px">2016년 「공공디자인의 진흥에 관한 법률」 제정 이후 커진 공공디자인 정책과 행정의 수요에 맞춰, 평가·경제학·거버넌스·ESG까지 공공디자인을 이끌 연구자를 기르는 과정입니다.</p>
+      </div>
+      <div class="courses">
+        <button class="course"><span class="cat">Policy</span><h4>공공디자인 행정론</h4><p>표준적인 공공디자인 정책·행정의 틀과 효율적인 거버넌스 체계, 선진형 업무 프로세스를 연구합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Method</span><h4>공공기획조사론</h4><p>지역사회 환경 조사방법론을 바탕으로 공적 개발이 도시와 농촌에 미치는 영향을 고찰합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Inclusive</span><h4>유니버설디자인 특론</h4><p>모든 사람을 위한 포용적 도시환경을 향한 유니버설디자인 도시정책의 방향을 연구합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Colloquium</span><h4>공공디자인 콜로키움 Ⅰ·Ⅱ</h4><p>기획, 법제, 시설, 서비스, 행정, 공간, 거버넌스 등 전문 영역 간의 공유와 참여로 공공디자인의 가치와 응용을 연구합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Evaluation</span><h4>공공디자인 평가방법론</h4><p>공공디자인 사업의 효과를 정량적·체계적으로 평가하는 실증적 방법을 연구합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Advanced</span><h4>공공디자인 특수연구</h4><p>공공 요구를 수집·분석하는 방법론과 공공 의제 기획, 실행 역량을 연구합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Critique</span><h4>공공디자인 비평</h4><p>교통, 건축, 문화예술, 도시개발 등 공공환경에서 공공디자인의 효과를 실증적으로 비평합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Economics</span><h4>공공디자인경제학</h4><p>지역 가치 상승, 상권 활성화, 일자리 창출 등 공공디자인의 경제적 효과를 분석합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Leadership</span><h4>공공 거버넌스와 리더십</h4><p>주민참여와 지역공동체 협력을 통한 공공 거버넌스와 공공디자인 리더십을 연구합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Service</span><h4>공공서비스론</h4><p>다양한 이해관계자 사이의 공공서비스 유형과 가치를 탐구하고 행정·관리 전략을 세웁니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Management</span><h4>공공디자인 매니지먼트</h4><p>인본주의에 기초한 문화 중심의 디자인 혁신을 위한 공공디자인 경영 시스템을 연구합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Innovation</span><h4>공공디자인 이노베이션</h4><p>디자인 프로세스의 혁신적 적용으로 공공 영역의 문제를 해결하는 방법론을 연구합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Social</span><h4>사회문제해결 디자인</h4><p>안전, 편의, 배려를 위한 사회문제해결디자인 정책과 국내외 성공 사례로 전략과 방법론을 연구합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">Art</span><h4>공공미술 전략기획론</h4><p>공공디자인의 방법으로서 공공미술의 가능성과 공공가치 실현을 위한 전략기획을 연구합니다.</p><span class="more">자세히 +</span></button>
+        <button class="course"><span class="cat">ESG</span><h4>공공디자인 ESG 전략론</h4><p>CSR·CSV를 포함한 ESG와 공공디자인의 협력 방법론, 민간과 공공의 가치 창출을 연구합니다.</p><span class="more">자세히 +</span></button>
+      </div>
+    </div>
+
+    <div id="seminars">
+      <div class="sec-head rv" style="margin:96px 0 0">
+        <div><p class="eyebrow">Seminars &amp; Lectures</p><h3 class="h-sec" style="font-size:clamp(26px,3vw,38px)">교실 밖의 수업</h3></div>
+      </div>
+      <div id="series">
+        <button class="series-card rv" type="button" data-open="seriesModal" aria-haspopup="dialog">
+          <div class="series-img"><img src="images/series-hall.jpg" alt="강의실을 가득 채운 공공디자인 세미나 참가자들" loading="lazy"><span class="series-badge">Monthly · 2020–2026</span></div>
+          <div class="series-body">
+            <p class="series-eyebrow">The Public Design Seminar · Collaborate with PDF X</p>
+            <h3>공공디자인연구센터<br>세미나 시리즈</h3>
+            <p class="series-desc">2020년부터 매달 한 번, 공공디자인이 지금 다뤄야 할 의제를 발제하고 토론합니다. 돌봄, 안전, 기후, AI, 시민주도까지 37개의 주제를 이어 왔습니다.</p>
+            <div class="series-stats"><div><strong>37</strong><span>세미나 주제</span></div><div><strong>7년</strong><span>2020–2026 매월</span></div><div><strong>R1310</strong><span>홍문관</span></div></div>
+            <ul class="series-recent"><li><span>37</span>시민참여를 넘어 시민주도로_Citizen-Led Public Design</li><li><span>36</span>전술적 도시주의 이후_Tactical Urbanism and Beyond</li><li><span>35</span>DESIGNOMICS: 공공디자인의 성과는 어떻게 측정되는가?</li><li><span>34</span>비인간 존재와 공존하는 도시_More-than-Human Design</li></ul>
+            <span class="series-cta">37개 주제 전체 보기 <b>→</b></span>
+          </div>
+        </button>
+      </div>
+
+      <dialog id="seriesModal" class="series-modal" aria-labelledby="seriesTitle">
+        <div class="sm-head">
+          <div><p class="series-eyebrow">The Public Design Seminar Series</p><h3 id="seriesTitle">공공디자인연구센터 세미나 시리즈</h3>
+          <p class="sm-meta">Monthly event, 2020–2026 · 홍익대학교 홍문관 R1310 · Collaborate with PDF X</p></div>
+          <button class="sm-close" type="button" aria-label="닫기">×</button>
+        </div>
+        <ol class="sm-list">
+          <li><span>01</span>사회문제와 공공디자인</li>
+          <li><span>02</span>지역 공공디자인 진흥계획과 확장성</li>
+          <li><span>03</span>공동체 디자인과 신경심리학적 소고</li>
+          <li><span>04</span>무엇이 ‘행복한 도시’를 만드는가?</li>
+          <li><span>05</span>Public Spaces &amp; Life during COVID19</li>
+          <li><span>06</span>X공공디자인</li>
+          <li><span>07</span>P.D.M _ Public Design Movement</li>
+          <li><span>08</span>점증적 공공디자인_옥상실험 시리즈</li>
+          <li><span>09</span>공공디자인의 확장에 관한 재고</li>
+          <li><span>10</span>Design X Socio-Value &amp; Effect</li>
+          <li><span>11</span>공공디자인의 확장을 위한 두 가지 관점</li>
+          <li><span>12</span>공공공간 사용성 향상을 위한 초세대디자인</li>
+          <li><span>13</span>Grafting_Activism</li>
+          <li><span>14</span>사회실험 디자인 프로젝트에 대한 재고</li>
+          <li><span>15</span>공공디자인 관점의 일본 공공공간 분석</li>
+          <li><span>16</span>사회적 약자 동행을 위한 공공디자인</li>
+          <li><span>17</span>Neuro, Social, Prescribing, Design</li>
+          <li><span>18</span>돌봄도시와 공공디자인_Care-Centered Public Design</li>
+          <li><span>19</span>기후위기 시대의 공공공간과 도시 회복탄력성</li>
+          <li><span>20</span>행동과학으로 읽는 공공디자인</li>
+          <li><span>21</span>도시의 외로움과 사회적 연결을 위한 디자인</li>
+          <li><span>22</span>공공디자인과 커먼즈_Urban Commons by Design</li>
+          <li><span>23</span>일상의 안전을 설계하다_Everyday Safety Design</li>
+          <li><span>24</span>보이지 않는 장벽_Invisible Barriers in Public Space</li>
+          <li><span>25</span>감각친화도시_Sensory-Friendly Urban Design</li>
+          <li><span>26</span>어린이의 시선으로 다시 보는 도시</li>
+          <li><span>27</span>초고령사회와 공공디자인의 새로운 역할</li>
+          <li><span>28</span>야간도시의 경험과 공공디자인_Night-Time Urbanism</li>
+          <li><span>29</span>공공공간의 환대성_Hospitality of Public Space</li>
+          <li><span>30</span>도시의 틈과 잉여공간을 활용하는 점진적 디자인</li>
+          <li><span>31</span>데이터로 진단하고 실험으로 검증하는 공공디자인</li>
+          <li><span>32</span>AI 시대의 공공디자인_Public Design after AI</li>
+          <li><span>33</span>기후불평등과 공간정의_Climate Justice by Design</li>
+          <li><span>34</span>비인간 존재와 공존하는 도시_More-than-Human Design</li>
+          <li><span>35</span>DESIGNOMICS: 공공디자인의 성과는 어떻게 측정되는가?</li>
+          <li><span>36</span>전술적 도시주의 이후_Tactical Urbanism and Beyond</li>
+          <li><span>37</span>시민참여를 넘어 시민주도로_Citizen-Led Public Design</li>
+        </ol>
+        <div class="sm-foot">
+          <span>서울특별시 마포구 와우산로 94 홍문관 1310호 · 02-320-1237</span>
+          <a class="btn btn-accent" href="https://www.instagram.com/hongik_publicdesign/" target="_blank" rel="noopener">다음 세미나 소식 보기 ↗</a>
+        </div>
+      </dialog>
+
+      <div class="seminars">
+        <article class="sem rv"><img src="images/edu-seminar2.jpg" alt="공공디자인전공 정례 세미나" loading="lazy"><div><h4>개강·종강 세미나와 콜로키움</h4><p>매 학기 연구 주제를 발표하고 토론합니다. 2026-1학기 주제는 「PUBLIC DESIGN SIX PERSPECTIVES: 다음의 공공성」.</p></div></article>
+        <article class="sem rv"><img src="images/edu-ipdf-screen.jpg" alt="국제공공디자인포럼 IPDF" loading="lazy"><div><h4>포럼과 국제 특강</h4><p>공공디자인포럼 PDF X, 국제공공디자인포럼 IPDF에서 에이스케 다치카와, 쿠츠나 히로키 등 국내외 연사를 만납니다.</p></div></article>
+        <article class="sem rv"><img src="images/edu-workshop.jpg" alt="공공디자인 워크숍" loading="lazy"><div><h4>학술답사와 국제 워크숍</h4><p>상하이, 도쿄, 2025 오사카 엑스포 학술답사와 한·중·일 대학 연합 워크숍으로 현장을 봅니다.</p></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PEOPLE ================= -->
+<section id="people">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="eyebrow">05 · People</p><h2 class="h-sec">사람들</h2>
+      <p class="lead">디자이너, 건축가, 공무원, 연구자, 의료·복지 전문가까지. 서로 다른 배경의 원우들이 같은 질문을 붙잡고 함께 연구합니다.</p></div>
+    </div>
+    <div class="people-hero rv">
+      <img src="images/people-forum.jpg" alt="공공디자인포럼 X 참가자 단체 사진" loading="lazy">
+      <div><h3>공공디자인연구센터와 함께한<br>석·박사 연구원들</h3></div>
+    </div>
+    <div class="people-cols">
+      <div class="pcard rv"><h4>재학생 성과 <em>Students</em></h4>
+        <ul class="alist">
+          <li><b>행정안전부장관상</b><span>김상아(박사과정) · 파주시 ‘모두의 순찰대’, 2024</span></li>
+          <li><b>공공디자인대상 학술부문 최우수상·우수상</b><span>박재은·주하나 · 2026</span></li>
+          <li><b>공공디자인대상 연구부문 우수상</b><span>김세훈(박사과정) · 2024</span></li>
+          <li><b>연구부문 최우수상·빅터 마골린상</b><span>김상아·이주호(박사과정) · 2023</span></li>
+          <li><b>미국미술치료학회 AATA 학술발표</b><span>주하나(박사과정) · 2023, 2025</span></li>
+        </ul></div>
+      <div class="pcard rv" id="alumni"><h4>졸업생 · 동문 <em>Alumni</em></h4>
+        <ul class="alist">
+          <li><b>빅터 마골린상</b><span>심윤서 · 2022 대한민국 공공디자인대상 학술부문</span></li>
+          <li><b>경기도 공공디자인 공모전 금상</b><span>임성욱 (석사 7기) · 2022</span></li>
+          <li><b>강남 ESG 공공디자인 공모전</b><span>석사·박사 3팀 수상 · 2022</span></li>
+          <li><b>한국국토정보공사 LX 공모전 우수상</b><span>심윤서 · 2021</span></li>
+          <li><b>통합학술대회 발표</b><span>이은영·이지영 · 2025 공공디자인 페스티벌</span></li>
+        </ul></div>
+      <div class="pcard rv"><h4>졸업 후 진로 <em>Career</em></h4>
+        <p style="font-size:14.5px;color:var(--ink-2);margin-bottom:16px">연구센터 프로젝트에 참여하며 쌓은 경험은 공공과 민간 양쪽으로 이어집니다.</p>
+        <div class="careers">
+          <span class="chip">지자체 공공디자인 행정가</span><span class="chip">공공기관 디자인 전문직</span><span class="chip">공공디자인 연구원</span>
+          <span class="chip">도시·공간 디자인 실무</span><span class="chip">서비스디자이너</span><span class="chip">총괄·자문 디자이너</span>
+          <span class="chip">대학 교원·연구자</span><span class="chip">NPO·사회혁신 창업</span><span class="chip">ESG·CSR 기획</span>
+        </div></div>
+    </div>
+
+    <!-- timeline -->
+    <div class="timeline" id="history">
+      <div class="sec-head rv" style="margin-bottom:26px"><div><p class="eyebrow">History</p><h3 class="h-sec" style="font-size:clamp(26px,3vw,38px)">연혁</h3></div></div>
+      <div class="tl-years rv" role="tablist" aria-label="연도 선택"></div>
+      <div class="tl-body rv"><div class="big" id="tlYear"></div><ul id="tlList"></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWS ================= -->
+<section id="news">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="eyebrow">06 · News</p><h2 class="h-sec">소식</h2></div>
+      <a class="btn btn-line" href="https://www.instagram.com/hongik_publicdesign/" target="_blank" rel="noopener">인스타그램에서 더 보기 ↗</a>
+    </div>
+    <div class="news-grid">
+      <article class="news feat rv"><img src="images/people-festival.jpg" alt="공공디자인 페스티벌 단체 사진" loading="lazy"><div class="bd"><div class="cat"><i>국제</i>2026.07</div><h4>공공디자인전공, 세계 사회혁신 디자인 네트워크 ‘DESIS Lab’ 지정</h4><p>32개국 68개 대학·연구소가 참여하는 DESIS Network에 한국 대학 대표로 합류했습니다. 2022–2025년 20개 프로젝트의 증거 기반 디자인과 시민참여형 리빙랩 모델을 인정받았습니다.</p></div></article>
+      <article class="news rv"><img src="images/campus.jpg" alt="홍익대학교 캠퍼스" loading="lazy"><div class="bd"><div class="cat"><i>교수진</i>2026.09</div><h4>보행디자인 권위자 오성훈 교수 임용</h4><p>건축공간연구원(AURI) 부원장 출신, 2026년 2학기부터 합류했습니다.</p></div></article>
+      <article class="news rv"><img src="images/news-tdri.jpg" alt="국립대만디자인연구소 MOU 서명식" loading="lazy"><div class="bd"><div class="cat"><i>협약</i>2025.10</div><h4>국립대만디자인연구소(TDRI)와 디자인 연구 MOU</h4></div></article>
+      <article class="news rv"><img src="images/news-ipdf.jpg" alt="한중 공공디자인 워크숍 단체 사진" loading="lazy"><div class="bd"><div class="cat"><i>포럼</i>2025.10</div><h4>국제공공디자인포럼 IPDF 2025와 한중 공공디자인 워크숍</h4></div></article>
+      <article class="news rv"><img src="images/news-suwon.jpg" alt="수원시-홍익대학교 업무협약식" loading="lazy"><div class="bd"><div class="cat"><i>협약</i>2025.04</div><h4>수원시와 지역사회 심리·정서 건강 지원 업무협약</h4></div></article>
+    </div>
+    <ul class="news-list">
+      <li><span class="d">2026.07.20</span><span class="c">포럼</span><span>공공디자인 포럼 2026 「디자인, 도시를 재생하다: 밀라노 디자인 위크」 개최</span></li>
+      <li><span class="d">2026</span><span class="c">수상</span><span>2026 대한민국 공공디자인대상 학술부문 최우수상·우수상, Platform 111 진흥원장상</span></li>
+      <li><span class="d">2026.05.26</span><span class="c">강연</span><span>이현성 교수, 도쿄 ‘2026 굿디자인코리아’ 초청 강연 「POLICY by DESIGN」</span></li>
+      <li><span class="d">2026.01.27</span><span class="c">세미나</span><span>동서대 디자인대학과 ‘포용하는 디자인’ 연합 세미나: 세계디자인도시(WDC) 부산</span></li>
+      <li><span class="d">2025.11</span><span class="c">수상</span><span>이현성 교수, 제27회 대한민국디자인대상 디자인 공로 부문 산업통상부장관 표창</span></li>
+      <li><span class="d">2025.11</span><span class="c">포럼</span><span>공공디자인포럼 PDF X 「안전을 위한 오사카 공공디자인」 쿠츠나 히로키</span></li>
+      <li><span class="d">2025.01</span><span class="c">인증</span><span>Public Design Governance 모델, UNESCO 지속가능발전교육(ESD) 공식프로젝트 재인증</span></li>
+      <li><span class="d">2024.10</span><span class="c">위촉</span><span>김주연 교수, 제1대 서울시 총괄 공공디자이너 위촉</span></li>
+      <li><span class="d">2024.07</span><span class="c">발간</span><span>공공디자인 뉴스레터 ‘The Public Design 365’ 100호 발간</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= ADMISSION ================= -->
+<section id="admission">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div><p class="eyebrow">07 · Admission</p><h2 class="h-sec">입학 안내</h2>
+      <p class="adm-slogan">여러분의 디자인에 <mark>공공의 가치</mark>를 더하세요,<br>여기 홍익에서.</p>
+      <p class="lead">도시와 일상의 문제를 디자인으로 풀고 싶은 분을 기다립니다. 디자인 전공자가 아니어도 괜찮습니다. 필요한 것은 공공에 대한 질문입니다.</p></div>
+    </div>
+    <!-- 모집 일정·전형 세부는 매 학기 모집요강 확정 후 아래 내용을 갱신하세요. -->
+    <div class="adm-top">
+      <div class="adm-card ma rv"><span class="deg">MASTER'S PROGRAM</span><h3>석사과정</h3><p class="dept">산업미술대학원 공공디자인전공</p>
+        <ul><li><b>모집 시기</b><span>전기(3월 입학) · 후기(9월 입학)</span></li><li><b>대상</b><span>공공디자인·도시·공간·행정 분야에 관심 있는 학사 학위 소지자</span></li><li><b>학위 요건</b><span>교과 이수 · 종합시험 · 학위논문</span></li><li><b>강점</b><span>연구센터 프로젝트와 실무 연계</span></li></ul></div>
+      <div class="adm-card phd rv"><span class="deg">DOCTORAL PROGRAM</span><h3>박사과정</h3><p class="dept">대학원 디자인공예학과 공공디자인</p>
+        <ul><li><b>모집 시기</b><span>대학원 모집요강에 따름</span></li><li><b>대상</b><span>공공디자인 연구자·정책 전문가를 목표로 하는 석사 학위 소지자</span></li><li><b>학위 요건</b><span>교과 이수 · 자격시험 · 학위논문</span></li><li><b>강점</b><span>국책·지자체 연구 참여, 국제 학술 발표</span></li></ul></div>
+    </div>
+
+    <div id="apply">
+      <div class="proc">
+        <div class="rv"><h4>모집요강 확인</h4><p>홍익대학교 대학원 입학 공지에서 해당 학기 모집요강을 확인합니다.</p></div>
+        <div class="rv"><h4>상담</h4><p>관심 연구 주제를 정리해 전공 사무실에 문의하면 상담을 받을 수 있습니다.</p></div>
+        <div class="rv"><h4>원서 접수</h4><p>온라인으로 원서를 접수하고 서류를 제출합니다.</p></div>
+        <div class="rv"><h4>면접</h4><p>연구계획과 공공디자인에 대한 관심, 경험을 이야기합니다.</p></div>
+        <div class="rv"><h4>합격 · 입학</h4><p>신입생 오리엔테이션과 개강 세미나로 첫 학기를 시작합니다.</p></div>
+      </div>
+    </div>
+
+    <div class="faq-wrap" id="faq">
+      <div class="rv">
+        <p class="eyebrow">FAQ</p><h3 class="h-sec" style="font-size:clamp(26px,3vw,38px)">자주 묻는 질문</h3>
+        <div class="contact-box" style="margin-top:28px">
+          <h4>입학 문의</h4>
+          <dl>
+            <dt>연구센터</dt><dd>02-320-1237</dd>
+            <dt>이메일</dt><dd><a href="mailto:armula@hongik.ac.kr">armula@hongik.ac.kr</a></dd>
+            <dt>위치</dt><dd>홍문관(R동) 13층 R1310 공공디자인연구센터</dd>
+          </dl>
+          <div class="btns"><a class="btn btn-dark" href="https://www.hongik.ac.kr" target="_blank" rel="noopener">홍익대학교 입학 안내 ↗</a></div>
+        </div>
+      </div>
+      <div class="faq rv">
+        <details><summary>디자인을 전공하지 않았는데 지원할 수 있나요?</summary><p>네. 공공디자인은 디자인, 건축, 도시, 행정, 사회과학, 보건·복지가 만나는 분야입니다. 실제로 공무원, 연구원, 의료·복지 전문가 등 다양한 배경의 원우들이 함께 공부하고 있습니다. 세부 지원 자격은 해당 학기 모집요강을 확인해 주세요.</p></details>
+        <details><summary>석사과정은 어떻게 졸업하나요?</summary><p>교과목을 이수하고 종합시험(공공디자인기획론, 공공디자인정책·행정론)에 합격한 뒤 학위논문 심사를 통과하면 졸업합니다. 매 학기 논문발표 세미나와 논문인준식이 열립니다.</p></details>
+        <details><summary>재학 중에 실제 프로젝트에 참여할 수 있나요?</summary><p>공공디자인연구센터가 수행하는 지자체·공공기관 용역, 공공디자인 실험실, 페스티벌, 아카데미 운영에 석·박사 연구원으로 참여할 수 있습니다. 서울시 사회문제해결디자인 기본계획처럼 재학생이 참여연구진으로 이름을 올린 사례가 많습니다.</p></details>
+        <details><summary>해외 교류 기회가 있나요?</summary><p>국제공공디자인포럼 IPDF, 한·중·일 대학 연합 워크숍, 해외 학술답사(상하이, 도쿄, 오사카 등)가 열립니다. DESIS Network를 통해 해외 대학과 공동 프로젝트도 준비하고 있습니다.</p></details>
+        <details><summary>공공디자인을 공부하면 어떤 일을 하게 되나요?</summary><p>지자체와 공공기관의 공공디자인 행정가, 공공디자인 진흥계획·연구 용역을 수행하는 연구원, 도시·공간·서비스 디자인 실무자, 총괄·자문 디자이너, 대학 연구자 등으로 활동합니다.</p></details>
+        <details><summary>입학 전에 전공 수업이나 행사를 경험해 볼 수 있나요?</summary><p>공공디자인포럼(PDF X), 개강 세미나, 국제공공디자인포럼 등 많은 행사가 외부에 공개됩니다. 일정은 인스타그램과 소식 페이지에서 안내합니다.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOCATION ================= -->
+<section id="location" style="padding-top:0;background:var(--white)">
+  <div class="wrap">
+    <div class="loc rv">
+      <div class="loc-info">
+        <p class="eyebrow">Location</p>
+        <h3>오시는 길</h3>
+        <dl>
+          <dt>주소</dt><dd>서울특별시 마포구 와우산로 94<br>홍익대학교 서울캠퍼스</dd>
+          <dt>연구센터</dt><dd>홍문관(R동) 13층 R1310</dd>
+          <dt>교수연구실</dt><dd>홍문관(R동) 12층·14층, 문헌관(MH동) 11층</dd>
+          <dt>지하철</dt><dd>2호선·공항철도·경의중앙선 홍대입구역, 6호선 상수역</dd>
+          <dt>전화</dt><dd>02-320-1237</dd>
+        </dl>
+        <div class="btns" style="margin-top:24px"><a class="btn btn-line" href="https://map.naver.com/p/search/%ED%99%8D%EC%9D%B5%EB%8C%80%ED%95%99%EA%B5%90%20%ED%99%8D%EB%AC%B8%EA%B4%80" target="_blank" rel="noopener">네이버 지도 ↗</a><a class="btn btn-line" href="https://map.kakao.com/?q=%ED%99%8D%EC%9D%B5%EB%8C%80%ED%95%99%EA%B5%90%20%ED%99%8D%EB%AC%B8%EA%B4%80" target="_blank" rel="noopener">카카오맵 ↗</a></div>
+      </div>
+      <iframe title="홍익대학교 위치 지도" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=%ED%99%8D%EC%9D%B5%EB%8C%80%ED%95%99%EA%B5%90%20%ED%99%8D%EB%AC%B8%EA%B4%80&z=16&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div><p class="f-brand">Design<br>for <em>Public</em>.</p>
+        <p style="margin-top:20px">홍익대학교 산업미술대학원 공공디자인전공<br>대학원 디자인공예학과 공공디자인<br>홍익대학교 공공디자인연구센터 · DESIS Lab</p></div>
+      <div><h5>바로가기</h5><ul><li><a href="#about">전공 소개</a></li><li><a href="#curriculum">교육과정</a></li><li><a href="#projects">연구·프로젝트</a></li><li><a href="#people">사람들</a></li><li><a href="#news">소식</a></li><li><a href="#admission">입학 안내</a></li></ul></div>
+      <div><h5>연결</h5><ul><li><a href="https://www.instagram.com/hongik_pd/" target="_blank" rel="noopener">공공디자인연구센터 ↗</a></li><li><a href="https://desis.hongik.ac.kr" target="_blank" rel="noopener">Hongik DESIS Lab ↗</a></li><li><a href="https://www.instagram.com/hongik_publicdesign/" target="_blank" rel="noopener">Instagram ↗</a></li><li><a href="https://www.hongik.ac.kr" target="_blank" rel="noopener">홍익대학교 ↗</a></li></ul></div>
+      <div><h5>문의</h5><ul><li>02-320-1237</li><li><a href="mailto:armula@hongik.ac.kr">armula@hongik.ac.kr</a></li><li>서울 마포구 와우산로 94</li></ul></div>
+    </div>
+    <div class="f-bot"><span>© Hongik University Public Design. All rights reserved.</span><span>Public Design Major, Hongik University</span></div>
+  </div>
+</footer>
+
+<a href="#top" class="to-top" aria-label="맨 위로">↑</a>
+
+<script>
+/* header style on scroll + to-top */
+const header=document.querySelector('header.site'),toTop=document.querySelector('.to-top');
+const onScroll=()=>{const y=window.scrollY;header.classList.toggle('solid',y>window.innerHeight*0.6);toTop.classList.toggle('show',y>900)};
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* mobile menu */
+const burger=document.querySelector('.burger'),mm=document.getElementById('mobileMenu');
+burger.addEventListener('click',()=>{const o=mm.classList.toggle('open');document.body.classList.toggle('menu-open',o);burger.setAttribute('aria-expanded',o);header.classList.toggle('solid',o||window.scrollY>window.innerHeight*0.6)});
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mm.classList.remove('open');document.body.classList.remove('menu-open');burger.setAttribute('aria-expanded',false);onScroll()}));
+
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* count up */
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target,to=+el.dataset.count,t0=performance.now(),d=1400;
+  const step=t=>{const p=Math.min((t-t0)/d,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)))+(p===1&&to===100?'+':'');if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step);cio.unobserve(el)}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+/* curriculum tabs */
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected',x===t));
+  document.querySelectorAll('.panel').forEach(p=>p.hidden=p.id!==t.getAttribute('aria-controls'));
+}));
+/* course cards */
+document.querySelectorAll('.course').forEach(c=>c.addEventListener('click',()=>{const o=c.classList.toggle('open');c.querySelector('.more').textContent=o?'접기 −':'자세히 +'}));
+
+/* timeline */
+const TL={
+"2018": [
+"1학기|공공디자인전공 신설",
+"1학기|석사 12명 입학",
+"1학기|제1회 공공디자인 세미나 (홍익대학교)",
+"1학기|연구결과집 Public Design Promenade Vol.1.0",
+"2학기|제2회 공공디자인 세미나 (하나금융 클럽원)",
+"2학기|석사 5명 입학",
+"2학기|제1회 공공디자인 학술답사 (대구 근대골목)",
+"2학기|수원시 도시디자인 아카데미 교육 진행",
+"2학기|[전공 특강] 안전한 도시를 위한 CPTED 안전디자인 전략",
+"2학기|연구결과집 Public Design Promenade Vol.2.0",
+"2학기|공공디자인 전공 종강 학술세미나"
+],
+"2019": [
+"1학기|제2회 공공디자인 학술답사 (중국 상하이)",
+"1학기|제3회 공공디자인 세미나 (하나금융 클럽원)",
+"1학기|석사 12명 입학",
+"1학기|[전공 특강] 공공디자인진흥법의 한계와 서울시 공공디자인 조례전략",
+"1학기|홍익대학교 공공디자인연구센터 개소",
+"1학기|용인시 공공디자인 아카데미 교육 진행",
+"1학기|공공디자인진흥포럼 개최 (홍익대학교)",
+"1학기|카카오 임팩트 100up 참여",
+"1학기|서울시 스타트업 공공디자인 기업 참여",
+"1학기|공공디자인 전공 종강 학술세미나",
+"1학기|제4회 홍익대학교 공공디자인 콜로키움 “사회문제, 사회가치 그리고 공공디자인”",
+"1학기|2019 공공디자인 시민공모전 수상 (김세련, 김현수)",
+"2학기|2019 대한민국 공공디자인대상 학술부문 특별상 ‘빅터 마골린상’ 수상 (지도교수 이현성)",
+"2학기|한국공간디자인학회 추계 학술대회 우수논문상 (오유경, 박재용)",
+"2학기|카카오 임팩트 100up 학생홍보 및 참여 지도 (석사과정 참여)",
+"2학기|서울시 스타트업 공공디자인 기업 참여 지도 (석사과정 참여)",
+"2학기|생활SOC 지역사회공헌 통합 세미나 (홍익대+중앙대 공동운영 및 학생 교류)",
+"2학기|학술답사 (세종시 · 조치원 도시재생 · 대전시 안전마을)",
+"2학기|한국도로공사 공공디자인 공모전 수상 (석사과정 참가 지도)"
+],
+"2020": [
+"03.03|서울 강남구–홍익대 공공디자인연구센터 업무협약(MOU) 기획 협의",
+"1학기|공공디자인 웨비나 01 “Universal & Governance in Public Design” 기획 및 주관",
+"1학기|관·학 협력 연구 ‘강남구 틈새공간 공공디자인’ (산업디자인 학부·공간디자인 석사 4개팀 지도)",
+"1학기|한국도로공사 고객디자인단 참여 (석사과정 참가 지도)",
+"08.10|공공디자인 뉴스레터 Public Design 365 창간",
+"2학기|국내 최초 ‘공공디자인’ 박사과정 신설 기획안 및 교과목 기획 연구",
+"2학기|한국도로공사 공공디자인 공모전 수상",
+"2학기|수원 국제 공공디자인 포럼 총괄 기획 및 운영 (수원시–연구센터 공동)",
+"2학기|공공디자인 전문가 직무 교과서 기획 및 연구 발행 (한국공예·디자인문화진흥원)",
+"2학기|공공디자인 전문 온라인 소식지 기획 및 운영 (한국공예·디자인문화진흥원)",
+"11.04|한국공예·디자인문화진흥원 업무협약(MOU) 체결",
+"2학기|수원시정연구원 업무협약(MOU)",
+"2학기|강남구 공공디자인진흥계획 아카데미 교육 기획 및 운영",
+"2학기|2020 문화체육관광부 장관상 수상 (연구센터 소장)"
+],
+"2021": [
+"02|서울시 소유자산 유니버설디자인 시각화 현장조사 (한국공공디자인학회)",
+"02|구미시 공단동 도시재생 활성화계획 수립용역 (한국도시설계학회)",
+"03|송파구 공공디자인진흥계획 수주",
+"04|Walkable 향교로 특화 가로 환경연구 (수원시정연구원)",
+"05|알파리움타워 2동 어린이집 인테리어 설계 (NC Soft)",
+"05|한국도로공사 국민디자인 참여 (김유진)",
+"06|문화체육관광부 공공디자인 기획전시 ‘익숙한 미래’ (총괄기획감독 이현성)",
+"07|PDG12 유네스코 지속가능발전교육(ESD) 인증",
+"07|한국국토정보공사 LX 공모전 우수상 (심윤서)",
+"07|2021 청년디자이너 인턴십지원 컨설팅 운영 및 지원 (한국공예·디자인문화진흥원)",
+"08|인천광역시 도시디자인진흥계획 수립용역",
+"08.28|국제공공디자인포럼(IPDF) 발대식",
+"08|공공디자인 콜로키움 개최",
+"08|공공소통연구소 업무협약(MOU) 체결",
+"08|한국사회복지협의회 사회공헌센터 업무협약(MOU) 체결",
+"09|아산프론티어 아카데미 협업 (서초구 흡연개선방안 마련 프로젝트)",
+"09|고양시 공직자 공공디자인 인식 함양 교육",
+"10|한국매니페스토실천본부 업무협약(MOU) 체결",
+"10|문화체육관광부 공공디자인 중등교과서 집필연구",
+"11|용인시 유니버설·공공디자인 아카데미 운영",
+"12.11|공공디자인 논문발표 및 종강세미나",
+"12.18|제1회 IPDF 국제공공디자인포럼"
+],
+"2022": [
+"03.26|제7회 공공디자인 전공 개강 콜로키움",
+"04.05|D-TECH 기술 디자인공모전 우수상 (임성욱, 조지영 · 석사과정)",
+"04.21|공공디자인 거버넌스 특강 (박지호 체인지워크 대표)",
+"05.16|일본 TDA 경관 디자인 지원기구 × 연구센터 ‘한일 경관 교육 대담회’",
+"06.21|프랑스 디자인 그룹 Cabanon Vertical 국제교류 MOU 체결",
+"06.21|2022-1학기 통합종강 세미나",
+"07|한국도로공사 5기 국민 고객디자인단 운영",
+"07.05|공공디자인전공 석사 논문인준식",
+"09|공공디자인 전공 개강 콜로키움 (정동1928아트센터)",
+"09.16|국제 Park(ing) Day 참가",
+"2022|‘강남 ESG 공공디자인 아이디어 공모전’ 3팀 수상 — 우수상 김종혁(석사9기)·김나현(석사8기), 장려상 이보아(박사3기)·김세련(석사1기 졸업)",
+"2022|제16회 경기도 공공디자인 공모전 금상 (임성욱 · 석사7기)",
+"2022|경관디자인+공공디자인 집담회 ‘공공이 경관에게 경관이 공공에게’ 공동 주관",
+"2022|2022 공공디자인 페스티벌 [IPDF 코리아 에디션] ‘2022 공공디자인 워크숍’ 운영",
+"12.10|제2회 IPDF 국제공공디자인포럼 (중국, 온라인) 공동 주최",
+"2022|대한민국 공공디자인대상 학술부문 특별상 ‘빅터 마골린상’ (심윤서)"
+],
+"2023": [
+"02.28|석·박사 신입생 오리엔테이션",
+"05.03|K-디자인 비전 선포식 초대 참가",
+"05.13|The Public Design Forum 2023 ‘공공가치를 추구하는 사람들의 공공디자인 사용하기’ 주최",
+"05.17|Public NPO Testbed 공심이 × 서울환경연합 택티컬 어바니즘 ‘가치그려’",
+"06|중국 디자인 대학 5개교 공공디자인 연합학술교류회",
+"06|국제공공디자인포럼 IPDF 주최",
+"06.16|노신미술대학 도시재생&문화진흥 국제연구센터 학술 협력 양해각서 체결",
+"06.18|공공디자인전공 종강세미나",
+"06|김주연 교수 인천광역시 총괄디자이너 선정",
+"07.21|광운대 공공소통연구소 LOUD 학술교류 ‘공공디자인포럼 X: 사회갈등예방을 위한 디자인 Vol.1’",
+"08.23|문화체육관광부 공공디자인 청년 인턴십 직무교육 주관",
+"08.26|공공디자인 전공 개강세미나 (에피소드 신촌 369)",
+"08|장영호 교수 남원시 공공디자인 총괄디자이너 위촉",
+"09.19|공공디자인포럼 ‘프랑스 공공디자인 거버넌스’ 주최 (프랑스 문화원·주한 프랑스 대사관 후원)",
+"09|인사혁신처 ‘적극행정 상징물(캐릭터) 공모전’ 우수상 (이우주 · 석사과정)",
+"10|공공디자인 페스티벌 ‘사회갈등예방 디자인’ 특별 세미나 (연구센터·광운대 공공소통연구소·한국PR학회 공동 주관)",
+"10.23|청년 디자이너를 위한 공공디자인 워크숍 주관 (문화역서울284 RTO)",
+"10.25|미국미술치료학회(AATA) 학술발표 (주하나 · 박사과정)",
+"10|2023 대한민국 공공디자인대상 연구부문 최우수상(문체부 장관상)·특별상(빅터 마골린상) (김상아, 이주호 · 박사과정)",
+"10|제25회 대한민국디자인대상 디자인 공로 부문 대통령 표창 (김주연 교수)"
+],
+"2024": [
+"01|국제공공디자인포럼 IPDF 사전행사 도쿄 개최 (일본 GK디자인 그룹, 중국 노신미술대학교, 시안건축과학기술대학교)",
+"01|제2차 강원 공공디자인진흥전략 ‘공공디자인 시대’ 기조 발제 (김주연 소장)",
+"02|2024-1학기 개강세미나 “공공디자인과 일상의 연결!”",
+"02|연구센터 특별 세미나 ‘사회실험 디자인 프로젝트에 대한 재고’",
+"05|『공공디자인으로 안전만들기』 (미세움) 출간",
+"05|공공디자인포럼 PDF 에이스케 다치카와(Eisuke Tachikawa) 초빙",
+"05|영주시 교량 경관디자인 기획 연구",
+"06|한국건설기술연구원 K-지하고속도로 공공디자인 업무협약",
+"06|서안건축과학대학교 문화·교육·연구 협력 양해각서 체결",
+"06|국제 공공디자인 포럼 IPDF 2024 ‘도시를 위한 공공디자인 Public Design for the City’ (시안과학기술대학교)",
+"06|초장대 K-지하 고속도로 인프라 안전 및 효율 향상 기술 개발 R&D 연구 (1차)",
+"07|공공디자인 뉴스레터 ‘The Public Design 365’ 100호 발간",
+"07|‘Public Design Governance’ 모델 UNESCO 지속가능교육(ESD) 재인증",
+"07|서울시 사회문제해결디자인 기본계획 수립",
+"07|사회갈등 해결 ‘분리형 흡연 부스’ 매뉴얼 개발",
+"07|미국 미술치료자격 전문감독관 ATCS 자격 취득 (주하나 · 박사과정)",
+"07|서울역 광고매체 리뉴얼 마스터플랜 수립 (코레일)",
+"08|충남 공공디자인 아카데미 기획 운영",
+"08|NPO Testbed 공.심.이 예비창업패키지 체결 / 도리도리 프로젝트",
+"10|김주연 교수 제1대 서울시 총괄 공공디자이너 위촉",
+"10|2024 대한민국 공공디자인대상 연구부문 우수상 (한국공예·디자인문화진흥원 원장상, 김세훈 · 박사과정)",
+"10|문화체육관광부 공공디자인 시범사업 ‘멘탈케어디자인’ 실증연구 (주하나 · 박사과정)",
+"10|대구 현풍천 교량 경관 개선사업 디자인 개발 및 기본구상 용역",
+"10|현대백화점 면세점 ESG 공공디자인 H-gram Design 기획 수립",
+"11|2024 대한민국 공공디자인 페스티벌: 공공디자인 실험실 5개소 기획 운영",
+"11|2024 페스티벌: The Public Design Forum X ‘사회갈등 예방을 위한 디자인 Vol.2’",
+"11|2024 페스티벌: Public Design Day 기획 운영",
+"11|2024 페스티벌: 『공공디자인으로 안전만들기』 북 세미나",
+"11|2024 페스티벌: 공공디자인 청년 네트워크 Network Design Party – Dopamine",
+"11|‘더 큰 파주’ 도시디자인 아카데미 기획 운영",
+"11|공공기관 사회공헌 세미나 ‘ESG 공공디자인’ (이현성 부소장, 사회공헌센터)",
+"12|파주시 ‘모두의 순찰대’ 행정안전부 공공서비스디자인 우수과제·행정안전부장관상 (김상아 · 박사과정)",
+"12|대구 달성 논공 다다촌 특화거리 조성사업 기본 및 실시설계 용역",
+"12|대전 도시디자인 리빙랩 기획 운영 (대전디자인진흥원)"
+],
+"2025": [
+"01|2024년도 유네스코 지속가능발전교육 공식프로젝트 재인증",
+"01|(사)공간디자인학회 중국 닝보대학 국제 컨퍼런스 발제 ‘Private-Public Collaborative Design’",
+"03|2025-1학기 개강세미나 ‘협력으로 만드는 포용사회’",
+"04|공공디자인포럼 PDF X ‘사회적 녹색 처방 Social Green Prescribing: 공공디자인과 건강복지의 접점’",
+"04|수원시 지역사회 심리·정서적 건강 지원 업무협약(MOU)",
+"05|Jane’s Walk Seoul 2025 기획 운영",
+"05|홍익대–수원시립미술관 2025 웰니스 프로그램 「마인딩」 기획 운영",
+"06|2025 세계열린정부주간 민관합동 국제행사 참가",
+"07|2025 오사카 엑스포 학술답사",
+"09|2025-2학기 개강세미나 ‘Public Private Design’",
+"09|KTX 서울역 공공매체 마스터플랜 수립",
+"09|서울디자인국제포럼 SDIF 총괄기획감독 (이현성 교수)",
+"09|2025 공공디자인 혁신 지원 사업 기본계획 수립",
+"09|2025 공공디자인 혁신사례조사 연구 완료",
+"09|공공서비스디자인 ‘고속철도 SRT 서비스를 re-design 하다’ 프로젝트 참여",
+"09|경기관광공사 2025 경기형 웰니스 관광지 컨설팅 연구용역 계획 수립",
+"10|2025 국제공공디자인포럼 IPDF 공동주관",
+"10|칭화대·허베이미대·노신미대·홍익대 ‘한중 공공디자인 워크숍’",
+"10|2025 페스티벌: 공공디자인 실험실 ‘공공스티커(The Public Sticker)’ SRT·사회공헌센터 협업",
+"10|2025 페스티벌: 통합학술대회 참가 (이은영, 이지영)",
+"10|공공디자인전공, 국제공공디자인포럼 IPDF 2025 주관",
+"10|공공디자인포럼 PDF X ‘Design for Social-Changing in Taiwan & Korea’",
+"10|국립대만디자인연구소(TDRI) 업무협약(MOU) 체결",
+"10|KIDP 산업안전디자인 표준 개발을 위한 기초 연구",
+"10|KTX 부산역·용산역 광고매체 리뉴얼 마스터플랜 수립 용역",
+"10|2025 더 큰 파주 도시디자인 역량 강화 교육",
+"10|제56회 AATA 미국미술치료학회 학술대회 연구발표 (포틀랜드, 주하나 · 박사과정)",
+"11|경기형 웰니스 관광지 수원시립미술관 「왕의 산책」 프로그램 운영 및 실증평가",
+"11|Alice’s Secret Passage (공심이 × CESCO × CHICOR × 강남구청)",
+"11|공공디자인 세미나 PDF X ‘안전을 위한 오사카 공공디자인’ (Kutsuna Hiroki)",
+"11|제27회 대한민국디자인대상 디자인 공로 부문 산업통상부장관 표창 (이현성 교수)",
+"11|공공디자인 전문인력 교과서 리뉴얼 (문화체육관광부)",
+"11|KIDP 산업안전디자인 세미나 2025 발제",
+"11|2025-2 수원·화성시 일대 ‘공공디자인 국내 학술답사’",
+"11|(사)한국공간디자인단체총연합회 제11대 회장 취임 (김주연 교수)"
+],
+"2026": [
+"2026|굿디자인코리아 도쿄 설명회 발제 ‘PbD_Public by DESIGN’",
+"2026|칭화대 ‘Design·AI 기반 혁신 및 π형 인재 양성 교수 교류 컨퍼런스’ 발제 “Agile Public Design for Social Innovation”",
+"2026|공공디자인 실험실 ‘그린 세이프 브릿지’ (3M, SEDG, 이오디디자인)",
+"2026|개강세미나 PUBLIC DESIGN SIX PERSPECTIVES “다음의 공공성: 여섯 개의 시선으로 바라본 공공디자인”",
+"2026|HD현대 글로벌 R&D센터 안전디자인 Safephilic 연구",
+"2026|사회혁신 디자인 네트워크 ‘DESIS Network’ 승인 및 ‘DESIS Lab’ 지정",
+"2026|공공디자인 포럼 2026 「디자인, 도시를 재생하다 – 밀라노 디자인 위크의 국제화와 공공공간의 건축적 연계성」 (최지혜, Magma Project 대표)",
+"2026|강원랜드 UX·XI 개선 기초방향 연구",
+"2026|한·일 5개 대학 WDC 연계 ‘국제 공동 지역재생 워크숍’ (홍익대·치바대·동서대·동아대·동명대)",
+"2026|‘더 큰 파주’ 도시디자인 아카데미 기획 운영",
+"2026|2026 대한민국 공공디자인대상 학술부문 최우수상·우수상 (박재은 박사, 주하나 박사)",
+"2026|2026 대한민국 공공디자인대상 진흥원장상 (Platform 111)",
+"2026|오성훈 교수 부임"
+]
+};
+const SUB={"2018":"전공 신설","2019":"연구센터 개소","2020":"박사과정 기획","2021":"UNESCO ESD 인증","2022":"국제 교류 확장","2023":"공공디자인포럼 X","2024":"안전·정책 연구","2025":"실험과 협력","2026":"DESIS Lab"};
+const yrs=document.querySelector('.tl-years'),tlY=document.getElementById('tlYear'),tlL=document.getElementById('tlList');
+function showYear(y){tlY.innerHTML=y+'<small>'+SUB[y]+'<br><span style="color:var(--mute);font-weight:600">'+TL[y].length+'개 항목</span></small>';tlL.innerHTML=TL[y].map(s=>{const i=s.indexOf('|');return '<li><span class="tl-d">'+s.slice(0,i)+'</span>'+s.slice(i+1)+'</li>'}).join('');
+  yrs.querySelectorAll('button').forEach(b=>b.setAttribute('aria-selected',b.textContent===y))}
+Object.keys(TL).forEach(y=>{const b=document.createElement('button');b.className='tl-year';b.textContent=y;b.setAttribute('role','tab');b.onclick=()=>showYear(y);yrs.appendChild(b)});
+showYear("2026");
+
+/* seminar series modal */
+const sModal=document.getElementById('seriesModal');
+document.querySelectorAll('[data-open="seriesModal"]').forEach(b=>b.addEventListener('click',()=>{sModal.showModal();document.body.classList.add('modal-open')}));
+sModal.querySelector('.sm-close').addEventListener('click',()=>sModal.close());
+sModal.addEventListener('click',e=>{if(e.target===sModal)sModal.close()});
+sModal.addEventListener('close',()=>document.body.classList.remove('modal-open'));
+
+</script>
+</body>
+</html>
