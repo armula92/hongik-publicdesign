@@ -266,6 +266,22 @@ header.site.solid{background:rgba(245,243,238,.94);backdrop-filter:blur(10px);-w
 #admission{background:var(--white)}
 .adm-slogan{font-size:clamp(24px,3.2vw,40px);font-weight:800;line-height:1.3;letter-spacing:-.03em;color:var(--accent);margin:4px 0 20px}
 .adm-slogan mark{background:linear-gradient(transparent 62%,rgba(191,94,56,.18) 62%);color:inherit}
+.adm-notice{display:grid;grid-template-columns:1.1fr 1fr;gap:28px 48px;align-items:start;background:var(--accent-soft);border:1px solid var(--accent-pale);border-radius:22px;padding:36px 40px;margin-bottom:28px}
+.an-badge{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:800;color:#fff;background:var(--accent);padding:5px 12px;border-radius:99px}
+.an-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:#fff;animation:anPulse 1.6s ease-in-out infinite}
+@keyframes anPulse{50%{opacity:.3}}
+.an-kicker{font-size:13px;color:var(--mute);font-weight:600;margin:14px 0 4px}
+.adm-notice h3{font-size:clamp(22px,2.6vw,30px);letter-spacing:-.03em;line-height:1.25}
+.an-sub{font-size:15px;color:var(--ink-2);margin-top:8px}
+.an-dates{list-style:none;border-top:2px solid var(--accent)}
+.an-dates li{display:grid;grid-template-columns:128px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--accent-pale);font-size:15px}
+.an-dates b{color:var(--accent-dark)}
+.an-dates span{font-variant-numeric:tabular-nums;font-weight:600}
+.an-btns{display:flex;gap:10px;flex-wrap:wrap}
+.an-primary{background:var(--accent);color:#fff}.an-primary:hover{background:var(--accent-dark)}
+.an-line{border:1.5px solid var(--accent-dark);color:var(--accent-dark)}.an-line:hover{background:var(--accent-dark);color:#fff}
+.an-note{font-size:13px;color:var(--mute);align-self:center}
+@media (max-width:760px){.adm-notice{grid-template-columns:1fr;padding:26px 20px}.an-dates li{grid-template-columns:104px 1fr;font-size:14px}}
 .adm-top{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .adm-card{border-radius:20px;padding:40px 36px;position:relative;overflow:hidden}
 .adm-card.ma{background:var(--ink);color:#fff}
@@ -909,6 +925,7 @@ body.modal-open{overflow:hidden}
       <article class="news rv"><img src="images/news-suwon.jpg" alt="수원시-홍익대학교 업무협약식" loading="lazy"><div class="bd"><div class="cat"><i>협약</i>2025.04</div><h4>수원시와 지역사회 심리·정서 건강 지원 업무협약</h4></div></article>
     </div>
     <ul class="news-list">
+      <li><span class="d">2026.09.18</span><span class="c">입학</span><span><a href="#notice2027" style="font-weight:700">2027학년도 전기 대학원 신입생 모집 공고 (원서접수 9.30–10.14)</a></span></li>
       <li><span class="d">2026.07.20</span><span class="c">포럼</span><span>공공디자인 포럼 2026 「디자인, 도시를 재생하다: 밀라노 디자인 위크」 개최</span></li>
       <li><span class="d">2026</span><span class="c">수상</span><span>2026 대한민국 공공디자인대상 학술부문 최우수상·우수상, Platform 111 진흥원장상</span></li>
       <li><span class="d">2026.05.26</span><span class="c">강연</span><span>이현성 교수, 도쿄 ‘2026 굿디자인코리아’ 초청 강연 「POLICY by DESIGN」</span></li>
@@ -930,6 +947,26 @@ body.modal-open{overflow:hidden}
       <p class="adm-slogan">여러분의 디자인에 <mark>공공의 가치</mark>를 더하세요,<br>여기 홍익에서.</p>
       <p class="lead">도시와 일상의 문제를 디자인으로 풀고 싶은 분을 기다립니다. 디자인 전공자가 아니어도 괜찮습니다. 필요한 것은 공공에 대한 질문입니다.</p></div>
     </div>
+    <!-- 2027학년도 전기 모집 공고 (홍익대 대학원입학 공지, 2026.09.18 게시). 다음 모집 공고가 뜨면 링크·일정 교체 -->
+    <div class="adm-notice rv" id="notice2027">
+      <div class="an-head">
+        <span class="an-badge">모집 중</span>
+        <p class="an-kicker">홍익대학교 대학원 입학 공지 · 2026.09.18</p>
+        <h3>2027학년도 전기 대학원 신입생 모집</h3>
+        <p class="an-sub">공공디자인 석사(산업미술대학원)·박사(일반대학원) 과정 모두 이번 모집에 포함됩니다.</p>
+      </div>
+      <ol class="an-dates">
+        <li><b>원서접수</b><span>9.30(수) 09:00 – 10.14(수) 24:00</span></li>
+        <li><b>서류제출</b><span>10.15(목) 16:00까지</span></li>
+        <li><b>전형 (서울캠퍼스)</b><span>11.14(토) – 11.15(일)</span></li>
+        <li><b>합격자 발표</b><span>12.7(월) 18시 예정</span></li>
+      </ol>
+      <div class="an-btns">
+        <a class="btn an-primary" href="https://www.hongik.ac.kr/kr/admission/notice-military.do?mode=view&amp;articleNo=157298" target="_blank" rel="noopener">모집 공고 보기 ↗</a>
+        <a class="btn an-line" href="https://www.hongik.ac.kr/kr/admission/notice-military.do?mode=download&amp;articleNo=157298&amp;attachNo=91780" rel="noopener">모집요강 내려받기 (ZIP)</a>
+      </div>
+      <p class="an-note">일정은 공고 기준이며, 세부 전형과 지원 자격은 반드시 모집요강에서 확인해 주세요.</p>
+    </div>
     <!-- 모집 일정·전형 세부는 매 학기 모집요강 확정 후 아래 내용을 갱신하세요. -->
     <div class="adm-top">
       <div class="adm-card ma rv"><span class="deg">MASTER'S PROGRAM</span><h3>석사과정</h3><p class="dept">산업미술대학원 공공디자인전공</p>
@@ -940,7 +977,7 @@ body.modal-open{overflow:hidden}
 
     <div id="apply">
       <div class="proc">
-        <div class="rv"><h4>모집요강 확인</h4><p>홍익대학교 대학원 입학 공지에서 해당 학기 모집요강을 확인합니다.</p></div>
+        <div class="rv"><h4>모집요강 확인</h4><p>홍익대학교 대학원 입학 공지에서 해당 학기 모집요강을 확인합니다. <a href="#notice2027" style="color:var(--accent);font-weight:700">2027학년도 공고 →</a></p></div>
         <div class="rv"><h4>상담</h4><p>관심 연구 주제를 정리해 전공 사무실에 문의하면 상담을 받을 수 있습니다.</p></div>
         <div class="rv"><h4>원서 접수</h4><p>온라인으로 원서를 접수하고 서류를 제출합니다.</p></div>
         <div class="rv"><h4>면접</h4><p>연구계획과 공공디자인에 대한 관심, 경험을 이야기합니다.</p></div>
@@ -958,7 +995,7 @@ body.modal-open{overflow:hidden}
             <dt>이메일</dt><dd><a href="mailto:armula@hongik.ac.kr">armula@hongik.ac.kr</a></dd>
             <dt>위치</dt><dd>홍문관(R동) 13층 R1310 공공디자인연구센터</dd>
           </dl>
-          <div class="btns"><a class="btn btn-dark" href="https://www.hongik.ac.kr" target="_blank" rel="noopener">홍익대학교 입학 안내 ↗</a></div>
+          <div class="btns"><a class="btn btn-dark" href="https://www.hongik.ac.kr/kr/admission/notice-military.do?mode=view&amp;articleNo=157298" target="_blank" rel="noopener">2027학년도 모집 공고 ↗</a></div>
         </div>
       </div>
       <div class="faq rv">
