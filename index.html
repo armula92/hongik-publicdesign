@@ -36,7 +36,7 @@ header.site{position:fixed;inset:0 0 auto 0;z-index:50;background:var(--accent-d
 header.site.solid{background:var(--accent-dark);color:#fff}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 .logo{display:flex;align-items:center;gap:10px;color:#fff}
-.logo img{height:42px;width:auto;display:block}
+.logo img{height:40px;width:auto;display:block}
 .logo-name{font-size:16px;font-weight:800;letter-spacing:-.02em;line-height:1.2;white-space:nowrap}
 .logo-name small{display:block;font-size:10.5px;font-weight:600;opacity:.7;letter-spacing:0}
 .menu{display:flex;gap:4px;list-style:none}
@@ -556,7 +556,7 @@ body.modal-open{overflow:hidden}
   .f-top{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
-  .logo img{height:30px}
+  .logo img{height:30px;max-width:calc(100vw - 100px);object-fit:contain;object-position:left center}
   .logo-name{font-size:14.5px}
   section{padding:76px 0}
   .wrap{padding:0 16px}
@@ -597,7 +597,7 @@ body.modal-open{overflow:hidden}
 <!-- ================= HEADER ================= -->
 <header class="site" id="top">
   <div class="wrap nav">
-    <a href="#top" class="logo" aria-label="홍익대학교 공공디자인 전공 홈"><img src="images/logo.png" alt="" width="192" height="158"><span class="logo-name">홍익대학교 공공디자인전공<small>HONGIK PUBLIC DESIGN</small></span></a>
+    <a href="#top" class="logo" aria-label="홍익대학교 공공디자인 전공 홈"><img src="images/logo-wordmark.jpg" alt="홍익대학교 공공디자인 전공 Hongik University Major in Public Design" width="1104" height="120"></a>
     <nav aria-label="주 메뉴">
       <ul class="menu">
         <li><a href="#about">전공 소개</a>
