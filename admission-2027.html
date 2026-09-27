@@ -52,7 +52,7 @@ body.all .card{position:relative;opacity:1;visibility:visible;margin:0 0 40px}
 /* ---------- card design (1080 base) ---------- */
 .card{background:var(--paper);padding:84px 88px 0;display:flex;flex-direction:column}
 .c-top{display:flex;align-items:center;justify-content:space-between;padding-bottom:26px;border-bottom:2px solid var(--ink)}
-.c-top img{height:46px;width:auto;display:block}
+.c-top img{height:38px;width:auto;display:block}
 .c-top .pg{font-size:24px;font-weight:700;color:var(--sky);font-variant-numeric:tabular-nums}
 .c-body{flex:1;display:flex;flex-direction:column;padding-top:56px;min-height:0}
 .c-foot{display:flex;justify-content:space-between;align-items:center;height:88px;border-top:1px solid var(--line);font-size:22px;color:var(--mute)}
@@ -102,11 +102,14 @@ h2{font-size:74px}
 .chips span{font-size:27px;font-weight:700;padding:12px 20px;background:var(--paper-2)}
 .dark .chips span{background:rgba(255,255,255,.1)}
 .fac{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:3px solid var(--ink);margin-top:36px}
-.fac div{padding:20px 14px 20px 0;border-bottom:1px solid var(--line)}
+.fac div{padding:18px 14px 18px 0;border-bottom:1px solid var(--line)}
 .fac div:not(:nth-child(4n+1)){padding-left:16px;border-left:1px solid var(--line)}
-.fac img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 20%;filter:grayscale(1);margin-bottom:12px}
-.fac b{display:block;font-size:27px}
-.fac span{font-size:20px;color:var(--sky);font-weight:700}
+.fac img{width:100%;height:180px;object-fit:cover;object-position:center 22%;filter:grayscale(1);margin-bottom:12px}
+.fac-more{display:flex;flex-direction:column;justify-content:flex-end;background:var(--navy);color:#fff;padding:20px!important}
+.fac-more strong{font-size:96px;font-weight:900;line-height:1;color:var(--sky-light)}
+.fac-more em{font-style:normal;font-size:21px;line-height:1.45;margin-top:10px;color:#DCEBF8}
+.fac b{display:block;font-size:26px}
+.fac span{font-size:19px;color:var(--sky);font-weight:700}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:3px solid var(--ink);margin-top:40px}
 .two > div{padding:28px 28px 0 0}
 .two > div+div{padding-left:28px;border-left:1px solid var(--line)}
@@ -126,7 +129,7 @@ h2{font-size:74px}
       <!-- 01 COVER -->
       <section class="card dark">
         <div class="photo-bg"><img src="images/hero-seminar.jpg" alt=""></div>
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt="홍익대학교 공공디자인 전공"><span class="pg">2027 Admission</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-white.png" alt="홍익대학교 공공디자인 전공"><span class="pg">2027 Admission</span></div>
         <div class="c-body" style="justify-content:flex-end;padding-bottom:40px">
           <p class="kick"><b>2027</b>석사 · 박사 신입생 모집</p>
           <h1 style="font-size:96px">여러분의 디자인에<br><span style="color:var(--sky-light)">공공의 가치</span>를<br>더하세요.</h1>
@@ -137,7 +140,7 @@ h2{font-size:74px}
 
       <!-- 02 WHAT -->
       <section class="card">
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt=""><span class="pg">02</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-navy.png" alt=""><span class="pg">02</span></div>
         <div class="c-body">
           <p class="kick"><b>Q.</b>공공디자인이란?</p>
           <h2>예쁜 시설물을<br>만드는 일이 아닙니다.</h2>
@@ -149,7 +152,7 @@ h2{font-size:74px}
 
       <!-- 03 WHY 1: research becomes reality -->
       <section class="card">
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt=""><span class="pg">03</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-navy.png" alt=""><span class="pg">03</span></div>
         <div class="c-body">
           <p class="kick"><b>Why Hongik 01</b>연구가 현실이 되는 곳</p>
           <h2>수업에서 시작한 연구가<br>실제 도시로 갑니다</h2>
@@ -165,7 +168,7 @@ h2{font-size:74px}
 
       <!-- 04 WHY 2: evidence -->
       <section class="card">
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt=""><span class="pg">04</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-navy.png" alt=""><span class="pg">04</span></div>
         <div class="c-body">
           <p class="kick"><b>Why Hongik 02</b>숫자로 증명하는 디자인</p>
           <h2>디자인이 바꾼 것을<br>측정합니다</h2>
@@ -177,7 +180,7 @@ h2{font-size:74px}
 
       <!-- 05 WHY 3: awards -->
       <section class="card dark">
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt=""><span class="pg">05</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-white.png" alt=""><span class="pg">05</span></div>
         <div class="c-body">
           <p class="kick"><b>Why Hongik 03</b>재학생이 받는 상</p>
           <h2>원우들의 연구가<br>인정받습니다</h2>
@@ -193,7 +196,7 @@ h2{font-size:74px}
 
       <!-- 06 WHY 4: global -->
       <section class="card">
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt=""><span class="pg">06</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-navy.png" alt=""><span class="pg">06</span></div>
         <div class="c-body">
           <p class="kick"><b>Why Hongik 04</b>세계와 연결된 전공</p>
           <h2>DESIS Lab으로<br>세계와 함께 연구합니다</h2>
@@ -205,23 +208,26 @@ h2{font-size:74px}
 
       <!-- 07 FACULTY -->
       <section class="card">
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt=""><span class="pg">07</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-navy.png" alt=""><span class="pg">07</span></div>
         <div class="c-body">
           <p class="kick"><b>Faculty</b>교수진</p>
-          <h2 style="font-size:64px">서로 다른 전문 분야가<br>하나의 공공 의제를 다룹니다</h2>
+          <h2 style="font-size:60px">서로 다른 전문 분야가<br>하나의 공공 의제를 다룹니다</h2>
           <div class="fac">
             <div><img src="images/fac-jungyoonchun.jpg" alt=""><b>정윤천</b><span>주임교수 · 건축이론</span></div>
             <div><img src="images/fac-kimjuyeon.jpg" alt=""><b>김주연</b><span>공간디자인</span></div>
             <div><img src="images/fac-ohseonghun.jpg" alt=""><b>오성훈</b><span>도시설계 · 보행</span></div>
             <div><img src="images/fac-leehyunsung.jpg" alt=""><b>이현성</b><span>Landscape Urbanism</span></div>
+            <div><img src="images/fac-jangyoungho.jpg" alt=""><b>장영호</b><span>건축 · 도시재생</span></div>
+            <div><img src="images/fac-chungjaehee.jpg" alt=""><b>정재희</b><span>서비스디자인</span></div>
+            <div><img src="images/fac-kwonsoonyeop.jpg" alt=""><b>권순엽</b><span>건축공학 · 겸임</span></div>
+            <div class="fac-more"><strong>7</strong><em>공간 · 도시 · 조경<br>건축 · 이론 · 서비스</em></div>
           </div>
-          <p class="lead" style="font-size:26px;margin-top:22px">장영호(건축) · 정재희(산업·서비스디자인) · 권순엽(건축공학) 교수 함께</p>
         </div>
       </section>
 
       <!-- 08 CURRICULUM -->
       <section class="card">
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt=""><span class="pg">08</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-navy.png" alt=""><span class="pg">08</span></div>
         <div class="c-body">
           <p class="kick"><b>Curriculum</b>과정 안내</p>
           <h2>실무형 석사,<br>연구형 박사</h2>
@@ -237,7 +243,7 @@ h2{font-size:74px}
       <!-- 09 OUTSIDE CLASS -->
       <section class="card dark">
         <div class="photo-bg"><img src="images/series-hall.jpg" alt=""></div>
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt=""><span class="pg">09</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-white.png" alt=""><span class="pg">09</span></div>
         <div class="c-body" style="justify-content:flex-end;padding-bottom:36px">
           <p class="kick"><b>Beyond Class</b>공공의제 세미나</p>
           <h2>2020년부터 이어 온<br><span style="color:var(--sky-light)">37개</span>의 공공의제</h2>
@@ -248,7 +254,7 @@ h2{font-size:74px}
 
       <!-- 10 WHO -->
       <section class="card">
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt=""><span class="pg">10</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-navy.png" alt=""><span class="pg">10</span></div>
         <div class="c-body">
           <p class="kick"><b>Who</b>누가 지원하나요?</p>
           <h2>디자인 전공자가<br>아니어도 괜찮습니다</h2>
@@ -260,7 +266,7 @@ h2{font-size:74px}
 
       <!-- 11 SCHEDULE -->
       <section class="card">
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt=""><span class="pg">11</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-navy.png" alt=""><span class="pg">11</span></div>
         <div class="c-body">
           <p class="kick"><b>2027 전기</b>대학원 신입생 모집 일정</p>
           <h2>지금 지원하세요</h2>
@@ -277,7 +283,7 @@ h2{font-size:74px}
       <!-- 12 CONTACT -->
       <section class="card dark">
         <div class="photo-bg"><img src="images/people-group.jpg" alt=""></div>
-        <div class="c-top"><img src="images/logo-hongik-pd.png" alt=""><span class="pg">12</span></div>
+        <div class="c-top"><img src="images/logo-hongik-pd-white.png" alt=""><span class="pg">12</span></div>
         <div class="c-body" style="justify-content:flex-end;padding-bottom:30px">
           <p class="kick"><b>Contact</b>입학 문의</p>
           <h2>공공의 내일을<br>함께 디자인할 당신을<br>기다립니다</h2>
