@@ -79,7 +79,14 @@ h2{font-size:74px}
 .photo-bg{position:absolute;inset:0;z-index:0}
 .photo-bg img{width:100%;height:100%;object-fit:cover}
 .photo-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,8,36,.72) 0%,rgba(4,8,36,.35) 38%,rgba(4,8,36,.94) 78%)}
-.card > *:not(.photo-bg){position:relative;z-index:1}
+.card > *:not(.photo-bg):not(.soft-bg){position:relative;z-index:1}
+/* soft photo background for light cards */
+.soft-bg{position:absolute;inset:0;z-index:0}
+.soft-bg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35) saturate(.9);opacity:.8}
+.soft-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#F5F3EE 0%,rgba(245,243,238,.96) 30%,rgba(245,243,238,.78) 55%,rgba(245,243,238,.42) 100%)}
+.soft .chips span{background:rgba(236,233,225,.92)}
+.soft .rows li{background:rgba(245,243,238,.82)}
+.soft .two > div{background:rgba(245,243,238,.84)}
 
 /* components */
 .rows{list-style:none;border-top:3px solid var(--ink);margin-top:40px}
@@ -142,7 +149,8 @@ h2{font-size:74px}
       </section>
 
       <!-- 02 WHAT -->
-      <section class="card">
+      <section class="card soft">
+        <div class="soft-bg"><img src="images/proj-janeswalk.jpg" alt="" style="object-position:center 85%"></div>
         <div class="c-top"><span class="c-logo">홍익대학교 <b>공공디자인 전공</b></span><span class="pg">02</span></div>
         <div class="c-body">
           <p class="kick"><b>Q.</b>공공디자인이란?</p>
@@ -154,7 +162,8 @@ h2{font-size:74px}
       </section>
 
       <!-- 03 WHY 1: research becomes reality -->
-      <section class="card">
+      <section class="card soft">
+        <div class="soft-bg"><img src="images/proj-station2.jpg" alt=""></div>
         <div class="c-top"><span class="c-logo">홍익대학교 <b>공공디자인 전공</b></span><span class="pg">03</span></div>
         <div class="c-body">
           <p class="kick"><b>Why Hongik 01</b>연구가 현실이 되는 곳</p>
@@ -229,7 +238,8 @@ h2{font-size:74px}
       </section>
 
       <!-- 08 CURRICULUM -->
-      <section class="card">
+      <section class="card soft">
+        <div class="soft-bg"><img src="images/edu-seminar2.jpg" alt=""></div>
         <div class="c-top"><span class="c-logo">홍익대학교 <b>공공디자인 전공</b></span><span class="pg">08</span></div>
         <div class="c-body">
           <p class="kick"><b>Curriculum</b>과정 안내</p>
@@ -256,7 +266,8 @@ h2{font-size:74px}
       </section>
 
       <!-- 10 WHO -->
-      <section class="card">
+      <section class="card soft">
+        <div class="soft-bg"><img src="images/people-festival.jpg" alt=""></div>
         <div class="c-top"><span class="c-logo">홍익대학교 <b>공공디자인 전공</b></span><span class="pg">10</span></div>
         <div class="c-body">
           <p class="kick"><b>Who</b>누가 지원하나요?</p>
@@ -268,7 +279,8 @@ h2{font-size:74px}
       </section>
 
       <!-- 11 SCHEDULE -->
-      <section class="card">
+      <section class="card soft">
+        <div class="soft-bg"><img src="images/rc-building.jpg" alt=""></div>
         <div class="c-top"><span class="c-logo">홍익대학교 <b>공공디자인 전공</b></span><span class="pg">11</span></div>
         <div class="c-body">
           <p class="kick"><b>2027 전기</b>대학원 신입생 모집 일정</p>
@@ -279,7 +291,7 @@ h2{font-size:74px}
             <li><b>전형</b><span>11.14(토) – 11.15(일)<small>서울캠퍼스</small></span></li>
             <li><b>합격 발표</b><span>12.7(월) 18시 예정</span></li>
           </ul>
-          <p class="lead" style="font-size:22px;margin-top:22px;color:var(--mute)">※ 세부 전형과 지원 자격은 홍익대학교 2027학년도 전기 대학원 모집요강을 확인해 주세요.</p>
+          <p class="lead" style="font-size:22px;margin-top:22px;color:var(--ink-2);background:rgba(245,243,238,.88);padding:10px 14px;align-self:flex-start">※ 세부 전형과 지원 자격은 홍익대학교 2027학년도 전기 대학원 모집요강을 확인해 주세요.</p>
         </div>
       </section>
 
