@@ -301,7 +301,6 @@ header.site.solid{background:var(--accent-dark);color:#fff}
 .adm-card li b{opacity:.75;font-weight:600}
 .proc{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:64px;counter-reset:s}
 .proc div{padding:24px 22px;border-top:3px solid var(--ink);position:relative}
-.proc div::before{counter-increment:s;content:"0" counter(s);font-size:13px;font-weight:800;color:var(--accent)}
 .proc h4{font-size:18px;margin:6px 0 6px;letter-spacing:-.02em}
 .proc p{font-size:14px;color:var(--ink-2)}
 .faq-wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:56px;margin-top:96px}
@@ -428,7 +427,7 @@ body.modal-open{overflow:hidden}
 .rcs-split{grid-template-columns:1fr;grid-template-rows:auto 1fr;gap:26px}
 .rcs-split .rcs-lead{margin-bottom:0;max-width:820px}
 .rcs-list{list-style:none;border-top:2px solid var(--ink);align-self:start}
-.rcs-list li{display:grid;grid-template-columns:60px 1fr;padding:15px 0;border-bottom:1px solid var(--line);font-size:18px;font-weight:600}
+.rcs-list li{padding:15px 0;border-bottom:1px solid var(--line);font-size:18px;font-weight:600}
 .rcs-list b{color:var(--sky)}
 .rcs-flow3{display:grid;grid-template-columns:1fr 1fr 1fr;align-self:start;border-top:2px solid var(--ink)}
 .rcs-flow3 div{padding:22px 22px 24px 0;position:relative}
@@ -675,10 +674,10 @@ body.modal-open{overflow:hidden}
     </div>
 
     <div class="features rv">
-      <div class="feature"><b>01</b><h3>연구와 실천의 연결</h3><p>수업 연구가 연구센터를 거쳐 지자체·공공기관과의 실제 프로젝트로 이어집니다.</p></div>
-      <div class="feature"><b>02</b><h3>증거 기반 디자인</h3><p>설치 전후를 비교해 측정하는 준실험 설계로, 디자인의 사회적 효과를 숫자로 확인합니다.</p></div>
-      <div class="feature"><b>03</b><h3>거버넌스 중심</h3><p>정부·지자체·기업·시민을 잇는 PDG(Public Design Governance) 모델로 UNESCO ESD 인증을 받았습니다.</p></div>
-      <div class="feature"><b>04</b><h3>국제 네트워크</h3><p>DESIS Network, 국제공공디자인포럼 IPDF, 대만·중국·일본·프랑스 파트너와 교류합니다.</p></div>
+      <div class="feature"><h3>연구와 실천의 연결</h3><p>수업 연구가 연구센터를 거쳐 지자체·공공기관과의 실제 프로젝트로 이어집니다.</p></div>
+      <div class="feature"><h3>증거 기반 디자인</h3><p>설치 전후를 비교해 측정하는 준실험 설계로, 디자인의 사회적 효과를 숫자로 확인합니다.</p></div>
+      <div class="feature"><h3>거버넌스 중심</h3><p>정부·지자체·기업·시민을 잇는 PDG(Public Design Governance) 모델로 UNESCO ESD 인증을 받았습니다.</p></div>
+      <div class="feature"><h3>국제 네트워크</h3><p>DESIS Network, 국제공공디자인포럼 IPDF, 대만·중국·일본·프랑스 파트너와 교류합니다.</p></div>
     </div>
 
     <div class="cycle rv">
@@ -686,12 +685,12 @@ body.modal-open{overflow:hidden}
       <h3 class="h-sec">홍익대 공공디자인의 6대 전략</h3>
       <p class="lead">의제를 발견하고, 방법을 연구하고, 현장에서 실험하고, 사람과 기관을 연결하고, 다음 세대를 교육하고, 성과를 사회로 확산합니다. 확산된 성과는 다시 새로운 의제가 됩니다.</p>
       <div class="steps6">
-        <div class="step"><span class="n">01</span><h4>Discover</h4><span class="ko">발견</span><p>포럼·페스티벌·뉴스레터로 아직 이름 없는 사회문제를 먼저 포착합니다.</p></div>
-        <div class="step"><span class="n">02</span><h4>Research</h4><span class="ko">연구</span><p>결과물이 아닌 문제해결의 방법론을 연구합니다.</p></div>
-        <div class="step"><span class="n">03</span><h4>Experiment</h4><span class="ko">실험</span><p>실제 도시와 일상에서 디자인의 효과를 검증합니다.</p></div>
-        <div class="step"><span class="n">04</span><h4>Connect</h4><span class="ko">연결</span><p>공공·민간·시민·학계의 협력 구조를 설계합니다.</p></div>
-        <div class="step"><span class="n">05</span><h4>Educate</h4><span class="ko">교육</span><p>차세대 전문가와 공공디자인 행정가를 기릅니다.</p></div>
-        <div class="step"><span class="n">06</span><h4>Share</h4><span class="ko">확산</span><p>포럼·출판·아카이브로 성과를 사회에 돌려줍니다.</p></div>
+        <div class="step"><h4>Discover</h4><span class="ko">발견</span><p>포럼·페스티벌·뉴스레터로 아직 이름 없는 사회문제를 먼저 포착합니다.</p></div>
+        <div class="step"><h4>Research</h4><span class="ko">연구</span><p>결과물이 아닌 문제해결의 방법론을 연구합니다.</p></div>
+        <div class="step"><h4>Experiment</h4><span class="ko">실험</span><p>실제 도시와 일상에서 디자인의 효과를 검증합니다.</p></div>
+        <div class="step"><h4>Connect</h4><span class="ko">연결</span><p>공공·민간·시민·학계의 협력 구조를 설계합니다.</p></div>
+        <div class="step"><h4>Educate</h4><span class="ko">교육</span><p>차세대 전문가와 공공디자인 행정가를 기릅니다.</p></div>
+        <div class="step"><h4>Share</h4><span class="ko">확산</span><p>포럼·출판·아카이브로 성과를 사회에 돌려줍니다.</p></div>
       </div>
       <p class="cycle-note">↻ Share에서 다시 Discover로. 공공디자인연구센터 비전 「디자인을 수단으로 공공가치를 생성하는 가치지능(Value Intelligence)」</p>
     </div>
@@ -936,7 +935,7 @@ body.modal-open{overflow:hidden}
             <h3>공공디자인연구센터<br>세미나 시리즈</h3>
             <p class="series-desc">2020년부터 주기적으로 공공디자인이 지금 다뤄야 할 의제를 발제하고 토론합니다. 돌봄, 안전, 기후, AI, 시민주도까지 37개의 주제를 지속적으로 이어가며, 사회를 향해 공공의제를 발신하고 있습니다.</p>
             <div class="series-stats"><div><strong>37</strong><span>세미나 주제</span></div><div><strong>7년</strong><span>2020–2026 지속</span></div><div><strong>R1310</strong><span>홍문관</span></div></div>
-            <ul class="series-recent"><li><span>37</span>시민참여를 넘어 시민주도로_Citizen-Led Public Design</li><li><span>36</span>전술적 도시주의 이후_Tactical Urbanism and Beyond</li><li><span>35</span>DESIGNOMICS: 공공디자인의 성과는 어떻게 측정되는가?</li><li><span>34</span>비인간 존재와 공존하는 도시_More-than-Human Design</li></ul>
+            <ul class="series-recent"><li>시민참여를 넘어 시민주도로_Citizen-Led Public Design</li><li>전술적 도시주의 이후_Tactical Urbanism and Beyond</li><li>DESIGNOMICS: 공공디자인의 성과는 어떻게 측정되는가?</li><li>비인간 존재와 공존하는 도시_More-than-Human Design</li></ul>
             <span class="series-cta">37개 주제 전체 보기 <b>→</b></span>
           </div>
         </button>
@@ -949,43 +948,43 @@ body.modal-open{overflow:hidden}
           <button class="sm-close" type="button" aria-label="닫기">×</button>
         </div>
         <ol class="sm-list">
-          <li><span>01</span>사회문제와 공공디자인</li>
-          <li><span>02</span>지역 공공디자인 진흥계획과 확장성</li>
-          <li><span>03</span>공동체 디자인과 신경심리학적 소고</li>
-          <li><span>04</span>무엇이 ‘행복한 도시’를 만드는가?</li>
-          <li><span>05</span>Public Spaces &amp; Life during COVID19</li>
-          <li><span>06</span>X공공디자인</li>
-          <li><span>07</span>P.D.M _ Public Design Movement</li>
-          <li><span>08</span>점증적 공공디자인_옥상실험 시리즈</li>
-          <li><span>09</span>공공디자인의 확장에 관한 재고</li>
-          <li><span>10</span>Design X Socio-Value &amp; Effect</li>
-          <li><span>11</span>공공디자인의 확장을 위한 두 가지 관점</li>
-          <li><span>12</span>공공공간 사용성 향상을 위한 초세대디자인</li>
-          <li><span>13</span>Grafting_Activism</li>
-          <li><span>14</span>사회실험 디자인 프로젝트에 대한 재고</li>
-          <li><span>15</span>공공디자인 관점의 일본 공공공간 분석</li>
-          <li><span>16</span>사회적 약자 동행을 위한 공공디자인</li>
-          <li><span>17</span>Neuro, Social, Prescribing, Design</li>
-          <li><span>18</span>돌봄도시와 공공디자인_Care-Centered Public Design</li>
-          <li><span>19</span>기후위기 시대의 공공공간과 도시 회복탄력성</li>
-          <li><span>20</span>행동과학으로 읽는 공공디자인</li>
-          <li><span>21</span>도시의 외로움과 사회적 연결을 위한 디자인</li>
-          <li><span>22</span>공공디자인과 커먼즈_Urban Commons by Design</li>
-          <li><span>23</span>일상의 안전을 설계하다_Everyday Safety Design</li>
-          <li><span>24</span>보이지 않는 장벽_Invisible Barriers in Public Space</li>
-          <li><span>25</span>감각친화도시_Sensory-Friendly Urban Design</li>
-          <li><span>26</span>어린이의 시선으로 다시 보는 도시</li>
-          <li><span>27</span>초고령사회와 공공디자인의 새로운 역할</li>
-          <li><span>28</span>야간도시의 경험과 공공디자인_Night-Time Urbanism</li>
-          <li><span>29</span>공공공간의 환대성_Hospitality of Public Space</li>
-          <li><span>30</span>도시의 틈과 잉여공간을 활용하는 점진적 디자인</li>
-          <li><span>31</span>데이터로 진단하고 실험으로 검증하는 공공디자인</li>
-          <li><span>32</span>AI 시대의 공공디자인_Public Design after AI</li>
-          <li><span>33</span>기후불평등과 공간정의_Climate Justice by Design</li>
-          <li><span>34</span>비인간 존재와 공존하는 도시_More-than-Human Design</li>
-          <li><span>35</span>DESIGNOMICS: 공공디자인의 성과는 어떻게 측정되는가?</li>
-          <li><span>36</span>전술적 도시주의 이후_Tactical Urbanism and Beyond</li>
-          <li><span>37</span>시민참여를 넘어 시민주도로_Citizen-Led Public Design</li>
+          <li>사회문제와 공공디자인</li>
+          <li>지역 공공디자인 진흥계획과 확장성</li>
+          <li>공동체 디자인과 신경심리학적 소고</li>
+          <li>무엇이 ‘행복한 도시’를 만드는가?</li>
+          <li>Public Spaces &amp; Life during COVID19</li>
+          <li>X공공디자인</li>
+          <li>P.D.M _ Public Design Movement</li>
+          <li>점증적 공공디자인_옥상실험 시리즈</li>
+          <li>공공디자인의 확장에 관한 재고</li>
+          <li>Design X Socio-Value &amp; Effect</li>
+          <li>공공디자인의 확장을 위한 두 가지 관점</li>
+          <li>공공공간 사용성 향상을 위한 초세대디자인</li>
+          <li>Grafting_Activism</li>
+          <li>사회실험 디자인 프로젝트에 대한 재고</li>
+          <li>공공디자인 관점의 일본 공공공간 분석</li>
+          <li>사회적 약자 동행을 위한 공공디자인</li>
+          <li>Neuro, Social, Prescribing, Design</li>
+          <li>돌봄도시와 공공디자인_Care-Centered Public Design</li>
+          <li>기후위기 시대의 공공공간과 도시 회복탄력성</li>
+          <li>행동과학으로 읽는 공공디자인</li>
+          <li>도시의 외로움과 사회적 연결을 위한 디자인</li>
+          <li>공공디자인과 커먼즈_Urban Commons by Design</li>
+          <li>일상의 안전을 설계하다_Everyday Safety Design</li>
+          <li>보이지 않는 장벽_Invisible Barriers in Public Space</li>
+          <li>감각친화도시_Sensory-Friendly Urban Design</li>
+          <li>어린이의 시선으로 다시 보는 도시</li>
+          <li>초고령사회와 공공디자인의 새로운 역할</li>
+          <li>야간도시의 경험과 공공디자인_Night-Time Urbanism</li>
+          <li>공공공간의 환대성_Hospitality of Public Space</li>
+          <li>도시의 틈과 잉여공간을 활용하는 점진적 디자인</li>
+          <li>데이터로 진단하고 실험으로 검증하는 공공디자인</li>
+          <li>AI 시대의 공공디자인_Public Design after AI</li>
+          <li>기후불평등과 공간정의_Climate Justice by Design</li>
+          <li>비인간 존재와 공존하는 도시_More-than-Human Design</li>
+          <li>DESIGNOMICS: 공공디자인의 성과는 어떻게 측정되는가?</li>
+          <li>전술적 도시주의 이후_Tactical Urbanism and Beyond</li>
+          <li>시민참여를 넘어 시민주도로_Citizen-Led Public Design</li>
         </ol>
         <div class="sm-foot">
           <span>서울특별시 마포구 와우산로 94 홍문관 1310호 · 02-320-1237</span>
@@ -1193,11 +1192,11 @@ body.modal-open{overflow:hidden}
           <div class="rcs-text wide"><p class="rcs-kicker"><b>About</b> 2019 개소</p><h3>공공디자인의 학문적 연구를<br>사회에 실현하는 플랫폼</h3>
             <p class="rcs-lead">공공디자인 계획, 공공 공간·시설·시각 디자인, 공공디자인 행정과 정책, 문화전략 전반에 걸쳐 기초자료 연구와 디자인 연구개발을 수행하고, 공공디자인의 발전적 미래에 공헌하는 것을 목적으로 합니다.</p></div>
           <ol class="rcs-list">
-            <li><b>01</b>공공디자인에 관한 학문적 연구</li>
-            <li><b>02</b>공공디자인의 정책 및 전략 연구</li>
-            <li><b>03</b>공공디자인에 관한 전문 교육 및 세미나</li>
-            <li><b>04</b>기획·조사·분석·개발·자문 등 진흥에 관련된 연구</li>
-            <li><b>05</b>센터의 목적을 달성하는 데 필요한 연구와 사업</li>
+            <li>공공디자인에 관한 학문적 연구</li>
+            <li>공공디자인의 정책 및 전략 연구</li>
+            <li>공공디자인에 관한 전문 교육 및 세미나</li>
+            <li>기획·조사·분석·개발·자문 등 진흥에 관련된 연구</li>
+            <li>센터의 목적을 달성하는 데 필요한 연구와 사업</li>
           </ol>
         </section>
         <section class="rcs-slide rcs-split">
@@ -1224,36 +1223,36 @@ body.modal-open{overflow:hidden}
           <div class="rcs-text wide"><p class="rcs-kicker"><b>Vision</b> Six Strategies</p><h3>여섯 개의 전략이 하나의 순환으로</h3>
             <p class="rcs-lead">확산된 성과가 다시 새로운 의제의 발견으로 이어집니다.</p></div>
           <ol class="rcs-cycle">
-            <li><b>01</b><em>Discover</em>발견<span>무엇을 다뤄야 하는가</span></li>
-            <li><b>02</b><em>Research</em>연구<span>어떻게 풀 것인가</span></li>
-            <li><b>03</b><em>Experiment</em>실험<span>실제로 작동하는가</span></li>
-            <li><b>04</b><em>Connect</em>연결<span>누구와 함께 하는가</span></li>
-            <li><b>05</b><em>Educate</em>교육<span>누가 이어받는가</span></li>
-            <li><b>06</b><em>Share</em>확산<span>어떻게 남기고 퍼뜨리는가</span></li>
+            <li><em>Discover</em>발견<span>무엇을 다뤄야 하는가</span></li>
+            <li><em>Research</em>연구<span>어떻게 풀 것인가</span></li>
+            <li><em>Experiment</em>실험<span>실제로 작동하는가</span></li>
+            <li><em>Connect</em>연결<span>누구와 함께 하는가</span></li>
+            <li><em>Educate</em>교육<span>누가 이어받는가</span></li>
+            <li><em>Share</em>확산<span>어떻게 남기고 퍼뜨리는가</span></li>
           </ol>
         </section>
         <section class="rcs-slide ">
-          <div class="rcs-text"><p class="rcs-kicker"><b>01</b> Discover · 발견</p><h3>사회가 요구하는<br>새로운 공공의제를 발견한다</h3><p class="rcs-lead">아직 이름 붙여지지 않은 사회문제를 공공디자인의 언어로 먼저 포착하고 질문을 던집니다.</p><ul class="rcs-grid"><li><b>PDF X</b><span>주제 집중형 포럼</span></li><li><b>IPDF</b><span>한·중·일 국제공공디자인포럼</span></li><li><b>진흥포럼</b><span>정책 의제 · 행정 네트워크</span></li><li><b>페스티벌</b><span>대한민국 공공디자인 페스티벌</span></li><li><b>의제집</b><span>Public Design Agenda</span></li><li><b>뉴스레터</b><span>The Public Design 365</span></li></ul></div>
+          <div class="rcs-text"><p class="rcs-kicker">Discover · 발견</p><h3>사회가 요구하는<br>새로운 공공의제를 발견한다</h3><p class="rcs-lead">아직 이름 붙여지지 않은 사회문제를 공공디자인의 언어로 먼저 포착하고 질문을 던집니다.</p><ul class="rcs-grid"><li><b>PDF X</b><span>주제 집중형 포럼</span></li><li><b>IPDF</b><span>한·중·일 국제공공디자인포럼</span></li><li><b>진흥포럼</b><span>정책 의제 · 행정 네트워크</span></li><li><b>페스티벌</b><span>대한민국 공공디자인 페스티벌</span></li><li><b>의제집</b><span>Public Design Agenda</span></li><li><b>뉴스레터</b><span>The Public Design 365</span></li></ul></div>
           <figure class="rcs-img"><img src="images/rc-pdfx.jpg" alt="The Public Design Forum X" loading="lazy"><figcaption>The Public Design Forum X</figcaption></figure>
         </section>
         <section class="rcs-slide ">
-          <div class="rcs-text"><p class="rcs-kicker"><b>02</b> Research · 연구</p><h3>결과물이 아니라<br>문제해결의 방법을 연구한다</h3><p class="rcs-lead">혁신의 결과물이 아니라, 혁신을 실현하게 만드는 방법을 연구합니다.</p><ul class="rcs-grid"><li><b>정책 · 제도</b><span>진흥계획 · 기본계획</span></li><li><b>사회문제해결</b><span>안전 · 고립 · 갈등 · 고령화</span></li><li><b>안전 R&amp;D</b><span>K-지하고속도로 · 산업안전디자인</span></li><li><b>건강 · 복지</b><span>사회적 처방 · 녹색 처방</span></li><li><b>공공매체</b><span>KTX 역사 공공매체 마스터플랜</span></li><li><b>진흥기관 연계</b><span>KCDF · KICT · AURI 등</span></li></ul></div>
+          <div class="rcs-text"><p class="rcs-kicker">Research · 연구</p><h3>결과물이 아니라<br>문제해결의 방법을 연구한다</h3><p class="rcs-lead">혁신의 결과물이 아니라, 혁신을 실현하게 만드는 방법을 연구합니다.</p><ul class="rcs-grid"><li><b>정책 · 제도</b><span>진흥계획 · 기본계획</span></li><li><b>사회문제해결</b><span>안전 · 고립 · 갈등 · 고령화</span></li><li><b>안전 R&amp;D</b><span>K-지하고속도로 · 산업안전디자인</span></li><li><b>건강 · 복지</b><span>사회적 처방 · 녹색 처방</span></li><li><b>공공매체</b><span>KTX 역사 공공매체 마스터플랜</span></li><li><b>진흥기관 연계</b><span>KCDF · KICT · AURI 등</span></li></ul></div>
           <figure class="rcs-img"><img src="images/rc-research.jpg" alt="서울시 사회문제해결디자인 기본계획 2024–2028" loading="lazy"><figcaption>서울시 사회문제해결디자인 기본계획 2024–2028</figcaption></figure>
         </section>
         <section class="rcs-slide ">
-          <div class="rcs-text"><p class="rcs-kicker"><b>03</b> Experiment · 실험</p><h3>실제 도시와 일상에서<br>디자인을 실험하고 검증한다</h3><p class="rcs-lead">'Design as Nudge' — 규제가 아니라 디자인적 개입으로 행동 변화를 유도하고, 실제 공간에서 효과를 관찰합니다.</p><div class="rcs-bigstat"><strong>11 → 34</strong><span>The Public Sticker, SRT 수서역<br>설치 전후 이용 약 3배 증가</span></div><ul class="rcs-grid"><li><b>공공디자인 실험실</b><span>흡연공간 · 멘탈케어 · 바이오필릭</span></li><li><b>Jane’s Walk Seoul</b><span>시민참여형 도보 관찰</span></li><li><b>Park(ing) Day</b><span>일시적 도시 공간 전환</span></li><li><b>공심이</b><span>Public NPO Testbed</span></li></ul></div>
+          <div class="rcs-text"><p class="rcs-kicker">Experiment · 실험</p><h3>실제 도시와 일상에서<br>디자인을 실험하고 검증한다</h3><p class="rcs-lead">'Design as Nudge' — 규제가 아니라 디자인적 개입으로 행동 변화를 유도하고, 실제 공간에서 효과를 관찰합니다.</p><div class="rcs-bigstat"><strong>11 → 34</strong><span>The Public Sticker, SRT 수서역<br>설치 전후 이용 약 3배 증가</span></div><ul class="rcs-grid"><li><b>공공디자인 실험실</b><span>흡연공간 · 멘탈케어 · 바이오필릭</span></li><li><b>Jane’s Walk Seoul</b><span>시민참여형 도보 관찰</span></li><li><b>Park(ing) Day</b><span>일시적 도시 공간 전환</span></li><li><b>공심이</b><span>Public NPO Testbed</span></li></ul></div>
           <figure class="rcs-img"><img src="images/proj-sticker-data.jpg" alt="공공디자인 실험실 ‘The Public Sticker’" loading="lazy"><figcaption>공공디자인 실험실 ‘The Public Sticker’</figcaption></figure>
         </section>
         <section class="rcs-slide ">
-          <div class="rcs-text"><p class="rcs-kicker"><b>04</b> Connect · 연결</p><h3>공공 · 민간 · 시민 · 학계의<br>협력 구조를 만든다</h3><p class="rcs-lead">정부–지자체–공공기관–대학–민간–시민사회를 잇는 거버넌스를 설계합니다. 이론적 축은 Public Design Governance(PDG)입니다.</p><ul class="rcs-grid"><li><b>UNESCO ESD</b><span>PDG 모델 인증 · 재인증</span></li><li><b>ESG / CSR</b><span>현대백화점면세점 · SRT</span></li><li><b>국내 MOU</b><span>KCDF · KICT · 수원시 등</span></li><li><b>시민사회</b><span>매니페스토본부 · 사회공헌센터</span></li><li><b>해외 파트너</b><span>대만 TDRI · 중국 4개교</span></li><li><b>국제 네트워크</b><span>GK디자인 · Cabanon Vertical · DESIS</span></li></ul></div>
+          <div class="rcs-text"><p class="rcs-kicker">Connect · 연결</p><h3>공공 · 민간 · 시민 · 학계의<br>협력 구조를 만든다</h3><p class="rcs-lead">정부–지자체–공공기관–대학–민간–시민사회를 잇는 거버넌스를 설계합니다. 이론적 축은 Public Design Governance(PDG)입니다.</p><ul class="rcs-grid"><li><b>UNESCO ESD</b><span>PDG 모델 인증 · 재인증</span></li><li><b>ESG / CSR</b><span>현대백화점면세점 · SRT</span></li><li><b>국내 MOU</b><span>KCDF · KICT · 수원시 등</span></li><li><b>시민사회</b><span>매니페스토본부 · 사회공헌센터</span></li><li><b>해외 파트너</b><span>대만 TDRI · 중국 4개교</span></li><li><b>국제 네트워크</b><span>GK디자인 · Cabanon Vertical · DESIS</span></li></ul></div>
           <figure class="rcs-img"><img src="images/rc-connect.jpg" alt="한중 공공디자인 워크숍" loading="lazy"><figcaption>한중 공공디자인 워크숍</figcaption></figure>
         </section>
         <section class="rcs-slide ">
-          <div class="rcs-text"><p class="rcs-kicker"><b>05</b> Educate · 교육</p><h3>차세대 공공디자인 전문가와<br>행정 역량을 육성한다</h3><p class="rcs-lead">‘프로젝트를 소비하는 과정’이 아니라 ‘연구자·전문가로 성장하는 과정’을 만듭니다.</p><ul class="rcs-grid"><li><b>행정가 교육</b><span>수원 · 용인 · 파주 · 강남 · 충남 아카데미</span></li><li><b>직무 교과서</b><span>『공공디자인 전문가 직무 교과서』</span></li><li><b>대학원</b><span>랩 · 논문 세미나 · 학술답사</span></li><li><b>청년 인턴십</b><span>문체부 공공디자인 직무교육</span></li></ul></div>
+          <div class="rcs-text"><p class="rcs-kicker">Educate · 교육</p><h3>차세대 공공디자인 전문가와<br>행정 역량을 육성한다</h3><p class="rcs-lead">‘프로젝트를 소비하는 과정’이 아니라 ‘연구자·전문가로 성장하는 과정’을 만듭니다.</p><ul class="rcs-grid"><li><b>행정가 교육</b><span>수원 · 용인 · 파주 · 강남 · 충남 아카데미</span></li><li><b>직무 교과서</b><span>『공공디자인 전문가 직무 교과서』</span></li><li><b>대학원</b><span>랩 · 논문 세미나 · 학술답사</span></li><li><b>청년 인턴십</b><span>문체부 공공디자인 직무교육</span></li></ul></div>
           <figure class="rcs-img"><img src="images/rc-educate.jpg" alt="‘더 큰 파주’ 도시디자인 역량 강화 교육" loading="lazy"><figcaption>‘더 큰 파주’ 도시디자인 역량 강화 교육</figcaption></figure>
         </section>
         <section class="rcs-slide ">
-          <div class="rcs-text"><p class="rcs-kicker"><b>06</b> Share · 확산</p><h3>연구성과를 포럼 · 출판 ·<br>아카이브로 확산한다</h3><p class="rcs-lead">축적된 성과를 사회로 돌려보내고, 그 결과가 다음 발견의 재료가 되게 합니다.</p><ul class="rcs-grid"><li><b>The Public Design 365</b><span>2020 창간 · 100호 이상</span></li><li><b>전문서적</b><span>『공공디자인으로 안전만들기』</span></li><li><b>Public Design Agenda</b><span>세미나 의제집</span></li><li><b>공공디자인서</b><span>Public Design Almanac 연간 리서치북 기획</span></li></ul></div>
+          <div class="rcs-text"><p class="rcs-kicker">Share · 확산</p><h3>연구성과를 포럼 · 출판 ·<br>아카이브로 확산한다</h3><p class="rcs-lead">축적된 성과를 사회로 돌려보내고, 그 결과가 다음 발견의 재료가 되게 합니다.</p><ul class="rcs-grid"><li><b>The Public Design 365</b><span>2020 창간 · 100호 이상</span></li><li><b>전문서적</b><span>『공공디자인으로 안전만들기』</span></li><li><b>Public Design Agenda</b><span>세미나 의제집</span></li><li><b>공공디자인서</b><span>Public Design Almanac 연간 리서치북 기획</span></li></ul></div>
           <figure class="rcs-img"><img src="images/rc-almanac.jpg" alt="「공공디자인서」 Public Design Almanac" loading="lazy"><figcaption>「공공디자인서」 Public Design Almanac</figcaption></figure>
         </section>
         <section class="rcs-slide rcs-split">
@@ -1307,7 +1306,7 @@ body.modal-open{overflow:hidden}
       <div><p class="f-brand">Design<br>for <em>Public</em>.</p>
         <p style="margin-top:20px">홍익대학교 산업미술대학원 공공디자인전공<br>대학원 디자인공예학과 공공디자인<br>홍익대학교 공공디자인연구센터 · DESIS Lab</p></div>
       <div><h5>바로가기</h5><ul><li><a href="#about">전공 소개</a></li><li><a href="#curriculum">교육과정</a></li><li><a href="#projects">연구·프로젝트</a></li><li><a href="#people">사람들</a></li><li><a href="#news">소식</a></li><li><a href="#admission">입학 안내</a></li></ul></div>
-      <div><h5>연결</h5><ul><li><a href="https://www.instagram.com/hongik_pd/" target="_blank" rel="noopener">공공디자인연구센터 ↗</a></li><li><a href="http://blog.naver.com/hipdcenter" target="_blank" rel="noopener">공공디자인연구센터 Blog ↗</a></li><li><a href="https://desis.hongik.ac.kr" target="_blank" rel="noopener">Hongik DESIS Lab ↗</a></li><li><a href="https://www.instagram.com/hongik_publicdesign/" target="_blank" rel="noopener">Instagram ↗</a></li><li><a href="https://www.hongik.ac.kr" target="_blank" rel="noopener">홍익대학교 ↗</a></li></ul></div>
+      <div><h5>연결</h5><ul><li><a href="https://www.instagram.com/hongik_pd/" target="_blank" rel="noopener">공공디자인연구센터 ↗</a></li><li><a href="http://blog.naver.com/hipdcenter" target="_blank" rel="noopener">공공디자인연구센터 Blog ↗</a></li><li><a href="https://desis.hongik.ac.kr" target="_blank" rel="noopener">Hongik DESIS Lab ↗</a></li><li><a href="https://www.instagram.com/hongik_publicdesign/" target="_blank" rel="noopener">Instagram ↗</a></li><li><a href="https://page.stibee.com/subscriptions/62173" target="_blank" rel="noopener">공공디자인 뉴스레터 ↗</a></li><li><a href="https://www.hongik.ac.kr" target="_blank" rel="noopener">홍익대학교 ↗</a></li></ul></div>
       <div><h5>문의</h5><ul><li>02-320-1237</li><li><a href="mailto:armula@hongik.ac.kr">armula@hongik.ac.kr</a></li><li>서울 마포구 와우산로 94</li></ul></div>
     </div>
     <div class="f-bot"><span>© Hongik University Public Design. All rights reserved.</span><span>Public Design Major, Hongik University</span></div>
