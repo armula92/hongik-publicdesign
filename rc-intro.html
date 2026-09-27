@@ -338,6 +338,14 @@ h1,h2,h3,.step .step-n,.stat .v,.tl-y,.aw .y{letter-spacing:-.02em!important}
 /* 사진·화면 모서리 각지게 */
 .fig,.stage{border-radius:0!important}
 </style>
+<style id="agenda-merge">
+.ag4{display:grid;grid-template-columns:repeat(4,1fr);gap:0 2.4cqw;align-items:start}
+.ag{border-top:1px solid var(--line);padding-top:1.4cqw;min-width:0}
+.ag h3{font-size:1.7cqw;font-weight:700;line-height:1.3;color:var(--ink);letter-spacing:-.02em;margin:0}
+.ag .agn{display:block;font-size:var(--xs);font-weight:700;color:var(--blue);margin:.4cqw 0 .9cqw}
+.ag .bul{gap:.45cqw}
+.ag .bul li{font-size:1.15cqw;line-height:1.4}
+</style>
 </head>
 <body>
 <div class="rail" id="rail"></div>
@@ -663,7 +671,7 @@ h1,h2,h3,.step .step-n,.stat .v,.tl-y,.aw .y{letter-spacing:-.02em!important}
     <div class="split">
       <div class="stack" style="gap:2cqw">
         <div class="eyebrow r">STRATEGY 06 <span class="ko">Share · 확산</span></div>
-        <h2 class="state ink r d1" style="font-size:4.4cqw">그 이름은, <em>공공디자인서</em></h2>
+        <h2 class="state ink r d1" style="font-size:3.5cqw">Annual Research Publication,<br><em>공공디자인서</em></h2>
         <p class="lead r d2" style="max-width:46ch">Public Design Almanac — 흩어진 출판물들을 하나의 연간 리서치북으로 통합하는 신규 계획, 7개 장으로 구성합니다.</p>
         <ol class="items r d3">
           <li class="item"><span class="n">Ⅰ</span><span class="t">Research<span class="d">정책 · 사회문제</span></span></li>
@@ -734,170 +742,44 @@ h1,h2,h3,.step .step-n,.stat .v,.tl-y,.aw .y{letter-spacing:-.02em!important}
   <p class="src">The Public Design Forum X — 발제와 토론의 현장</p>
 </section></div>
 
-<!-- 21 8.1 사회적 약자·돌봄·건강 -->
-<div class="wrap"><section class="stage" aria-label="사회적 약자 · 돌봄 · 건강">
+<!-- 공공의제 묶음: 공공의제 — 사람 · 안전 · 환경 · 기술 -->
+<div class="wrap"><section class="stage" aria-label="공공의제 — 사람 · 안전 · 환경 · 기술">
   <div class="pane">
     <div class="head">
-      <div class="eyebrow r">AGENDA 01 / 08</div>
-      <h2 class="h1 r d1">사회적 약자 · 돌봄 · 건강</h2>
+      <div class="eyebrow r">AGENDA <span class="ko">· 앞으로 다뤄야 할 공공디자인 의제</span></div>
+      <h2 class="h1 r d1">사람 · 안전 · 환경 · 기술</h2>
     </div>
     <div class="body">
-      <div class="split" style="grid-template-columns:1fr 1fr">
-        <ul class="bul tight r d2">
-          <li>공동체 디자인과 신경심리학적 소고</li>
-          <li>사회적 약자 동행을 위한 공공디자인</li>
-          <li>Neuro, Social, Prescribing, Design</li>
-          <li>돌봄도시와 공공디자인 — Care-Centered Public Design</li>
-        </ul>
-        <ul class="bul tight r d3">
-          <li>도시의 외로움과 사회적 연결을 위한 디자인</li>
-          <li>어린이의 시선으로 다시 보는 도시</li>
-          <li>초고령사회와 공공디자인의 새로운 역할</li>
-          <li>무엇이 '행복한 도시'를 만드는가?</li>
-        </ul>
+      <div class="ag4 r d2">
+        <div class="ag"><h3>사회적 약자 · 돌봄 · 건강</h3><span class="agn">8개 의제</span><ul class="bul tight"><li>공동체 디자인과 신경심리학적 소고</li><li>사회적 약자 동행을 위한 공공디자인</li><li>Neuro, Social, Prescribing, Design</li><li>돌봄도시와 공공디자인 — Care-Centered Public Design</li><li>도시의 외로움과 사회적 연결을 위한 디자인</li><li>어린이의 시선으로 다시 보는 도시</li><li>초고령사회와 공공디자인의 새로운 역할</li><li>무엇이 '행복한 도시'를 만드는가?</li></ul></div>
+        <div class="ag"><h3>안전 · 접근성 · 감각환경</h3><span class="agn">4개 의제</span><ul class="bul tight"><li>일상의 안전을 설계하다 — Everyday Safety Design</li><li>보이지 않는 장벽 — Invisible Barriers in Public Space</li><li>감각친화도시 — Sensory-Friendly Urban Design</li><li>공공공간 사용성 향상을 위한 초세대디자인</li></ul></div>
+        <div class="ag"><h3>기후 · 환경 · 회복탄력성</h3><span class="agn">3개 의제</span><ul class="bul tight"><li>기후위기 시대의 공공공간과 도시 회복탄력성</li><li>기후불평등과 공간정의 — Climate Justice by Design</li><li>비인간 존재와 공존하는 도시 — More-than-Human Design</li></ul></div>
+        <div class="ag"><h3>데이터 · 기술 · AI</h3><span class="agn">4개 의제</span><ul class="bul tight"><li>행동과학으로 읽는 공공디자인</li><li>데이터로 진단하고 실험으로 검증하는 공공디자인</li><li>AI 시대의 공공디자인 — Public Design after AI</li><li>DESIGNOMICS — 공공디자인의 성과는 어떻게 측정되는가?</li></ul></div>
       </div>
     </div>
-    <p class="foot r d4">8개 의제</p>
+    <p class="foot r d4">4개 분야 · 19개 의제</p>
   </div>
 </section></div>
 
-<!-- 22 8.2 안전·접근성·감각환경 -->
-<div class="wrap"><section class="stage" aria-label="안전 · 접근성 · 감각환경">
+<!-- 공공의제 묶음: 공공의제 — 참여 · 공간 · 이론 · 정책 -->
+<div class="wrap"><section class="stage" aria-label="공공의제 — 참여 · 공간 · 이론 · 정책">
   <div class="pane">
     <div class="head">
-      <div class="eyebrow r">AGENDA 02 / 08</div>
-      <h2 class="h1 r d1">안전 · 접근성 · 감각환경</h2>
+      <div class="eyebrow r">AGENDA <span class="ko">· 앞으로 다뤄야 할 공공디자인 의제</span></div>
+      <h2 class="h1 r d1">참여 · 공간 · 이론 · 정책</h2>
     </div>
     <div class="body">
-      <ul class="bul r d2" style="max-width:60ch">
-        <li>일상의 안전을 설계하다 — Everyday Safety Design</li>
-        <li>보이지 않는 장벽 — Invisible Barriers in Public Space</li>
-        <li>감각친화도시 — Sensory-Friendly Urban Design</li>
-        <li>공공공간 사용성 향상을 위한 초세대디자인</li>
-      </ul>
-    </div>
-    <p class="foot r d3">4개 의제</p>
-  </div>
-</section></div>
-
-<!-- 23 8.3 기후·환경·회복탄력성 -->
-<div class="wrap"><section class="stage" aria-label="기후 · 환경 · 회복탄력성">
-  <div class="pane">
-    <div class="head">
-      <div class="eyebrow r">AGENDA 03 / 08</div>
-      <h2 class="h1 r d1">기후 · 환경 · 회복탄력성</h2>
-    </div>
-    <div class="body">
-      <ul class="bul r d2" style="max-width:60ch">
-        <li>기후위기 시대의 공공공간과 도시 회복탄력성</li>
-        <li>기후불평등과 공간정의 — Climate Justice by Design</li>
-        <li>비인간 존재와 공존하는 도시 — More-than-Human Design</li>
-      </ul>
-    </div>
-    <p class="foot r d3">3개 의제</p>
-  </div>
-</section></div>
-
-<!-- 24 8.4 데이터·기술·AI -->
-<div class="wrap"><section class="stage" aria-label="데이터 · 기술 · AI">
-  <div class="pane">
-    <div class="head">
-      <div class="eyebrow r">AGENDA 04 / 08</div>
-      <h2 class="h1 r d1">데이터 · 기술 · AI</h2>
-    </div>
-    <div class="body">
-      <ul class="bul r d2" style="max-width:62ch">
-        <li>행동과학으로 읽는 공공디자인</li>
-        <li>데이터로 진단하고 실험으로 검증하는 공공디자인</li>
-        <li>AI 시대의 공공디자인 — Public Design after AI</li>
-        <li>DESIGNOMICS — 공공디자인의 성과는 어떻게 측정되는가?</li>
-      </ul>
-    </div>
-    <p class="foot r d3">4개 의제</p>
-  </div>
-</section></div>
-
-<!-- 25 8.5 시민참여·거버넌스·행동주의 -->
-<div class="wrap"><section class="stage" aria-label="시민참여 · 거버넌스 · 행동주의">
-  <div class="pane">
-    <div class="head">
-      <div class="eyebrow r">AGENDA 05 / 08</div>
-      <h2 class="h1 r d1">시민참여 · 거버넌스 · 행동주의</h2>
-    </div>
-    <div class="body">
-      <ul class="bul r d2" style="max-width:60ch">
-        <li>Grafting_Activism</li>
-        <li>공공디자인과 커먼즈 — Urban Commons by Design</li>
-        <li>시민참여를 넘어 시민주도로 — Citizen-Led Public Design</li>
-      </ul>
-    </div>
-    <p class="foot r d3">3개 의제</p>
-  </div>
-</section></div>
-
-<!-- 26 8.6 도시공간·전술적 개입 -->
-<div class="wrap"><section class="stage" aria-label="도시공간 · 전술적 개입">
-  <div class="pane">
-    <div class="head">
-      <div class="eyebrow r">AGENDA 06 / 08</div>
-      <h2 class="h1 r d1">도시공간 · 전술적 개입</h2>
-    </div>
-    <div class="body">
-      <ul class="bul r d2" style="max-width:62ch">
-        <li>점증적 공공디자인 — 옥상실험 시리즈</li>
-        <li>야간도시의 경험과 공공디자인 — Night-Time Urbanism</li>
-        <li>공공공간의 환대성 — Hospitality of Public Space</li>
-        <li>도시의 틈과 잉여공간을 활용하는 점진적 디자인</li>
-        <li>전술적 도시주의 이후 — Tactical Urbanism and Beyond</li>
-      </ul>
-    </div>
-    <p class="foot r d3">5개 의제</p>
-  </div>
-</section></div>
-
-<!-- 27 8.7 이론·방법론·확장 담론 -->
-<div class="wrap"><section class="stage" aria-label="이론 · 방법론 · 확장 담론">
-  <div class="pane">
-    <div class="head">
-      <div class="eyebrow r">AGENDA 07 / 08</div>
-      <h2 class="h1 r d1">이론 · 방법론 · 확장 담론</h2>
-    </div>
-    <div class="body">
-      <div class="split" style="grid-template-columns:1fr 1fr">
-        <ul class="bul tight r d2">
-          <li>사회문제와 공공디자인</li>
-          <li>X공공디자인</li>
-          <li>P.D.M — Public Design Movement</li>
-          <li>공공디자인의 확장에 관한 재고</li>
-        </ul>
-        <ul class="bul tight r d3">
-          <li>Design X Socio-Value &amp; Effect</li>
-          <li>공공디자인의 확장을 위한 두 가지 관점</li>
-          <li>사회실험 디자인 프로젝트에 대한 재고</li>
-        </ul>
+      <div class="ag4 r d2">
+        <div class="ag"><h3>시민참여 · 거버넌스 · 행동주의</h3><span class="agn">3개 의제</span><ul class="bul tight"><li>Grafting_Activism</li><li>공공디자인과 커먼즈 — Urban Commons by Design</li><li>시민참여를 넘어 시민주도로 — Citizen-Led Public Design</li></ul></div>
+        <div class="ag"><h3>도시공간 · 전술적 개입</h3><span class="agn">5개 의제</span><ul class="bul tight"><li>점증적 공공디자인 — 옥상실험 시리즈</li><li>야간도시의 경험과 공공디자인 — Night-Time Urbanism</li><li>공공공간의 환대성 — Hospitality of Public Space</li><li>도시의 틈과 잉여공간을 활용하는 점진적 디자인</li><li>전술적 도시주의 이후 — Tactical Urbanism and Beyond</li></ul></div>
+        <div class="ag"><h3>이론 · 방법론 · 확장 담론</h3><span class="agn">7개 의제</span><ul class="bul tight"><li>사회문제와 공공디자인</li><li>X공공디자인</li><li>P.D.M — Public Design Movement</li><li>공공디자인의 확장에 관한 재고</li><li>Design X Socio-Value &amp; Effect</li><li>공공디자인의 확장을 위한 두 가지 관점</li><li>사회실험 디자인 프로젝트에 대한 재고</li></ul></div>
+        <div class="ag"><h3>정책 · 국제 비교</h3><span class="agn">3개 의제</span><ul class="bul tight"><li>지역 공공디자인 진흥계획과 확장성</li><li>Public Spaces &amp; Life during COVID19</li><li>공공디자인 관점의 일본 공공공간 분석</li></ul></div>
       </div>
     </div>
-    <p class="foot r d4">7개 의제</p>
+    <p class="foot r d4">4개 분야 · 18개 의제</p>
   </div>
 </section></div>
 
-<!-- 28 8.8 정책·국제 비교 -->
-<div class="wrap"><section class="stage" aria-label="정책 · 국제 비교">
-  <div class="pane">
-    <div class="head">
-      <div class="eyebrow r">AGENDA 08 / 08</div>
-      <h2 class="h1 r d1">정책 · 국제 비교</h2>
-    </div>
-    <div class="body">
-      <ul class="bul r d2" style="max-width:62ch">
-        <li>지역 공공디자인 진흥계획과 확장성</li>
-        <li>Public Spaces &amp; Life during COVID19</li>
-        <li>공공디자인 관점의 일본 공공공간 분석</li>
-      </ul>
-    </div>
-    <p class="foot r d3">3개 의제</p>
-  </div>
-</section></div>
 
 <!-- 29 Design for Public -->
 <div class="wrap"><section class="stage on-dark" aria-label="Design for Public">
