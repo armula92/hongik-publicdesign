@@ -488,6 +488,29 @@ body.modal-open{overflow:hidden}
   .rcs-dots{display:none}
 }
 
+
+/* applicant intro (square cards) */
+.nav-ctas{display:flex;gap:8px;align-items:center}
+.nav-intro{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;background:#fff;color:var(--accent-dark);font-weight:800;font-size:14px;white-space:nowrap}
+.nav-intro i{width:7px;height:7px;border-radius:50%;background:var(--sky);animation:anPulse 1.6s ease-in-out infinite}
+.nav-intro em{font-style:normal;font-size:11.5px;font-weight:800;color:#fff;background:var(--sky);padding:2px 6px}
+.nav-intro:hover{background:var(--accent-light)}
+.nav-intro.m{width:100%;justify-content:center;padding:16px;font-size:16px;margin:8px 0 6px;background:var(--accent);color:#fff}
+.ad-modal{border:0;padding:0;margin:auto;background:var(--accent-dark);width:min(calc(100vw - 32px),calc(100vh - 150px));max-width:none;max-height:none;overflow:hidden}
+.ad-modal[open]{display:flex;flex-direction:column;animation:smIn .3s ease}
+.ad-modal::backdrop{background:rgba(4,8,36,.85)}
+.ad-top{display:flex;align-items:center;gap:14px;padding:10px 12px 10px 18px;color:#fff;font-weight:800;font-size:15px}
+.ad-top b{color:var(--accent-light);margin-right:4px}
+.ad-open{margin-left:auto;font-size:13px;font-weight:700;color:var(--accent-pale)}
+.ad-open:hover{color:#fff}
+.ad-close{width:40px;height:40px;font-size:26px;line-height:1;color:#fff}
+.ad-close:focus{outline:none}
+#adFrame{display:block;width:100%;border:0;height:calc(min(calc(100vw - 32px),calc(100vh - 150px)) + 56px);background:var(--accent-dark)}
+@media (max-width:760px){
+  .ad-modal{width:100vw;height:100dvh}
+  #adFrame{flex:1;height:auto}
+}
+
 /* reveal */
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
 .rv.in{opacity:1;transform:none}
@@ -499,7 +522,7 @@ body.modal-open{overflow:hidden}
 
 /* ---------- Responsive ---------- */
 @media (max-width:1080px){
-  .menu,.nav .nav-cta{display:none}
+  .menu,.nav .nav-ctas{display:none}
   .burger{display:block}
   .mobile-menu{display:block;position:fixed;inset:72px 0 0 0;background:var(--paper);color:var(--ink);padding:16px 24px 40px;overflow-y:auto;
     transform:translateX(100%);transition:transform .3s;z-index:49}
@@ -584,12 +607,13 @@ body.modal-open{overflow:hidden}
           <ul class="sub"><li><a href="#admission">모집 안내</a></li><li><a href="#apply">지원 방법</a></li><li><a href="#faq">자주 묻는 질문</a></li></ul></li>
       </ul>
     </nav>
-    <a href="#admission" class="nav-cta">입학 안내</a>
+    <div class="nav-ctas"><a href="#admission" class="nav-cta">입학 안내</a><button type="button" class="nav-intro" data-open-ad><i></i>지원자를 위한 전공소개<em>2027</em></button></div>
     <button class="burger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
+  <button type="button" class="nav-intro m" data-open-ad><i></i>지원자를 위한 전공소개<em>2027</em></button>
   <details><summary>전공 소개</summary><a href="#about">전공 소개</a><a href="#faculty">교수진</a><a href="#location">오시는 길</a></details>
   <details><summary>교육과정</summary><a href="#curriculum">석사·박사 과정</a><a href="#courses">교과목</a><a href="#series">세미나 시리즈</a><a href="#seminars">공공의제 세미나</a></details>
   <details><summary>연구·프로젝트</summary><a href="#research">연구 분야</a><a href="#projects">공공디자인 프로젝트</a><a href="#pubs">논문·출판</a></details>
@@ -1071,6 +1095,7 @@ body.modal-open{overflow:hidden}
       <div class="an-btns">
         <a class="btn an-primary" href="https://www.hongik.ac.kr/kr/admission/notice-military.do?mode=view&amp;articleNo=157298" target="_blank" rel="noopener">모집 공고 보기 ↗</a>
         <a class="btn an-line" href="https://www.hongik.ac.kr/kr/admission/notice-military.do?mode=download&amp;articleNo=157298&amp;attachNo=91780" rel="noopener">모집요강 내려받기 (ZIP)</a>
+        <button type="button" class="btn an-line" data-open-ad>지원자를 위한 전공소개 ▶</button>
       </div>
       <p class="an-note">일정은 공고 기준이며, 세부 전형과 지원 자격은 반드시 모집요강에서 확인해 주세요.</p>
     </div>
@@ -1258,6 +1283,13 @@ body.modal-open{overflow:hidden}
     <div class="rcs-dots" id="rcsDots"></div>
     <button type="button" class="rcs-next" aria-label="다음 슬라이드">다음 →</button>
   </div>
+</dialog>
+
+<dialog id="adModal" class="ad-modal" aria-label="지원자를 위한 전공소개 2027">
+  <div class="ad-top"><span><b>2027</b> 지원자를 위한 전공소개</span>
+    <a class="ad-open" href="admission-2027.html" target="_blank" rel="noopener">새 창으로 ↗</a>
+    <button class="ad-close" type="button" aria-label="닫기">×</button></div>
+  <iframe id="adFrame" title="지원자를 위한 전공소개 카드" data-src="admission-2027.html"></iframe>
 </dialog>
 </main>
 
@@ -1538,6 +1570,21 @@ showYear("2026");
   m.addEventListener('close',()=>document.body.classList.remove('modal-open'));
   document.querySelectorAll('[data-open-rc]').forEach(b=>b.addEventListener('click',()=>{go(0);m.showModal();document.body.classList.add('modal-open')}));
   go(0);
+})();
+
+
+/* applicant intro popup */
+(()=>{
+  const m=document.getElementById('adModal'),f=document.getElementById('adFrame'); if(!m) return;
+  document.querySelectorAll('[data-open-ad]').forEach(b=>b.addEventListener('click',()=>{
+    const mm=document.getElementById('mobileMenu'); if(mm&&mm.classList.contains('open')) document.querySelector('.burger').click();
+    if(!f.getAttribute('src')) f.src=f.dataset.src; else if(f.contentWindow) f.contentWindow.postMessage('reset-admission','*');
+    m.showModal(); document.body.classList.add('modal-open'); setTimeout(()=>{try{f.contentWindow.focus()}catch(e){}},300);
+  }));
+  m.querySelector('.ad-close').onclick=()=>m.close();
+  m.addEventListener('click',e=>{if(e.target===m)m.close()});
+  m.addEventListener('close',()=>document.body.classList.remove('modal-open'));
+  addEventListener('message',e=>{if(e.data==='close-admission')m.close()});
 })();
 
 /* seminar series modal */
