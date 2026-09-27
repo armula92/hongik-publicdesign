@@ -35,10 +35,10 @@ section{padding:110px 0}
 header.site{position:fixed;inset:0 0 auto 0;z-index:50;background:var(--accent-dark);color:#fff}
 header.site.solid{background:var(--accent-dark);color:#fff}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo{display:block;line-height:1}
-.logo-text{font-size:18px;font-weight:700;color:#AEB4C6;white-space:nowrap}
-.logo-text b{font-weight:800;color:#D6DAE4;margin-left:2px}
-.logo:hover .logo-text b{color:#fff}
+.logo{display:flex;align-items:center;gap:10px;color:#fff}
+.logo img{height:36px;width:auto;display:block}
+.logo-name{font-size:16px;font-weight:800;letter-spacing:-.02em;line-height:1.2;white-space:nowrap}
+.logo-name small{display:block;font-size:10.5px;font-weight:600;opacity:.7;letter-spacing:0}
 .menu{display:flex;gap:4px;list-style:none}
 .menu>li{position:relative}
 .menu>li>a{display:block;padding:10px 14px;font-size:15px;font-weight:600;border-radius:0}
@@ -552,7 +552,8 @@ body.modal-open{overflow:hidden}
   .f-top{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
-  .logo-text{font-size:16px}
+  .logo img{height:30px}
+  .logo-name{font-size:14.5px}
   section{padding:76px 0}
   .wrap{padding:0 16px}
   .about-grid,.track-intro,.pubs,.faq-wrap,.adm-top,.loc,.tl-body{grid-template-columns:1fr;gap:32px}
@@ -592,7 +593,7 @@ body.modal-open{overflow:hidden}
 <!-- ================= HEADER ================= -->
 <header class="site" id="top">
   <div class="wrap nav">
-    <a href="#top" class="logo" aria-label="홍익대학교 공공디자인 전공 홈"><span class="logo-text">홍익대학교 <b>공공디자인 전공</b></span></a>
+    <a href="#top" class="logo" aria-label="홍익대학교 공공디자인 전공 홈"><img src="images/logo.png" alt="" width="192" height="158"><span class="logo-name">홍익대학교 공공디자인전공<small>HONGIK PUBLIC DESIGN</small></span></a>
     <nav aria-label="주 메뉴">
       <ul class="menu">
         <li><a href="#about">전공 소개</a>
@@ -654,7 +655,7 @@ body.modal-open{overflow:hidden}
 <section id="about">
   <div class="wrap">
     <div class="sec-head rv">
-      <div><p class="eyebrow">01 · About</p><h2 class="h-sec">전공 소개</h2></div>
+      <div><p class="eyebrow">About</p><h2 class="h-sec">전공 소개</h2></div>
       <span class="num-tag">Since 2018 · 산업미술대학원 / 대학원</span>
     </div>
     <div class="about-grid">
@@ -738,7 +739,7 @@ body.modal-open{overflow:hidden}
 <section id="projects">
   <div class="wrap">
     <div class="sec-head rv">
-      <div><p class="eyebrow">02 · Projects</p><h2 class="h-sec">디자인이 바꾼 것들</h2>
+      <div><p class="eyebrow">Projects</p><h2 class="h-sec">디자인이 바꾼 것들</h2>
       <p class="lead">공공디자인의 결과는 ‘무엇을 만들었나’가 아니라 ‘무엇이 달라졌나’로 말합니다. 각 프로젝트를 사회문제, 디자인 접근, 실제 변화의 순서로 소개합니다.</p></div>
       <div class="flow-legend"><span>사회문제</span><i>→</i><span>디자인 접근</span><i>→</i><span>실제 변화</span></div>
     </div>
@@ -825,7 +826,7 @@ body.modal-open{overflow:hidden}
 <section id="research">
   <div class="wrap">
     <div class="sec-head rv">
-      <div><p class="eyebrow">03 · Research</p><h2 class="h-sec">연구 분야</h2>
+      <div><p class="eyebrow">Research</p><h2 class="h-sec">연구 분야</h2>
       <p class="lead">대학원 학위논문, 교수진의 학술 연구, 정책 연구와 디자인 R&amp;D가 여섯 영역을 가로지릅니다.</p></div>
     </div>
     <div class="areas">
@@ -862,7 +863,7 @@ body.modal-open{overflow:hidden}
 <section id="curriculum" style="background:var(--white)">
   <div class="wrap">
     <div class="sec-head rv">
-      <div><p class="eyebrow">04 · Curriculum</p><h2 class="h-sec">교육과정</h2>
+      <div><p class="eyebrow">Curriculum</p><h2 class="h-sec">교육과정</h2>
       <p class="lead">석사과정은 공공디자인의 기획·정책·실무 역량을, 박사과정은 공공디자인을 이끌 연구자와 리더십을 기릅니다.</p></div>
     </div>
 
@@ -1001,7 +1002,7 @@ body.modal-open{overflow:hidden}
 <section id="people">
   <div class="wrap">
     <div class="sec-head rv">
-      <div><p class="eyebrow">05 · People</p><h2 class="h-sec">사람들</h2>
+      <div><p class="eyebrow">People</p><h2 class="h-sec">사람들</h2>
       <p class="lead">디자이너, 건축가, 공무원, 연구자, 의료·복지 전문가까지. 서로 다른 배경의 원우들이 같은 질문을 붙잡고 함께 연구합니다.</p></div>
     </div>
     <div class="people-hero rv">
@@ -1047,7 +1048,7 @@ body.modal-open{overflow:hidden}
 <section id="news">
   <div class="wrap">
     <div class="sec-head rv">
-      <div><p class="eyebrow">06 · News</p><h2 class="h-sec">소식</h2></div>
+      <div><p class="eyebrow">News</p><h2 class="h-sec">소식</h2></div>
       <a class="btn btn-line" href="https://www.instagram.com/hongik_publicdesign/" target="_blank" rel="noopener">인스타그램에서 더 보기 ↗</a>
     </div>
     <div class="news-grid">
@@ -1076,7 +1077,7 @@ body.modal-open{overflow:hidden}
 <section id="admission">
   <div class="wrap">
     <div class="sec-head rv">
-      <div><p class="eyebrow">07 · Admission</p><h2 class="h-sec">입학 안내</h2>
+      <div><p class="eyebrow">Admission</p><h2 class="h-sec">입학 안내</h2>
       <p class="adm-slogan">여러분의 디자인에 <mark>공공의 가치</mark>를 더하세요,<br>여기 홍익에서.</p>
       <p class="lead">도시와 일상의 문제를 디자인으로 풀고 싶은 분을 기다립니다. 디자인 전공자가 아니어도 괜찮습니다. 필요한 것은 공공에 대한 질문입니다.</p></div>
     </div>
