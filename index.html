@@ -28,7 +28,7 @@
 :root{
   --paper:#F5F3EE; --paper-2:#ECE9E1; --ink:#111111; --ink-2:#3A3A3A; --mute:#6E6B64;
   --line:#D9D5CB; --accent:#040824; --accent-dark:#040824; --accent-deep:#040824; --navy-2:#0D1640; --navy-line:#1E2A5C; --sky:#2F8FCC; --accent-light:#7CC7F0; --accent-pale:#B6E1F7; --accent-soft:#E6F3FB;
-  --white:#FFFFFF; --maxw:1240px; --radius:0; --site-header-height:136px;
+  --white:#FFFFFF; --maxw:1240px; --radius:0; --site-header-height:72px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--site-header-height) + 4px)}
@@ -48,16 +48,14 @@ section{padding:110px 0}
 /* ---------- Header ---------- */
 header.site{position:fixed;inset:0 0 auto 0;z-index:50;background:var(--accent-dark);color:#fff}
 header.site.solid{background:var(--accent-dark);color:#fff}
-.brochure-banner{background:var(--accent-light);color:var(--accent-dark)}
-.brochure-banner .wrap{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:10px;padding-bottom:10px}
-.brochure-copy{display:flex;align-items:baseline;gap:14px;min-width:0}
-.brochure-copy strong{font-size:18px;font-weight:800;letter-spacing:-.025em}
-.brochure-copy span{font-size:13px;font-weight:500}
-.brochure-download{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:10px 20px;background:var(--accent-dark);color:#fff;font-size:15px;line-height:1.3;font-weight:800;white-space:nowrap;flex-shrink:0;transition:background .2s,color .2s}
+.brochure-download{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 14px;background:var(--accent-light);color:var(--accent-dark);font-size:13px;line-height:1.3;font-weight:800;white-space:nowrap;flex-shrink:0;transition:background .2s,color .2s}
 .brochure-download svg{width:19px;height:19px;flex:none}
 .brochure-download:hover{background:#fff;color:var(--accent-dark)}
-.brochure-download:focus-visible{outline:3px solid var(--accent-dark);outline-offset:3px}
-.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brochure-download:focus-visible{outline:3px solid var(--accent-light);outline-offset:3px}
+.brochure-download.m{width:100%;margin-top:16px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.nav-menu{margin-left:auto}
+.nav-actions{display:flex;align-items:center;gap:12px;flex-shrink:0}
 .logo{display:flex;align-items:center;gap:10px;color:#fff}
 .logo img{height:40px;width:auto;display:block}
 .logo-name{font-size:16px;font-weight:800;letter-spacing:-.02em;line-height:1.2;white-space:nowrap}
@@ -459,8 +457,8 @@ body.modal-open{overflow:hidden}
 .to-top.show{opacity:1;visibility:visible}
 
 /* ---------- Responsive ---------- */
-@media (max-width:1080px){
-  .menu,.nav .nav-ctas{display:none}
+@media (max-width:1200px){
+  .nav-menu{display:none}
   .burger{display:block}
   .mobile-menu{display:block;position:fixed;inset:var(--site-header-height) 0 0 0;background:var(--paper);color:var(--ink);padding:16px 24px 40px;overflow-y:auto;
     transform:translateX(100%);transition:transform .3s;z-index:49}
@@ -475,6 +473,8 @@ body.modal-open{overflow:hidden}
   body.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
   body.menu-open .burger span:nth-child(2){opacity:0}
   body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+}
+@media (max-width:1080px){
   .features{grid-template-columns:1fr 1fr}
   .steps6{grid-template-columns:repeat(3,1fr)}
   .fac-grid{grid-template-columns:repeat(3,1fr)}
@@ -488,13 +488,13 @@ body.modal-open{overflow:hidden}
   .f-top{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
-  .brochure-banner .wrap{gap:10px}
-  .brochure-copy{display:block}
-  .brochure-copy strong{display:block;font-size:15px;line-height:1.35}
-  .brochure-copy span{display:block;font-size:11.5px;line-height:1.35;margin-top:3px}
-  .brochure-download{font-size:13px;padding:10px 12px;gap:6px}
-  .brochure-download svg{width:17px;height:17px}
-  .logo img{height:30px;max-width:calc(100vw - 100px);object-fit:contain;object-position:left center}
+  .nav{gap:8px}
+  .nav-actions{gap:6px}
+  .nav .brochure-download{width:42px;padding:0}
+  .nav .brochure-label{display:none}
+  .nav .burger{width:40px}
+  .logo{min-width:0}
+  .logo img{height:auto;width:min(276px,calc(100vw - 136px));max-width:100%;object-fit:contain;object-position:left center}
   .logo-name{font-size:14.5px}
   section{padding:76px 0}
   .wrap{padding:0 16px}
@@ -534,18 +534,9 @@ body.modal-open{overflow:hidden}
 
 <!-- ================= HEADER ================= -->
 <header class="site" id="top">
-  <div class="brochure-banner" aria-label="전공 소개 책자 다운로드">
-    <div class="wrap">
-      <div class="brochure-copy"><strong>전공 소개 책자</strong><span>A4 가로형 · 28쪽 · PDF</span></div>
-      <a class="brochure-download" href="downloads/hongik-public-design-brochure.pdf" download="홍익대학교_공공디자인전공_소개책자_가로형.pdf" aria-label="전공 소개 책자 PDF 다운로드, A4 가로형 28쪽">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>
-        소개 책자 다운로드
-      </a>
-    </div>
-  </div>
   <div class="wrap nav">
     <a href="#top" class="logo" aria-label="홍익대학교 공공디자인 전공 홈"><img src="images/logo-wordmark.jpg" alt="홍익대학교 공공디자인 전공 Hongik University Major in Public Design" width="1104" height="120"></a>
-    <nav aria-label="주 메뉴">
+    <nav class="nav-menu" aria-label="주 메뉴">
       <ul class="menu">
         <li><a href="#about">전공 소개</a>
           <ul class="sub"><li><a href="#about">전공 소개</a></li><li><a href="#faculty">교수진</a></li><li><a href="#location">오시는 길</a></li></ul></li>
@@ -561,7 +552,13 @@ body.modal-open{overflow:hidden}
           <ul class="sub"><li><a href="#admission">모집 안내</a></li><li><a href="#apply">지원 방법</a></li><li><a href="#faq">자주 묻는 질문</a></li></ul></li>
       </ul>
     </nav>
-    <button class="burger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    <div class="nav-actions">
+      <a class="brochure-download" href="downloads/hongik-public-design-brochure.pdf" download="홍익대학교_공공디자인전공_소개책자_가로형.pdf" aria-label="소개 책자 다운로드, PDF 28쪽" title="소개 책자 다운로드 (PDF)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>
+        <span class="brochure-label">소개 책자 다운로드</span>
+      </a>
+      <button class="burger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    </div>
   </div>
 </header>
 
@@ -573,6 +570,7 @@ body.modal-open{overflow:hidden}
   <details><summary>사람들</summary><a href="#people">재학생</a><a href="#alumni">졸업생·진로</a><a href="#history">연혁</a></details>
   <details><summary>소식</summary><a href="#news">수상·협약·포럼</a></details>
   <details><summary>입학 안내</summary><a href="#admission">모집 안내</a><a href="#apply">지원 방법</a><a href="#faq">자주 묻는 질문</a></details>
+  <a class="brochure-download m" href="downloads/hongik-public-design-brochure.pdf" download="홍익대학교_공공디자인전공_소개책자_가로형.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>소개 책자 다운로드</a>
   <a href="#admission" class="btn btn-accent">입학 안내 바로가기 →</a>
 </div>
 
