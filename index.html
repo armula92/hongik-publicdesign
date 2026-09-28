@@ -28,10 +28,10 @@
 :root{
   --paper:#F5F3EE; --paper-2:#ECE9E1; --ink:#111111; --ink-2:#3A3A3A; --mute:#6E6B64;
   --line:#D9D5CB; --accent:#040824; --accent-dark:#040824; --accent-deep:#040824; --navy-2:#0D1640; --navy-line:#1E2A5C; --sky:#2F8FCC; --accent-light:#7CC7F0; --accent-pale:#B6E1F7; --accent-soft:#E6F3FB;
-  --white:#FFFFFF; --maxw:1240px; --radius:0;
+  --white:#FFFFFF; --maxw:1240px; --radius:0; --site-header-height:136px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--site-header-height) + 4px)}
 body{font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   background:var(--paper);color:var(--ink);line-height:1.65;word-break:keep-all;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
@@ -48,6 +48,15 @@ section{padding:110px 0}
 /* ---------- Header ---------- */
 header.site{position:fixed;inset:0 0 auto 0;z-index:50;background:var(--accent-dark);color:#fff}
 header.site.solid{background:var(--accent-dark);color:#fff}
+.brochure-banner{background:var(--accent-light);color:var(--accent-dark)}
+.brochure-banner .wrap{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:10px;padding-bottom:10px}
+.brochure-copy{display:flex;align-items:baseline;gap:14px;min-width:0}
+.brochure-copy strong{font-size:18px;font-weight:800;letter-spacing:-.025em}
+.brochure-copy span{font-size:13px;font-weight:500}
+.brochure-download{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;padding:10px 20px;background:var(--accent-dark);color:#fff;font-size:15px;line-height:1.3;font-weight:800;white-space:nowrap;flex-shrink:0;transition:background .2s,color .2s}
+.brochure-download svg{width:19px;height:19px;flex:none}
+.brochure-download:hover{background:#fff;color:var(--accent-dark)}
+.brochure-download:focus-visible{outline:3px solid var(--accent-dark);outline-offset:3px}
 .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
 .logo{display:flex;align-items:center;gap:10px;color:#fff}
 .logo img{height:40px;width:auto;display:block}
@@ -69,7 +78,7 @@ header.site.solid{background:var(--accent-dark);color:#fff}
 .mobile-menu{display:none}
 
 /* ---------- Hero ---------- */
-.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;padding:0 0 64px;overflow:hidden}
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;padding:calc(var(--site-header-height) + 36px) 0 64px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:url(images/hero-seminar.jpg) center 40%/cover no-repeat;transform:scale(1.04);animation:heroZoom 18s ease-out forwards}
 @keyframes heroZoom{to{transform:scale(1)}}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 65%),linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.1) 35%,rgba(0,0,0,.8) 100%)}
@@ -453,7 +462,7 @@ body.modal-open{overflow:hidden}
 @media (max-width:1080px){
   .menu,.nav .nav-ctas{display:none}
   .burger{display:block}
-  .mobile-menu{display:block;position:fixed;inset:72px 0 0 0;background:var(--paper);color:var(--ink);padding:16px 24px 40px;overflow-y:auto;
+  .mobile-menu{display:block;position:fixed;inset:var(--site-header-height) 0 0 0;background:var(--paper);color:var(--ink);padding:16px 24px 40px;overflow-y:auto;
     transform:translateX(100%);transition:transform .3s;z-index:49}
   .mobile-menu.open{transform:none}
   .mobile-menu details{border-bottom:1px solid var(--line)}
@@ -479,6 +488,12 @@ body.modal-open{overflow:hidden}
   .f-top{grid-template-columns:1fr 1fr}
 }
 @media (max-width:760px){
+  .brochure-banner .wrap{gap:10px}
+  .brochure-copy{display:block}
+  .brochure-copy strong{display:block;font-size:15px;line-height:1.35}
+  .brochure-copy span{display:block;font-size:11.5px;line-height:1.35;margin-top:3px}
+  .brochure-download{font-size:13px;padding:10px 12px;gap:6px}
+  .brochure-download svg{width:17px;height:17px}
   .logo img{height:30px;max-width:calc(100vw - 100px);object-fit:contain;object-position:left center}
   .logo-name{font-size:14.5px}
   section{padding:76px 0}
@@ -519,6 +534,15 @@ body.modal-open{overflow:hidden}
 
 <!-- ================= HEADER ================= -->
 <header class="site" id="top">
+  <div class="brochure-banner" aria-label="전공 소개 책자 다운로드">
+    <div class="wrap">
+      <div class="brochure-copy"><strong>전공 소개 책자</strong><span>A4 가로형 · 28쪽 · PDF</span></div>
+      <a class="brochure-download" href="downloads/hongik-public-design-brochure.pdf" download="홍익대학교_공공디자인전공_소개책자_가로형.pdf" aria-label="전공 소개 책자 PDF 다운로드, A4 가로형 28쪽">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>
+        소개 책자 다운로드
+      </a>
+    </div>
+  </div>
   <div class="wrap nav">
     <a href="#top" class="logo" aria-label="홍익대학교 공공디자인 전공 홈"><img src="images/logo-wordmark.jpg" alt="홍익대학교 공공디자인 전공 Hongik University Major in Public Design" width="1104" height="120"></a>
     <nav aria-label="주 메뉴">
