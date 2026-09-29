@@ -454,6 +454,15 @@ body.modal-open{overflow:hidden}
 
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
+/* Google 번역 도구의 상단 배너·툴팁 숨김 */
+#gt-el,.skiptranslate iframe,iframe.skiptranslate,.goog-te-banner-frame,#goog-gt-tt,.goog-te-balloon-frame{display:none!important;visibility:hidden!important}
+body{top:0!important}
+.nav .logo{flex:none}
+@media (max-width:1480px){html.translated-ltr .brochure-label{display:none}}
+html.translated-ltr .menu>li>a{font-size:12.5px;padding:10px 7px;white-space:nowrap}
+html.translated-ltr .nav-dl,html.translated-ltr .nav-dl *{white-space:nowrap}
+.goog-text-highlight{background:none!important;box-shadow:none!important}
+
 /* reveal */
 .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
 .rv.in{opacity:1;transform:none}
@@ -562,11 +571,11 @@ body.modal-open{overflow:hidden}
       </ul>
     </nav>
     <div class="nav-actions">
-      <ul class="lang" aria-label="언어 선택 (Google 번역)">
+      <ul class="lang" aria-label="언어 선택 (Google 번역)" translate="no">
         <li><a href="https://www.public-design.kr/" data-lang="ko" lang="ko" title="한국어" aria-label="한국어"><svg viewBox="0 0 20 20" aria-hidden="true"><rect width="20" height="20" fill="#fff"/><circle cx="10" cy="10" r="4.6" fill="#0047A0"/><path d="M5.4 10a4.6 4.6 0 0 1 9.2 0 2.3 2.3 0 0 0-4.6 0 2.3 2.3 0 0 1-4.6 0z" fill="#CD2E3A" transform="rotate(34 10 10)"/><g fill="#000"><g transform="rotate(-56 10 10)"><rect x="8.5" y="1.9" width="3" height=".6"/><rect x="8.5" y="2.9" width="3" height=".6"/><rect x="8.5" y="3.9" width="3" height=".6"/></g><g transform="rotate(56 10 10)"><rect x="8.5" y="1.9" width="1.3" height=".6"/><rect x="10.2" y="1.9" width="1.3" height=".6"/><rect x="8.5" y="2.9" width="3" height=".6"/><rect x="8.5" y="3.9" width="1.3" height=".6"/><rect x="10.2" y="3.9" width="1.3" height=".6"/></g><g transform="rotate(124 10 10)"><rect x="8.5" y="1.9" width="1.3" height=".6"/><rect x="10.2" y="1.9" width="1.3" height=".6"/><rect x="8.5" y="2.9" width="1.3" height=".6"/><rect x="10.2" y="2.9" width="1.3" height=".6"/><rect x="8.5" y="3.9" width="1.3" height=".6"/><rect x="10.2" y="3.9" width="1.3" height=".6"/></g><g transform="rotate(-124 10 10)"><rect x="8.5" y="1.9" width="3" height=".6"/><rect x="8.5" y="2.9" width="1.3" height=".6"/><rect x="10.2" y="2.9" width="1.3" height=".6"/><rect x="8.5" y="3.9" width="3" height=".6"/></g></g></svg></a></li>
-        <li><a href="https://www-public-design-kr.translate.goog/?_x_tr_sl=ko&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp" data-lang="en" lang="en" title="English (Google Translate)" aria-label="English"><svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0 0l60 30M60 0L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30M60 0L0 30" stroke="#C8102E" stroke-width="2.4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg></a></li>
-        <li><a href="https://www-public-design-kr.translate.goog/?_x_tr_sl=ko&amp;_x_tr_tl=zh-CN&amp;_x_tr_hl=zh-CN&amp;_x_tr_pto=wapp" data-lang="zh-CN" lang="zh-CN" title="中文 (Google 翻译)" aria-label="中文"><svg viewBox="0 0 20 20" aria-hidden="true"><rect width="20" height="20" fill="#EE1C25"/><g fill="#FFFF00"><polygon points="0,-1 .2245,-.309 .951,-.309 .363,.118 .588,.809 0,.382 -.588,.809 -.363,.118 -.951,-.309 -.2245,-.309" transform="translate(7.2 8.2) scale(3.4)"/><polygon points="0,-1 .2245,-.309 .951,-.309 .363,.118 .588,.809 0,.382 -.588,.809 -.363,.118 -.951,-.309 -.2245,-.309" transform="translate(11.8 4.4) scale(1.1)"/><polygon points="0,-1 .2245,-.309 .951,-.309 .363,.118 .588,.809 0,.382 -.588,.809 -.363,.118 -.951,-.309 -.2245,-.309" transform="translate(13.6 6.6) scale(1.1)"/><polygon points="0,-1 .2245,-.309 .951,-.309 .363,.118 .588,.809 0,.382 -.588,.809 -.363,.118 -.951,-.309 -.2245,-.309" transform="translate(13.6 9.4) scale(1.1)"/><polygon points="0,-1 .2245,-.309 .951,-.309 .363,.118 .588,.809 0,.382 -.588,.809 -.363,.118 -.951,-.309 -.2245,-.309" transform="translate(11.8 11.6) scale(1.1)"/></g></svg></a></li>
-        <li><a href="https://www-public-design-kr.translate.goog/?_x_tr_sl=ko&amp;_x_tr_tl=ja&amp;_x_tr_hl=ja&amp;_x_tr_pto=wapp" data-lang="ja" lang="ja" title="日本語 (Google 翻訳)" aria-label="日本語"><svg viewBox="0 0 20 20" aria-hidden="true"><rect width="20" height="20" fill="#fff"/><circle cx="10" cy="10" r="5.4" fill="#BC002D"/></svg></a></li>
+        <li><a href="?lang=en" data-lang="en" lang="en" title="English (Google Translate)" aria-label="English"><svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0 0l60 30M60 0L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30M60 0L0 30" stroke="#C8102E" stroke-width="2.4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></svg></a></li>
+        <li><a href="?lang=zh-CN" data-lang="zh-CN" lang="zh-CN" title="中文 (Google 翻译)" aria-label="中文"><svg viewBox="0 0 20 20" aria-hidden="true"><rect width="20" height="20" fill="#EE1C25"/><g fill="#FFFF00"><polygon points="0,-1 .2245,-.309 .951,-.309 .363,.118 .588,.809 0,.382 -.588,.809 -.363,.118 -.951,-.309 -.2245,-.309" transform="translate(7.2 8.2) scale(3.4)"/><polygon points="0,-1 .2245,-.309 .951,-.309 .363,.118 .588,.809 0,.382 -.588,.809 -.363,.118 -.951,-.309 -.2245,-.309" transform="translate(11.8 4.4) scale(1.1)"/><polygon points="0,-1 .2245,-.309 .951,-.309 .363,.118 .588,.809 0,.382 -.588,.809 -.363,.118 -.951,-.309 -.2245,-.309" transform="translate(13.6 6.6) scale(1.1)"/><polygon points="0,-1 .2245,-.309 .951,-.309 .363,.118 .588,.809 0,.382 -.588,.809 -.363,.118 -.951,-.309 -.2245,-.309" transform="translate(13.6 9.4) scale(1.1)"/><polygon points="0,-1 .2245,-.309 .951,-.309 .363,.118 .588,.809 0,.382 -.588,.809 -.363,.118 -.951,-.309 -.2245,-.309" transform="translate(11.8 11.6) scale(1.1)"/></g></svg></a></li>
+        <li><a href="?lang=ja" data-lang="ja" lang="ja" title="日本語 (Google 翻訳)" aria-label="日本語"><svg viewBox="0 0 20 20" aria-hidden="true"><rect width="20" height="20" fill="#fff"/><circle cx="10" cy="10" r="5.4" fill="#BC002D"/></svg></a></li>
       </ul>
       <a class="brochure-download" href="downloads/hongik-public-design-brochure.pdf" download="홍익대학교_공공디자인전공_소개책자_가로형.pdf" aria-label="소개 책자 다운로드, PDF 28쪽" title="소개 책자 다운로드 (PDF)">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 16v5h14v-5"/></svg>
@@ -1162,6 +1171,7 @@ body.modal-open{overflow:hidden}
   </div>
 </footer>
 
+<div id="gt-el" aria-hidden="true"></div>
 <a href="#top" class="to-top" aria-label="맨 위로">↑</a>
 
 <script>
@@ -1170,15 +1180,25 @@ const header=document.querySelector('header.site'),toTop=document.querySelector(
 const onScroll=()=>{const y=window.scrollY;header.classList.toggle('solid',y>window.innerHeight*0.6);toTop.classList.toggle('show',y>900)};
 window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 
-/* language flags: Google 번역 사이트(translate.goog)로 이동, 태극기는 원래 주소로 */
+/* language flags: 페이지 안 Google 번역(웹사이트 번역 도구). translate.goog 주소 방식은 한국 등에서 차단되어 사용하지 않음 */
 const langNav=document.querySelector('.nav .lang'),langM=langNav.cloneNode(true);
 langM.classList.add('m');document.getElementById('mobileMenu').prepend(langM);
-const curLang=new URLSearchParams(location.search).get('_x_tr_tl')||'ko';
+const gtCookie=()=>{const m=document.cookie.match(/(?:^|;\s*)googtrans=\/ko\/([^;]+)/);return m?decodeURIComponent(m[1]):'ko'};
+const setGt=l=>{const host=location.hostname,base=host.replace(/^www\./,'');
+  const exp=l==='ko'?';expires=Thu, 01 Jan 1970 00:00:00 GMT':'';const v=l==='ko'?'':'/ko/'+l;
+  ['', ';domain='+host, ';domain=.'+base].forEach(d=>{document.cookie='googtrans='+v+';path=/'+d+exp});};
+let curLang=gtCookie();
+const qLang=new URLSearchParams(location.search).get('lang');
+if(qLang&&qLang!==curLang){setGt(qLang);curLang=qLang;}
 document.querySelectorAll('.lang a').forEach(a=>{
   const l=a.dataset.lang;if(l===curLang)a.setAttribute('aria-current','true');
-  a.addEventListener('click',e=>{e.preventDefault();const p=location.pathname;
-    window.top.location.href=l==='ko'?'https://www.public-design.kr'+p:'https://www-public-design-kr.translate.goog'+p+'?_x_tr_sl=ko&_x_tr_tl='+l+'&_x_tr_hl='+l+'&_x_tr_pto=wapp'});
+  a.addEventListener('click',e=>{e.preventDefault();if(l===gtCookie())return;setGt(l);
+    const u=new URL(location.href);u.searchParams.delete('lang');history.replaceState(null,'',u.pathname+u.search+u.hash);location.reload();});
 });
+if(curLang!=='ko'){
+  window.gtInit=()=>{new google.translate.TranslateElement({pageLanguage:'ko',includedLanguages:'en,zh-CN,ja',autoDisplay:false},'gt-el')};
+  const sc=document.createElement('script');sc.src='https://translate.google.com/translate_a/element.js?cb=gtInit';document.body.appendChild(sc);
+}
 
 /* mobile menu */
 const burger=document.querySelector('.burger'),mm=document.getElementById('mobileMenu');
